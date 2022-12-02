@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>add_timeline</title>
+</head>
+
+<body>
+
+    <div class="container" style="padding: 7%;">
+
+        <div class="col-12">
+            <h1>add timeline event </h1>
+
+            <h3>type</h3>
+            <div class="row mb-3 type_form">
+                <div class="col-12">
+                    <label for="form-select" class="form-label">type</label>
+                    <select class="form-select" id="form-select">
+                        <option value="1">professional</option>
+                        <option value="2">education</option>
+                        <option value="3">certifications</option>
+                    </select>
+                </div>
+            </div>
+
+            <h3>local</h3>
+            <div class="row mb-3">
+                <div class="col-10">
+                    <label for="institution" class="form-label">institution</label>
+                    <input type="text" class="form-control" id="institution" placeholder="institution">
+                </div>
+                <div class="col-2">
+                    <label for="institution_initials" class="form-label">institution_initials</label>
+                    <input type="text" class="form-control" id="institution_initials" placeholder="initials">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-3">
+                    <label for="district" class="form-label">district</label>
+                    <input type="text" class="form-control" id="district" placeholder="district">
+                </div>
+                <div class="col-3">
+                    <label for="city" class="form-label">city</label>
+                    <input type="text" class="form-control" id="city" placeholder="city">
+                </div>
+                <div class="col-3">
+                    <label for="state" class="form-label">state</label>
+                    <input type="text" class="form-control" id="state" placeholder="state">
+                </div>
+                <div class="col-3">
+                    <label for="country" class="form-label">country</label>
+                    <input type="text" class="form-control" id="country" placeholder="country">
+                </div>
+            </div>
+
+            <h3>date</h3>
+            <div class="row mb-3">
+                <div class="col-6">
+                    <label for="data_start" class="form-label">data_start</label>
+                    <input type="date" class="form-control" id="data_start">
+                </div>
+                <div class="col-6">
+
+                    <label for="data_end" class="form-label">data_end</label>
+                    <input type="date" class="form-control" id="data_end">
+                </div>
+            </div>
+
+            <h3>about</h3>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <label for="title" class="form-label">title</label>
+                    <input type="text" class="form-control" id="title" placeholder="title">
+                </div>
+                <div class="col-8">
+                    <label for="type" class="form-label">type</label>
+                    <input type="text" class="form-control" id="type" placeholder="type">
+                </div>
+                <div class="col-4">
+                    <label for="hours" class="form-label">hours</label>
+                    <input type="text" class="form-control" id="hours" placeholder="hours">
+                </div>
+            </div>
+
+            <h3>description</h3>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <label for="where" class="form-label">where</label>
+                    <textarea class="form-control" id="where" rows="3" placeholder="where you worked in that company or position; what squad? what project? what product?"></textarea>
+                </div>
+                <div class="col-12">
+                    <label for="what" class="form-label">what</label>
+                    <textarea class="form-control" id="what" rows="3" placeholder="how you worked in that company or position; what is the role in the squad? what is the role in the project? How did you contribute to the product?"></textarea>
+                </div>
+                <div class="col-12">
+                    <label for="tech_stack" class="form-label">tech_stack</label>
+                    <textarea class="form-control" id="tech_stack" rows="3"
+                        placeholder="What technologies did you use to perform the functions? <br> use  ;  to split the technology"></textarea>
+                </div>
+                <div class="col-12">
+                    <label for="effects" class="form-label">effects</label>
+                    <textarea class="form-control" id="effects" rows="3" placeholder="How did the work contribute to the company, squad, project and product?"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <button type="button" class="btn btn-primary">add</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

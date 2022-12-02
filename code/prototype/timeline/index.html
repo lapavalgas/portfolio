@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>timeline</title>
+</head>
+
+<!-- CONSIDERAÇÔES
+
+    Tipos de Cards:
+        Carreira
+        Educação
+        Certificações
+
+    O card de Carreira poderá incluir Pesquisas Acadêmica
+    O Card de Carreira poderá incluir Evolução do Cargo
+    O Card de Carreira poderá incluir Clientes de Consultoria
+    O Card de Carreira poderá incluir Atividades Autonomas
+    O Card de Carreira poderá incluir Estágios e Voluntáriados
+    O Card de Carreira poderá incluir Links 
+    O Card de Carreira poderá incluir Inicio e Fim (enfase no Inicío)
+
+    O Card de Educação poderá incluir Apresentações e Palestrar importantes
+    O Card de Educação poderá incluir Links 
+    O Card de Carreira poderá incluir Inicio e Fim (enfase no Fim)
+    
+    O Card de Certificações poderá incluir Links 
+    
+    NEXT STEPS:
+        - Revisar .json
+        - Construção .json Educação e Certificação
+
+
+-->
+
+<body style="margin: 10% 0%;">
+    <div class="container">
+
+        <!-- TIMELINE -->
+        <div class="timeline">
+            <!-- TIMELINE YEAR -->
+            <div class="timeline-year"><span>Março de 2022</span></div>
+
+            <!-- TIMELINE CONTAINER LEFT -->
+            <div class="timeline-container left">
+                <div class="timeline-container-content">
+                    <h5 class="display-none">2022-03-01 - atual </h5>
+                    <span class="timeline-arrow"></span>
+                    <p class="timeline-containter-content-type">Carreira<p>
+                    <p><span class="timeline-containter-content-title">Desenvolvedor Web</span>
+                        <br>NTT Data Europe & Latam / NTT Data
+                        <br>Florianópolis, Santa Catarina - Brasil
+                        <br>Pleno Tempo integral CLT
+                        <br>
+                    </p>
+                    <p><a href="">Ver mais...</a></p>
+                    <!-- <div class="time-line-content-more">
+                        <p> Integrava a equipe de desenvolvimento web em um cliente do
+                            segmento bancário. Atuação para manutenção, desenvolvimento de features e modernização de
+                            sistemas legado java. Trabalhando com Atendimento ao cliente, Java, Spring, Docker, Postman,
+                            Insominia. </p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="timeline-container none"></div>
+
+            <!-- TIMELINE CONTAINER RIGHT -->
+            <div class="timeline-container right">
+                <div class="timeline-container-content">
+                    <h5 class="display-none">{{data_start}} - {{data_end}}</h5>
+                    <span class="timeline-arrow"></span>
+                    <p class="timeline-containter-content-type">Carreira<p>
+                    <p><span class="timeline-containter-content-title">{{title}}</span>
+                        <br>{{institution}} / {{institution_initials}}
+                        <br>{{city}}, {{state}} - {{country}}
+                        <br>{{type}}
+                        <br>
+                    </p>
+                    <p><a href="">Ver mais...</a></p>
+                    <!-- <div class="time-line-content-more">
+                        <p> Integrava a equipe de desenvolvimento web em um cliente do
+                            segmento bancário. Atuação para manutenção, desenvolvimento de features e modernização de
+                            sistemas legado java. Trabalhando com Atendimento ao cliente, Java, Spring, Docker, Postman,
+                            Insominia. </p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="timeline-container none"></div>
+
+            <!-- TIMELINE CONTAINER LEFT -->
+            <div class="timeline-container left">
+                <div class="timeline-container-content">
+                    <h5 class="display-none">2022-03-01 - atual </h5>
+                    <span class="timeline-arrow"></span>
+                    <p class="timeline-containter-content-type">Carreira<p>
+                    <p><span class="timeline-containter-content-title">Desenvolvedor Web</span>
+                        <br>NTT Data Europe & Latam / NTT Data
+                        <br>Florianópolis, Santa Catarina - Brasil
+                        <br>Pleno Tempo integral CLT
+                        <br>
+                    </p>
+                    <!-- <p><a href="">Ver mais...</a></p> -->
+                    <div class="time-line-content-more">
+                        <p> Integrava a equipe de desenvolvimento web em um cliente do
+                            segmento bancário. Atuação para manutenção, desenvolvimento de features e modernização de
+                            sistemas legado java. Trabalhando com Atendimento ao cliente, Java, Spring, Docker, Postman,
+                            Insominia. <span><a href="">...ver menos.</a></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-container none"></div>
+
+            <!-- TIMELINE CONTAINER RIGHT -->
+            <div class="timeline-container right">
+                <div class="timeline-container-content">
+                    <h5 class="display-none">{{data_start}} - {{data_end}}</h5>
+                    <span class="timeline-arrow"></span>
+                    <p class="timeline-containter-content-type">Carreira<p>
+                    <p><span class="timeline-containter-content-title">{{title}}</span>
+                        <br>{{institution}} / {{institution_initials}}
+                        <br>{{city}}, {{state}} - {{country}}
+                        <br>{{type}}
+                        <br>
+                    </p>
+                    <!-- <p><a href="">Ver mais...</a></p> -->
+                    <div class="time-line-content-more">
+                        <p> {{description.where}}. {{description.what}}. Trabalhando com {{description.tech_stack}}. {{description.effects}}. <span><a href="">...ver menos.</a></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-container none"></div>
+
+        </div>
+
+
+        <div class="timeline">
+            <div class="timeline-year"><span>Novembro de 2022</span></div>
+
+
+            <!-- CARD EVENT: INICIO DE CURSO & CERTIFICAÇÃO -->
+
+            <!-- INICIO CURSO -->
+            <div class="timeline-container left">
+                <div class="timeline-container-content">
+                    <h5 class="display-none">{{data_start}} - {{data_end}}</h5>
+                    <span class="timeline-arrow"></span>
+                    <p class="timeline-containter-content-type">Educação<p>
+                    <p><span class="timeline-containter-content-title">Iniciando o mestrado em Informática em Saúde</span>
+                        <br>Universidade Federal de Santa Catarina / UFSC
+                        <br>Florianópolis, Santa Catarina - Brasil
+                        <br>Mestrado
+                        <br>
+                    </p>
+                    <!-- <p><a href="">Ver mais...</a></p> -->
+                    <div class="time-line-content-more">
+                        <p>Programa de pós-graduação Mestrado Carreira em Informática em Saúde / PPGINFOS.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-container none"></div>
+
+            <!-- CERTIFICAÇÃO -->
+            <div class="timeline-container left">
+                <div class="timeline-container-content">
+                    <h5 class="display-none">2022-03-01 - 2022-03-01</h5>
+                    <span class="timeline-arrow"></span>
+                    <p class="timeline-containter-content-type">Certificações<p>
+                    <p><span class="timeline-containter-content-title">AWS Partner: Accreditation (Business)</span>
+                        <br>Amazon Web Services Training and Certification
+                    </p>
+                    <!-- <p><a href="">Ver mais...</a></p> -->
+                    <div class="time-line-content-more">
+                        <p style="text-align: right;"><a href="">Badge link</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-container none"></div>
+
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
