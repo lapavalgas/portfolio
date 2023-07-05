@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import PortfolioViewVue from "@/views/PortfolioView.vue";
-import ResumeViewVue from "@/views/ResumeView.vue";
 import TimelineViewVue from "@/views/TimelineView.vue";
 
 const router = createRouter({
@@ -12,12 +11,7 @@ const router = createRouter({
       component: PortfolioViewVue,
     },
     {
-      path: "/resume",
-      name: "resume",
-      component: ResumeViewVue,
-    },
-    {
-      path: "/tml/:lng/spy",
+      path: "/~tml",
       name: "timeline",
       component: TimelineViewVue,
       props: true,
