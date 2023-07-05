@@ -1,0 +1,52 @@
+{
+  "name": "Rafael Lapa Valgas",
+  "contact": {
+    "adress": "[At the top of your European CV, contact details are a must. List your address, telephone number, and email address alongside your name. With this CV format, European recruiters may also be looking for your date of birth, gender, nationality, and even a picture – so this is the place to include them.]",
+    "telephone": "",
+    "whatsapp": "",
+    "email": "",
+    "linkedin": "",
+    "github": ""
+  },
+  "personalStatemant": "Your personal statement or CV personal profile is the first thing a recruiter reads when they look at your Curriculum vitae. As it is your opening paragraph, it’s vital that the personal statement for your CV draws recruiters in and gains their interest. Many recruiters will only read your CV personal statement and decide if you sound like a suitable candidate before reading anything else.",
+  "workExperience": [
+    {
+      "jobTitle": "[List your previous jobs with a few bullet points about your main responsibilities and achievements. You should keep these responsibilities concise to stop your European CV becoming too long. You should list your most recent (or current) position first, so recruiters can work backwards through your career.]",
+      "startDate": "",
+      "endDate": "",
+      "companyName": "",
+      "description": "First sentence. topicos: separar; por; ponto e virgula; finalização."
+    }
+  ],
+  "educationExperience": [
+    {
+      "institutionName": "",
+      "startDate": "",
+      "endDate": "",
+      "degree": "[This section appears much higher up in the CV format for European countries, sometimes coming after the contact details but most often following your work history. Like your work history, you should use reverse-chronological order with the most recent qualifications first.]",
+      "fieldOfStudy": "",
+      "description": "First sentence. topicos: separar; por; ponto e virgula; finalização.",
+      "thesis": {
+        "name": "",
+        "description": "",
+        "link": ""
+      }
+    }
+  ],
+  "skills": {
+    "motherTongue": "The language you speak naturally and natively",
+    "languages": [
+      "List language skills levels on your European CV, ideally using the Common European Framework of Reference for Languages (CEFR)",
+      {
+        "language": "english",
+        "level": "b1",
+        "system": "TOEFL"
+      }
+    ],
+    "communication": "Also known as interpersonal skills",
+    "interpersonal": "",
+    "organisational": "Describe your skills and competencies for organisation and time management",
+    "jobSpecific": "This is where you’ll include job-specific, technical skills",
+    "digital": "Finally, summarise your computer skills with a focus, where relevant, on your specific field"
+  }
+}

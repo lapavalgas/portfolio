@@ -1,0 +1,33 @@
+---
+year: "2014"
+type: Experiência Profissional
+job_title: Monitor da disciplina de Harmonia e Contraponto
+job_level: Estágio
+institution_name: Universidade do Estado de Santa Catarina
+abbreviation_name: UDESC
+city: Florianópolis
+state: Santa Catarina
+country: Brasil
+description:
+  intro: "Pela segunda vez como monitor dessa disciplina, eram minhas atribuições:"
+  tasks:
+    - Participar de reuniões periódicas com o orientador para discutir as atividades
+      pedagógicas
+    - Aplicar e corrigir exercícios de harmonia e contraponto
+    - Orientar e acompanhar os alunos durante o processo de aprendizagem
+  conclusion:
+    Este trabalho me permitiu contribuir para o aprendizado e desenvolvimento
+    dos alunos em técnicas de harmonia e contraponto. Além disso, foi uma oportunidade
+    valiosa para desenvolver minhas habilidades de comunicação e ensino, a fim de
+    transmitir conhecimento de forma eficaz para outras pessoas.
+skills:
+  - Habilidades de apresentação
+  - Planejamento de aulas
+  - Piano
+  - Música
+  - Teoria musical
+  - Educação musical
+date_start: "2014-07-01"
+date_end: "2014-12-31"
+link: ""
+display: true

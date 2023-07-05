@@ -1,0 +1,40 @@
+{
+  "year": "2011",
+  "type": "Experiência Profissional",
+  "job_title": "Pesquisador",
+  "job_level": "Bolsista de Iniciação Científica",
+  "institution_name": "Centro Universitário Estácio de Santa Catarina",
+  "abbreviation_name": "Estácio",
+  "location": {
+    "city": "São José",
+    "state": "Santa Catarina",
+    "country": "Brasil"
+  },
+  "description": {
+    "intro": "Como Estudante Pesquisador, tive a oportunidade de participar do Programa de Iniciação Científica UNIEDU, art. 170/171 FUMDES/SC. O título da minha pesquisa foi: \"O papel da psicologia na reabilitação das pessoas com déficits neurológicos\". Eram minhas atribuições:",
+    "tasks": [
+      "Realizar uma revisão bibliográfica aprofundada sobre o tema da pesquisa",
+      "Analisar e interpretar os dados coletados",
+      "Redigir um relatório científico sobre os resultados da pesquisa",
+      "Apresentar os resultados da pesquisa ao programa de pesquisa universitário"
+    ],
+    "conclusion": "Essa experiência foi enriquecedora, pois me permitiu aprofundar meus conhecimentos em psicologia e neuropsicologia, além de começar a desenvolver habilidades em pesquisa científica. Também tive a oportunidade de aprimorar minhas habilidades de apresentação e comunicação."
+  },
+  "skills": [
+    "Exames psicológicos",
+    "Neuropsicologia",
+    "Testes psicológicos",
+    "Testes neuropsicológicos",
+    "Avaliação psicométrica",
+    "Microsoft Excel",
+    "Habilidades de apresentação",
+    "Pesquisa qualitativa",
+    "Pesquisa quantitativa",
+    "Avaliação neuropsicológica",
+    "Psicometria"
+  ],
+  "date_start": "2011-06-01",
+  "date_end": "2012-06-30",
+  "link": "",
+  "display": false
+}

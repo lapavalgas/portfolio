@@ -1,0 +1,137 @@
+{
+  "menu": {
+    "cover": "perfil",
+    "about": "sobre",
+    "skills": "habilidades",
+    "showcases": "showcases",
+    "projects": "projetos",
+    "contact": "contatos",
+    "resume": "curriculum"
+  },
+  "sections": {
+    "cover": {
+      "name": "Rafael Lapa Valgas",
+      "profession": "SOFTWARE ENGINEER"
+    },
+    "about": {
+      "title": "Sobre mim",
+      "card": {
+        "title": "EXPERIÊNCIAS",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+      }
+    },
+    "skills": {
+      "title": "Habilidades",
+      "cards": [
+        {
+          "title": "ENGENHEIRO DE SOFTWARE",
+          "description": "orem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+        },
+        {
+          "title": "FULLSTACK DEVELOPER",
+
+          "description": "orem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+        },
+        {
+          "title": "QUALITY ASSURANCE",
+          "description": "orem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+        }
+      ]
+    },
+    "showcases": {
+      "title": "Showcases",
+      "cards": [
+        {
+          "title": "NEUROPSYCHOLOGY EHR SYSTEM",
+          "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint velnon est mollitia optio rem neque, vitae ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint vel non est mollitia optio rem neque.",
+          "img": "",
+          "link": ""
+        },
+        {
+          "title": "NEUROPSYCHOLOGY EHR SYSTEM",
+          "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint velnon est mollitia optio rem neque, vitae ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint vel non est mollitia optio rem neque.",
+          "img": "",
+          "link": ""
+        },
+        {
+          "title": "NEUROPSYCHOLOGY EHR SYSTEM",
+          "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint velnon est mollitia optio rem neque, vitae ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint vel non est mollitia optio rem neque.",
+          "img": "",
+          "link": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projetos ",
+      "cards": [
+        {
+          "title": "SOFTWARE ENGINEER",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
+          "techstack": ["JavaScript", "Spring", "Docker"],
+          "link": "https://github.com/lapavalgas"
+        },
+        {
+          "title": "SOFTWARE ENGINEER",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
+          "techstack": ["JavaScript", "CSS", "Java"],
+          "link": "https://github.com/lapavalgas"
+        },
+        {
+          "title": "SOFTWARE ENGINEER",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
+          "techstack": ["VueJs", "CSS", "Java"],
+          "link": "https://github.com/lapavalgas"
+        },
+        {
+          "title": "SOFTWARE ENGINEER",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
+          "techstack": ["JavaScript", "CSS", "Java"],
+          "link": "https://github.com/lapavalgas"
+        },
+        {
+          "title": "SOFTWARE ENGINEER",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
+          "techstack": ["JavaScript", "CSS", "Java"],
+          "link": "https://github.com/lapavalgas"
+        },
+        {
+          "title": "SOFTWARE ENGINEER",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
+          "techstack": ["JavaScript", "CSS", "Java"],
+          "link": "https://github.com/lapavalgas"
+        },
+        {
+          "title": "SOFTWARE ENGINEER",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
+          "techstack": ["JavaScript", "CSS", "Java"],
+          "link": "https://github.com/lapavalgas"
+        
+        },
+        {
+          "title": "SOFTWARE ENGINEER",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
+          "techstack": ["JavaScript", "CSS", "Java"],
+          "link": "https://github.com/lapavalgas"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contate-me",
+      "card": {
+        "title": "Contact!",
+        "descriptions": [
+          "Say hello... See my work, My Shelf, My Resume... TOSCXO",
+          "If BANANA you want to know more about me or my work, or if you would just like to say hello, Just give me a call or send me an email. I'd love to hear from you.",
+          "Feel free  TETOto reach out if you want a to build something together, have a question, or just want to connect."
+        ]
+      }
+    }
+  },
+  "footer": {
+    "linkedin": "LinkedIn",
+    "github": "Github",
+    "email": "E-mail",
+    "resume": "Resume",
+    "scrolldown": "toca lhe o pau"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "year": "2013",
+  "type": "Experiência Profissional",
+  "job_title": "Monitor de música",
+  "job_level": "Monitor da Orquestra Escola (FIC)",
+  "institution_name": "Instituto Federal de Santa Catarina",
+  "abbreviation_name": "IFSC",
+  "city": "Florianópolis",
+  "state": "Santa Catarina",
+  "country": "Brasil",
+  "description": {
+    "intro": "Como Monitor de Música na Orquestra Escola do IFSC, fui responsável por ensinar e revisar o conteúdo programático de teoria musical e leitura de partituras. Minhas atribuições incluíam:",
+    "tasks": [
+      "Participar de reuniões periódicas com os orientadores para discutir o planejamento pedagógico",
+      "Ensinar técnicas de leitura de partituras e interpretação musical",
+      "Orientar e acompanhar os alunos durante o processo de aprendizagem"
+    ],
+    "conclusion": "Meu trabalho contribuiu para nivelar os conhecimentos dos integrantes da orquestra. Essa experiência me permitiu desenvolver habilidades de ensino e a capacidade de transmitir conhecimento para outras pessoas."
+  },
+  "skills": [
+    "Habilidades de apresentação",
+    "Planejamento de aulas",
+    "Piano",
+    "Música",
+    "Teoria musical",
+    "Educação musical"
+  ],
+  "date_start": "2013-07-01",
+  "date_end": "2013-12-31",
+  "link": "",
+  "display": true
+}

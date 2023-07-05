@@ -1,0 +1,10 @@
+# geral: close 1st commit portfolio / timeline / resume structure to github
+# geral: construir o json com informações aproximadas da realidade (para iniciar uma cara de finalização)
+
+# portfolio: revisar layout para o 'contact-me'
+
+# timeline: objetivo é ter diversos jsons (estudos médio, superior, pós, mestrado, trabalhos) separados que serão unidos em um único e então o sistema irá organizar e apresentar. precisa criar o serviço que junta n jsons em um único const
+
+# resume: deixar pronto a solução CSS para print em uma e duas colunas. utilizar o padrão de duas colunas e deixar o de uma coluna comentado. 
+# resume: cada sessão do resume deverá estar em um json separado para facilitar manutenção
+# resume: verificar viabilidade de utilizar o mesmo json para timeline/trabalhos e resume/trabalhos 

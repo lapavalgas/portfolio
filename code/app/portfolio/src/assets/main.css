@@ -1,35 +1,86 @@
-@import './base.css';
+@import "./base.css";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/***-------------------------------------------------------
+        FLICKITY
+-------------------------------------------------------***/
 
-  font-weight: normal;
+.flickity-page-dots {
+  bottom: -1rem !important;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+.flickity-page-dots .dot {
+  background: var(--clr-base-white) !important;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+.flickity-prev-next-button.previous {
+  display: none !important;
+}
+
+.flickity-prev-next-button.next {
+  display: none !important;
+}
+
+.scrollable-place {
+  height: 3000px;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* media query for landscap and tablet */
+@media (orientation: landscape) and (min-width: 640px),
+  (min-width: 768px) and (max-width: 1024px) {
+  .flickity-page-dots {
+    bottom: -0rem !important;
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+/* media query for ajusts in landscape and tablet */
+@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
+  (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* media query for desktops */
+@media (min-width: 1025px) and (min-height: 625px) {
+  .flickity-page-dots {
+    position: absolute !important;
+    margin-bottom: -70px !important;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+  .flickity-prev-next-button.previous {
+    display: initial !important;
+    left: -100px !important;
+  }
+
+  .flickity-prev-next-button.next {
+    display: initial !important;
+    right: -100px !important;
   }
 }
+
+/* media query for ajusts in desktops */
+@media (min-width: 1445px) {
+}
+
+/* media query for ajusts in desktops */
+@media (min-width: 1600px) {
+}
+
+/***-------------------------------------------------------
+        END HOME
+-------------------------------------------------------***/
+
+/***-------------------------------------------------------
+        UTILS
+-------------------------------------------------------***/
+.display-none {
+  display: none;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+/* <a href="javascript: void(0)">ocultar descrição</a> */

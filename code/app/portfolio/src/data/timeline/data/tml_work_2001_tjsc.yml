@@ -1,0 +1,35 @@
+---
+year: "2001"
+type: Experiência Profissional
+job_title: Suporte técnico em informática
+job_level: Aprendiz
+institution_name: Tribunal de Justiça de Santa Catarina
+abbreviation_name: TJSC
+location:
+  city: Florianópolis
+  state: Santa Catarina
+  country: Brasil
+description:
+  intro:
+    "Como Aprendiz de Suporte Técnico, tive a responsabilidade de prestar suporte
+    para resolução de problemas de hardware, software e rede de computadores. Eram
+    minhas atribuições:"
+  tasks:
+    - Atender e resolver chamadas de suporte de forma profissional e eficiente
+    - Treinar e orientar os usuários em sistemas e ferramentas de TI
+    - Realizar manutenção preventiva e corretiva em equipamentos de TI
+    - Instalar e configurar sistemas operacionais e aplicativos
+    - Efetuar alterações na infraestrutura de rede e computadores
+  conclusion:
+    Esse trabalho foi fundamental para garantir o bom funcionamento das
+    atividades da instituição, permitindo que eu adquirisse conhecimentos e habilidades
+    técnicas fundamentais para minha carreira em tecnologia da informação.
+skills:
+  - Linux
+  - Microsoft Windows
+  - Rede de computadores
+  - Suporte de hardware de TI
+date_start: "2001-02-01"
+date_end: "2001-09-30"
+link: ""
+display: false

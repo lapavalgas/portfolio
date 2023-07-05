@@ -167,7 +167,7 @@
 
 /***-------------------------------------------------------
         START
-        -------------------------------------------------------***/
+-------------------------------------------------------***/
 
 * {
     font-family: var(--ff-base);
@@ -228,6 +228,7 @@ section {
     html {
         scroll-snap-type: mandatory;
         scroll-snap-points-y: repeat(100vh);
+        -webkit-scroll-snap-points-y: repeat(100vh);
         scroll-snap-type: y mandatory;
     }
 

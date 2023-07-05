@@ -1,0 +1,38 @@
+---
+year: "2014"
+type: Experiência Profissional
+job_title: Professor de música
+job_level: Estágio supervisionado obrigatório
+institution_name: Instituto Federal de Santa Catarina
+abbreviation_name: IFSC
+city: Florianópolis
+state: Santa Catarina
+country: Brasil
+description:
+  intro:
+    "Como Estagiário de Educação Musical no IFSC, fui responsável por ensinar
+    e promover a música brasileira para alunos do terceiro ano do ensino médio. Minhas
+    atribuições incluíam:"
+  tasks:
+    - Participar de reuniões periódicas com o orientador para discutir as atividades
+      pedagógicas
+    - Desenvolver os planos de aulas e materiais didáticos
+    - Apresentar os diferentes ritmos e estilos musicais brasileiros
+    - Ensinar técnicas de música em instrumentos de percussão
+    - Orientar e acompanhar os alunos durante o processo de aprendizagem
+  conclusion:
+    Esse trabalho foi importante para difundir a música brasileira e ampliar
+    as referências musicais dos alunos. Além disso, me permitiu desenvolver habilidades
+    de ensino e capacidade de transmitir conhecimento para outras pessoas, bem como
+    aprender sobre metodologias de ensino e planejamento pedagógico.
+skills:
+  - Habilidades de apresentação
+  - Planejamento de aulas
+  - Piano
+  - Música
+  - Teoria musical
+  - Educação musical
+date_start: "2014-01-01"
+date_end: "2014-06-30"
+link: ""
+display: true
