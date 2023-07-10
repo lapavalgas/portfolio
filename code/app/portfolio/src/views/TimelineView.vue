@@ -2,5 +2,5 @@
 import TimelineVue from "@/components/Timeline/TimelineYear.vue";
 </script>
 <template>
-  <TimelineVue  />
+  <TimelineVue />
 </template>

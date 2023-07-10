@@ -1,0 +1,51 @@
+{
+  "year": "2012",
+  "type": "work experience",
+  "institution_name": "Bateras Beat escola de música",
+  "abbreviation_name": "Bateras Beat",
+  "location": {
+    "city": "Florianópolis",
+    "state": "Santa Catarina",
+    "country": "Brasil"
+  },
+  "date_start": "2013-02-01",
+  "date_end": "2014-12-20",
+  "display": true,
+  "link": [],
+  "positions": [
+    {
+      "job_title": "Professor de música",
+      "date_start": "2013-02-01",
+      "date_end": "2014-12-20",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "",
+          "project:": "Aulas de teclado",
+          "job_level": "Autônomo",
+          "squad": "",
+          "description": {
+            "intro": "",
+            "tasks": [
+              "Ensinar os conceitos básicos e avançados da técnica de piano erudito, teoria, harmonia e percepção musical de acordo com o nível e interesse de cada aluno",
+              "Adaptar o conteúdo das aulas de acordo com as necessidades específicas de cada aluno",
+              "Oferecer feedback e suporte para ajudar os alunos a progredirem em suas habilidades musicais",
+              "Revisar e atualizar regularmente meu conhecimento e habilidades, a fim de oferecer o ensino de qualidade aos meus alunos"
+            ],
+            "conclusion": ""
+          },
+          "skills": [
+            "Habilidades de apresentação",
+            "Atendimento ao cliente",
+            "Planejamento de aulas",
+            "Piano",
+            "Música",
+            "Teoria musical",
+            "Educação musical"
+          ]
+        }
+      ]
+    }
+  ]
+}

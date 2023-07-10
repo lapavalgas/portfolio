@@ -1,0 +1,53 @@
+{
+  "year": "2016",
+  "type": "education experience",
+  "institution_name": "Instituto Catarinense de Terapia Cognitiva",
+  "abbreviation_name": "ICTC",
+  "location": {
+    "city": "Florianópolis",
+    "state": "Santa Catarina",
+    "country": "Brasil"
+  },
+  "date_start": "2016-08-01",
+  "date_end": "2018-08-30",
+  "display": true,
+  "link": [],
+  "course_name": "Neuropsicologia Clínica",
+  "department": "",
+  "internship": [],
+  "required_internship": [],
+  "research": [
+    {
+      "job_title": "researcher",
+      "date_start": "2017-06-01",
+      "date_end": "2018-06-30",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "",
+          "project:": "",
+          "job_level": "",
+          "squad": "",
+          "date_start": "",
+          "date_end": "",
+          "display": true,
+          "description": {
+            "intro": "Como Aluno Pesquisador, realizei uma revisão de literatura integrativa sobre o uso de informática na neuropsicologia de 1970 a 2017. O título da minha pesquisa foi: 'A informatização da neuropsicologia: uma revisão dos limites, obstáculos e potenciais da automatização'",
+            "tasks": [
+              "Realizar uma revisão bibliográfica aprofundada sobre o tema da pesquisa",
+              "Analisar e interpretar os dados coletados",
+              "Identificar o processo de informatização da neuropsicologia e das ciências cognitivas",
+              "Identificar oportunidade de informatização da neuropsicologia",
+              "Redigir um artigo científico sobre os resultados da pesquisa",
+              "Apresentar os resultados da pesquisa ao programa de pós-graduação"
+            ],
+            "conclusion": "O resultado da pesquisa foi um artigo publicado na biblioteca da universidade e uma apresentação para a turma de pós-graduação. Essa experiência foi uma oportunidade valiosa para desenvolver minhas habilidades em pesquisa científica e análise de dados. Além disso, me permitiu aprimorar minhas habilidades de comunicação e apresentação ao compartilhar os resultados da pesquisa ao programa de pós-graduação. Esta pesquisa foi fundamental para viabilizar minha pesquisa de mestrado."
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ]
+}

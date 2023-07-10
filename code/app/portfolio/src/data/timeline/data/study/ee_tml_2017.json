@@ -1,0 +1,68 @@
+{
+  "year": "2017",
+  "type": "education experience",
+  "institution_name": "Centro Universitário Municipal de São José",
+  "abbreviation_name": "USJ",
+  "location": {
+    "city": "São José",
+    "state": "Santa Catarina",
+    "country": "Brasil"
+  },
+  "date_start": "2017-07-01",
+  "date_end": "2021-07-30",
+  "display": true,
+  "link": [
+    "https://fastservice.vercel.app/",
+    "https://github.com/lapavalgas/undergraduate_fastservice",
+    "https://github.com/lapavalgas/undergraduate_repositories/tree/main/repositories/20190701_usj_internship_extensao_website",
+    "https://github.com/lapavalgas/undergraduate_repositories"
+  ],
+  "course_name": "Análise e Desenvolvimento de Sistemas",
+  "department": "",
+  "internship": [
+    {
+      "job_title": "Desenvolvedor Web",
+      "date_start": "",
+      "date_end": "",
+      "link": [
+        "https://github.com/lapavalgas/undergraduate_repositories/tree/main/repositories/20190701_usj_internship_extensao_website",
+        "https://raw.githubusercontent.com/lapavalgas/undergraduate_repositories/main/repositories/20190701_usj_internship_extensao_website/resources/logo_app0.png",
+        "https://raw.githubusercontent.com/lapavalgas/undergraduate_repositories/main/repositories/20190701_usj_internship_extensao_website/resources/logo_app1.jpg",
+        "https://raw.githubusercontent.com/lapavalgas/undergraduate_repositories/main/repositories/20190701_usj_internship_extensao_website/resources/logo_app2.png"
+      ],
+      "display": true,
+      "projects": [
+        {
+          "department": "",
+          "project:": "",
+          "job_level": "Estagiário",
+          "squad": "",
+          "date_start": "2019-07-01",
+          "date_end": "2020-02-01",
+          "display": true,
+          "description": {
+            "intro": "",
+            "tasks": [
+              "Realizar um levantamento de requisitos com o reitor e o vice-reitor para compreender as necessidades de melhorias do website",
+              "Desenvolver e apresentar propostas de novos layouts para o website que atendessem às demandas identificadas (UX/UI)",
+              "Utilizar as ferramentas: framework CMS WordPress, PHP, JavaScript, HTML e CSS para desenvolver e implementar as melhorias "
+            ],
+            "conclusion": ""
+          },
+          "skills": [
+            "CMS",
+            "WordPres",
+            "PHP",
+            "HTML",
+            "CSS",
+            "Design UX/UI",
+            "apresentar"
+          ]
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ],
+  "required_internship": [],
+  "research": []
+}

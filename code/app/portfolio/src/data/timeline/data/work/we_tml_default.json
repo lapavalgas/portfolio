@@ -1,0 +1,42 @@
+{
+  "year": "",
+  "type": "work experience",
+  "institution_name": "",
+  "abbreviation_name": "",
+  "location": {
+    "city": "",
+    "state": "",
+    "country": ""
+  },
+  "date_start": "",
+  "date_end": "",
+  "display": true,
+  "link": [],
+  "positions": [
+    {
+      "job_title": "",
+      "date_start": "",
+      "date_end": "",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "",
+          "project:": "",
+          "job_level": "",
+          "squad": "",
+          "date_start": "",
+          "date_end": "",
+          "display": true,
+          "description": {
+            "intro": "",
+            "tasks": [],
+            "conclusion": ""
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ]
+}

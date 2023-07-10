@@ -1,0 +1,20 @@
+{
+  "year": "2023",
+  "type": "education experience",
+  "institution_name": "Universidade Federal de Santa Catarina",
+  "abbreviation_name": "UFSC",
+  "location": {
+    "city": "Florianópolis",
+    "state": "Santa Catarina",
+    "country": "Brasil"
+  },
+  "date_start": "2019-06-01",
+  "date_end": "2021-12-20",
+  "display": false,
+  "link": [],
+  "course_name": "Letras Italiano",
+  "department": "Centro de Comunicação e Expressão",
+  "internship": [],
+  "required_internship": [],
+  "research": []
+}

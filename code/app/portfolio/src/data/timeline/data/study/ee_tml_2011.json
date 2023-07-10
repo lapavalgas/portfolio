@@ -1,0 +1,228 @@
+{
+  "year": "2011",
+  "type": "education experience",
+  "institution_name": "Centro Universitário Estácio de Santa Catarina",
+  "abbreviation_name": "Estácio",
+  "location": {
+    "city": "São José",
+    "state": "Santa Catarina",
+    "country": "Brasoç"
+  },
+  "date_start": "2011-07-01",
+  "date_end": "2016-07-30",
+  "display": true,
+  "link": [],
+  "course_name": "Bacharelado em Psicologia",
+  "department": "",
+  "internship": [
+    {
+      "job_title": "Psicólogo",
+      "date_start": "2015-01-01",
+      "date_end": "2015-06-30",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "institution_name": "Instituto Guga Kuerten",
+          "project:": "Campeões da Vida / Núcleo do Itacurubi",
+          "job_level": "Estagiário",
+          "squad": "",
+          "date_start": "2015-01-01",
+          "date_end": "2015-06-30",
+          "display": true,
+          "description": {
+            "intro": "Como Estagiário em Psicologia, tive a responsabilidade de atuar no programa Campeões da Vida, do Instituto Guga Kuerten, no núcleo do Itacorubi em Florianópolis. Eram minhas atribuições:",
+            "tasks": [
+              "Mediar as reuniões de planejamento semanalmente das atividades",
+              "Acompanhar a realização das atividades e contribuir para o engajamento das crianças",
+              "Oferecer suporte emocional e psicológico às crianças que precisavam",
+              "Coletar informações que pudessem auxiliar no planejamento das próximas atividades"
+            ],
+            "conclusion": "Esse trabalho foi fundamental para manter a equipe unida e o planejamento das atividades aderente à realidade das crianças que participavam do programa Campeões da Vida, do IGK. Além disso, me permitiu desenvolver, pela primeira vez, as habilidades de escuta e apoio psicológico, bem como aprender sobre metodologias de planejamento de atividades e trabalho em equipe em projetos sociais."
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ],
+  "required_internship": [
+    {
+      "job_title": "Neuropsicólogo",
+      "date_start": "2015-01-01",
+      "date_end": "2016-05-30",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "Neuropsicologia",
+          "project:": "",
+          "job_level": "Estagiário",
+          "squad": "",
+          "date_start": "2015-01-01",
+          "date_end": "2016-05-30",
+          "display": true,
+          "description": {
+            "intro": "Como Estagiário de Psicologia, tive a responsabilidade de realizar atendimentos psicoterapêuticos e avaliações neuropsicológicas aos pacientes do Serviço de Psicologia Aplicado (SPA) do Centro Universitário Estácio de Santa Catarina. Eram minhas atribuições:",
+            "tasks": [
+              "Oferecer psicoterapia na abordagem da Terapia Cognitiva Comportamental (TCC)",
+              "Oferecer e escuta terapêutica para alguns familiares dos pacientes em atendimento",
+              "Realizar avaliação psicológica e neuropsicológica "
+            ],
+            "conclusion": "Essa experiência me permitiu adquirir conhecimentos e habilidades na área de psicologia clínica e neuropsicologia, além de desenvolver minhas habilidades em comunicação. Foi uma oportunidade valiosa de aplicar meus conhecimentos teóricos em uma situação prática e ajudar os pacientes a melhorar sua qualidade de vida."
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ],
+  "classroom_monitor": [
+    {
+      "job_title": "Monitor de Laboratório",
+      "date_start": "2015-01-01",
+      "date_end": "2016-06-20",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "Laboratório de Testes Psicológicos",
+          "project:": "",
+          "job_level": "Bolsista",
+          "squad": "",
+          "date_start": "2015-01-01",
+          "date_end": "2016-06-20",
+          "display": true,
+          "description": {
+            "intro": "Como Monitor de Avaliação Psicológica, tive a responsabilidade de revisar e ensinar o conteúdo programático da disciplina de Técnicas e Exames Psicológicos. Eram minhas atribuições:",
+            "tasks": [
+              "Participar de reuniões periódicas com o orientador para discutir as atividades pedagógicas",
+              "Realizar workshops instruindo os alunos sobre como aplicar e avaliar os resultados de testes psicológicos psicométricos",
+              "Organizar e distribuir os testes psicológicos da instituição de ensino para os alunos matriculados em estágio obrigatório"
+            ],
+            "conclusion": "Este trabalho foi importante para manter os testes psicológicos organizados e contribuir para o aprendizado e desenvolvimento dos alunos dessa disciplina. Além disso, foi uma oportunidade valiosa de desenvolver minhas habilidades de comunicação e ensino, a fim de transmitir conhecimento de forma eficaz para outras pessoas."
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ],
+  "research": [
+    {
+      "job_title": "Pesquisador",
+      "date_start": "2011-06-01",
+      "date_end": "2016-05-30",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "Neuropsicologia",
+          "project:": "O papel da psicologia na reabilitação das pessoas com déficits neurológicos",
+          "job_level": "Bolsista",
+          "squad": "",
+          "date_start": "2011-06-01",
+          "date_end": "2012-06-30",
+          "display": true,
+          "description": {
+            "intro": "Como Estudante Pesquisador, tive a oportunidade de participar do Programa de Iniciação Científica UNIEDU, art. 170/171 FUMDES/SC. O título da minha pesquisa foi: 'O papel da psicologia na reabilitação das pessoas com déficits neurológicos'. Eram minhas atribuições:",
+            "tasks": [
+              "Realizar uma revisão bibliográfica aprofundada sobre o tema da pesquisa",
+              "Analisar e interpretar os dados coletados",
+              "Redigir um relatório científico sobre os resultados da pesquisa",
+              "Apresentar os resultados da pesquisa ao programa de pesquisa universitário"
+            ],
+            "conclusion": "Essa experiência foi enriquecedora, pois me permitiu aprofundar meus conhecimentos em psicologia e neuropsicologia, além de começar a desenvolver habilidades em pesquisa científica. Também tive a oportunidade de aprimorar minhas habilidades de apresentação e comunicação."
+          },
+          "skills": []
+        },
+        {
+          "department": "Neuropsicologia",
+          "project:": "O papel da neuropsicologia no diagnóstico de demência tipo Alzheimer",
+          "job_level": "Bolsista",
+          "squad": "",
+          "date_start": "2013-01-01",
+          "date_end": "2013-12-20",
+          "display": true,
+          "description": {
+            "intro": "Como Estudante Pesquisador, tive a oportunidade de participar do Programa de Iniciação Científica UNIEDU, art. 170/171 FUMDES/SC. O título da minha pesquisa foi: 'O papel da neuropsicologia no diagnóstico de demência tipo Alzheimer'. Eram minhas atribuições:",
+            "tasks": [
+              "Realizar uma revisão bibliográfica aprofundada sobre o tema da pesquisa",
+              "Investigar os protocolos de avaliação neuropsicológica utilizados por profissionais de Florianópolis para o diagnóstico de demência tipo Alzheimer",
+              "Analisar e interpretar os dados coletados",
+              "Redigir um relatório científico sobre os resultados da pesquisa",
+              "Apresentar os resultados da pesquisa ao programa de pesquisa universitário"
+            ],
+            "conclusion": "Essa experiência foi enriquecedora, pois me permitiu aprofundar meus conhecimentos em neuropsicologia e avaliação neuropsicológica, além de desenvolver habilidades em pesquisa científica. Tive a oportunidade de aprimorar minhas habilidades de apresentação e comunicação ao compartilhar os resultados da pesquisa com o programa de pesquisa universitário."
+          },
+          "skills": []
+        },
+        {
+          "department": "Psicologia",
+          "project:": "Análise de impacto do Serviço de Psicologia Aplicada da Estácio",
+          "job_level": "Bolsista",
+          "squad": "",
+          "date_start": "2014-01-01",
+          "date_end": "2014-12-20",
+          "display": true,
+          "description": {
+            "intro": "Como Aluno Pesquisador, tive a oportunidade de participar do Programa de Iniciação Científica UNIEDU, art. 170/171 FUMDES/SC, em uma pesquisa de título: 'Análise de impacto do Serviço de Psicologia Aplicada da Estácio'. Eram minhas atribuições:",
+            "tasks": [
+              "Realizar levantamento de dados clínicos em prontuários de pacientes",
+              "Desenvolver um sistema informatizado em VBA integrado ao Microsoft Excel para catalogar e processar os dados levantados nos prontuários dos pacientes",
+              "Orientar os alunos matriculados em estágio sobre como utilizar a ferramenta de coleta de dados desenvolvida de coleta de dados",
+              "Redigir um relatório científico sobre os resultados da pesquisa",
+              "Apresentar os resultados da pesquisa ao programa de pesquisa universitário"
+            ],
+            "conclusion": "Essa experiência foi valiosa para o meu desenvolvimento profissional, pois me permitiu adquirir habilidades em pesquisa científica e trabalho em equipe. Foi também minha primeira experiência com o desenvolvimento de sistemas informatizados. Além disso, tive a oportunidade de aprimorar minhas habilidades de apresentação e comunicação ao compartilhar os resultados da pesquisa universitária."
+          },
+          "skills": []
+        },
+        {
+          "department": "Neuropsicologia",
+          "project:": "Funções executivas e intervenções musicais",
+          "job_level": "Voluntário",
+          "squad": "",
+          "date_start": "2015-06-01",
+          "date_end": "2015-11-20",
+          "display": true,
+          "description": {
+            "intro": "Como Aluno Pesquisador, tive a oportunidade de participar como voluntário em uma pesquisa vinculada à Universidade Federal de Santa Catarina (UFSC) com o prof. dr. Takase. O objetivo dessa pesquisa foi avaliar a influência da educação musical na memória operacional de crianças escolares do ensino fundamental. Eram minhas atribuições:",
+            "tasks": [
+              "Realizar uma revisão bibliográfica aprofundada sobre o tema da pesquisa",
+              "Planejar o protocolo de educação musical",
+              "Realizar coleta de dados através da avaliação da memória operacional em crianças do ensino fundamental antes e após a execução de um protocolo de educação musical"
+            ],
+            "conclusion": "Essa experiência foi valiosa para estudar a relação entre a educação musical e a memória operacional. Porém, infelizmente, a pesquisa teve que ser interrompida devido ao financiamento em outra pesquisa em andamento."
+          },
+          "skills": []
+        },
+        {
+          "department": "Neuropsicologia",
+          "project:": "Análise clínica da demência e doença de Parkinson na avaliação neuropsicológica: um estudo dos pacientes parkinsonianos da clínica de fisioterapia da Estácio",
+          "job_level": "Bolsista",
+          "squad": "",
+          "date_start": "2015-01-01",
+          "date_end": "2016-05-30",
+          "display": true,
+          "description": {
+            "intro": "Como Aluno Pesquisador, tive a oportunidade de participar do Programa de Iniciação Científica da UNIEDU, art. 170/171 FUMDES/SC e vincular essa pesquisa ao meu Trabalho de Conclusão de Curso e o último estágio obrigatório em Psicologia Clínica. O título da minha pesquisa foi: 'Análise clínica da demência e doença de Parkinson na avaliação neuropsicológica: um estudo dos pacientes parkinsonianos da clínica de fisioterapia da Estácio'. Eram minhas atribuições:",
+            "tasks": [
+              "Realizar uma revisão bibliográfica aprofundada sobre o tema da pesquisa",
+              "Realizar uma coleta de dados através de uma série de avaliações neuropsicológicas supervisionadas",
+              "Instruir colegas estagiários e participantes dessa pesquisa na condução das avaliações neuropsicológicas",
+              "Realizar o acompanhamento terapêutico de alguns pacientes e respectivos familiares",
+              "Tabular e avaliar estatisticamente os dados coletados",
+              "Analisar e interpretar os dados coletados",
+              "Redigir um artigo científico sobre os resultados da pesquisa",
+              "Apresentar os resultados da pesquisa ao programa de pesquisa universitário"
+            ],
+            "conclusion": "Essa experiência foi uma oportunidade valiosa para desenvolver minhas habilidades em pesquisa científica e trabalho em equipe. Além disso, tive a oportunidade de aprimorar minhas habilidades em avaliação neuropsicológica e aplicar meus conhecimentos teóricos em uma situação prática. A publicação do artigo e a apresentação dos resultados da pesquisa também me permitiram desenvolver minhas habilidades de comunicação científica. Também foi uma oportunidade valiosa de aplicar meus conhecimentos teóricos em uma situação prática e ajudar os pacientes a melhorar sua qualidade de vida."
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "year": "2017",
+  "type": "work experience",
+  "institution_name": "Orsegups Participações S/A",
+  "abbreviation_name": "",
+  "location": {
+    "city": "Florianópolis",
+    "state": "Santa Catarina",
+    "country": "Brasil"
+  },
+  "date_start": "2017-06-01",
+  "date_end": "2019-05-01",
+  "display": true,
+  "link": [],
+  "positions": [
+    {
+      "job_title": "Operador de Som e Imagem",
+      "date_start": "2017-06-01",
+      "date_end": "2019-05-01",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "Assessoria de Comunicação Social do TCE/SC",
+          "project:": "",
+          "job_level": "Terceirizado",
+          "squad": "",
+          "date_start": "",
+          "date_end": "",
+          "display": true,
+          "description": {
+            "intro": "",
+            "tasks": [
+              "Operar e manter os equipamentos de som e imagem da instituição",
+              "Garantir que as sessões plenárias do tribunal fossem transmitidas e gravadas diariamente",
+              "Digitalizar, organizar, padronizar e preservar o acervo fotográfico da instituição, que datava de 1955 a 2019, seguindo os padrões do Conselho Nacional de Arquivos (CONARQ)"
+            ],
+            "conclusion": ""
+          },
+          "skills": [
+            "Microsoft Excel",
+            "Atendimento ao cliente",
+            "Digitalização",
+            "Organização",
+            "CONARQ",
+            "Áudio",
+            "Operar mesa de som"
+          ]
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ]
+}

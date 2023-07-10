@@ -1,0 +1,129 @@
+{
+  "year": "2010",
+  "type": "education experience",
+  "institution_name": "Universidade do Estado de Santa Catarina",
+  "abbreviation_name": "UDESC",
+  "location": {
+    "city": "Florianópolis",
+    "state": "Santa Catarina",
+    "country": "Brasil"
+  },
+  "date_start": "2010-01-01",
+  "date_end": "2015-06-30",
+  "is_course_completed": false,
+  "is_course_completed_description": "Em 2015, fiz o trancamento de matrícula no curso de Licenciatura em Música da UDESC, me sentia sobrecarregado de atividades e queria focar no estudo e nos estágios de Psicologia.",
+  "display": true,
+  "link": [],
+  "course_name": "Licenciatura em Música",
+  "department": "Centro de Artes (CEART) / Departamento de Música (DMU)",
+  "classroom_monitor": [
+    {
+      "job_title": "Monitor de Disciplina",
+      "date_start": "2013-06-01",
+      "date_end": "2014-12-20",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "Disciplina de Harmonia e Contraponto",
+          "project:": "",
+          "job_level": "Bolsista",
+          "squad": "",
+          "date_start": "2013-06-01",
+          "date_end": "2013-12-20",
+          "display": true,
+          "description": {
+            "intro": "Como Monitor de Música, tive a responsabilidade de ensinar e revisar o conteúdo programático da disciplina de harmonia e contraponto aos alunos. Eram minhas atribuições:",
+            "tasks": [
+              "Participar de reuniões periódicas com o orientador para discutir as atividades pedagógicas",
+              "Aplicar e corrigir exercícios de harmonia e contraponto",
+              "Orientar e acompanhar os alunos durante o processo de aprendizagem"
+            ],
+            "conclusion": "Este trabalho me permitiu contribuir para o aprendizado e desenvolvimento dos alunos em técnicas de harmonia e contraponto. Além disso, foi uma oportunidade valiosa para desenvolver minhas habilidades de comunicação e ensino, a fim de transmitir conhecimento de forma eficaz para outras pessoas."
+          },
+          "skills": []
+        },
+        {
+          "department": "Disciplina de Harmonia e Contraponto",
+          "project:": "",
+          "job_level": "Bolsista",
+          "squad": "",
+          "date_start": "2014-06-01",
+          "date_end": "2014-12-20",
+          "display": true,
+          "description": {
+            "intro": "Como Monitor de Música, tive a responsabilidade de ensinar e revisar o conteúdo programático da disciplina de harmonia e contraponto aos alunos. Eram minhas atribuições:",
+            "tasks": [
+              "Participar de reuniões periódicas com o orientador para discutir as atividades pedagógicas",
+              "Aplicar e corrigir exercícios de harmonia e contraponto",
+              "Orientar e acompanhar os alunos durante o processo de aprendizagem"
+            ],
+            "conclusion": "Este trabalho me permitiu contribuir para o aprendizado e desenvolvimento dos alunos em técnicas de harmonia e contraponto. Além disso, foi uma oportunidade valiosa para desenvolver minhas habilidades de comunicação e ensino, a fim de transmitir conhecimento de forma eficaz para outras pessoas."
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ],
+  "internship": [],
+  "required_internship": [
+    {
+      "job_title": "Estágio Supervisionado",
+      "date_start": "2014-01-01",
+      "date_end": "2016-06-30",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "institution_name": "Instituto Federal de Santa Catarina",
+          "abbreviation_name": "IFSC",
+          "department": "Música",
+          "project:": "",
+          "job_level": "Estagiário",
+          "squad": "",
+          "date_start": "2014-01-01",
+          "date_end": "2014-06-30",
+          "display": true,
+          "description": {
+            "intro": "Como Estagiário de Educação Musical no IFSC, tive a responsabilidade de ensinar e promover a música brasileira para alunos do terceiro ano do ensino médio. Eram minhas atribuições:",
+            "tasks": [
+              "Participar de reuniões periódicas com o orientador para discutir as atividades pedagógicas",
+              "Desenvolver os planos de aulas e materiais didáticos",
+              "Apresentar os diferentes ritmos e estilos musicais brasileiros",
+              "Ensinar técnicas de música em instrumentos de percussão",
+              "Orientar e acompanhar os alunos durante o processo de aprendizagem"
+            ],
+            "conclusion": "Esse trabalho foi importante para difundir a música brasileira e ampliar as referências musicais dos alunos. Além disso, me permitiu desenvolver habilidades de ensino e capacidade de transmitir conhecimento para outras pessoas, bem como aprender sobre metodologias de ensino e planejamento pedagógico."
+          },
+          "skills": []
+        },
+        {
+          "institution_name": "Escola Livre de Mùsica de Florianópolis",
+          "abbreviation_name": "ELMF",
+          "department": "Música",
+          "project:": "",
+          "job_level": "Estagiário",
+          "squad": "",
+          "date_start": "2015-01-1",
+          "date_end": "2016-06-30",
+          "display": true,
+          "description": {
+            "intro": "Como Estagiário de Educação Musical na Escola Livre de Música de Florianópolis, tive a responsabilidade de ensinar música e explorar os timbres dos instrumentos e as propriedades do som para uma turma de musicalização infantil na Escola Livre de Música de Florianópolis. Eram minhas atribuições:",
+            "tasks": [
+              "Participar de reuniões periódicas com o orientador para discutir as atividades pedagógicas",
+              "Desenvolver os planos de aulas e materiais didáticos",
+              "Apresentar aos alunos os diferentes timbres e propriedades do som",
+              "Ensinar técnicas de música em diferentes instrumentos",
+              "Orientar e acompanhar os alunos durante o processo de aprendizagem"
+            ],
+            "conclusion": "Esse trabalho foi importante para apresentar a música aos alunos e despertar o interesse pela arte. Além disso, me permitiu desenvolver habilidades de ensino e capacidade de transmitir conhecimento para outras pessoas, bem como aprender sobre metodologias de ensino e planejamento pedagógico."
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ],
+  "research": []
+}

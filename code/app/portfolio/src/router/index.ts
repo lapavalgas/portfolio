@@ -11,7 +11,7 @@ const router = createRouter({
       component: PortfolioViewVue,
     },
     {
-      path: "/~tml",
+      path: "/tml",
       name: "timeline",
       component: TimelineViewVue,
       props: true,

@@ -1,0 +1,94 @@
+{
+  "year": "2016",
+  "type": "work experience",
+  "institution_name": "Consultório de Psicologia",
+  "abbreviation_name": "",
+  "location": {
+    "city": "São José",
+    "state": "Santa Catarina",
+    "country": "Brasil"
+  },
+  "date_start": "2016-01-01",
+  "date_end": "2021-12-01",
+  "display": true,
+  "link": [],
+  "positions": [
+    {
+      "job_title": "Psicólogo",
+      "date_start": "2016-01-01",
+      "date_end": "2021-12-20",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "Psicoterapia",
+          "project:": "",
+          "job_level": "Especialista",
+          "squad": "",
+          "description": {
+            "intro": "Como Psicólogo, atuo com Psicoterapia Cognitivo-Comportamental (TCC) e realizo Avaliações Psicológicas. É meu compromisso:",
+            "tasks": [
+              "Orientar pacientes na compreensão e modificação de padrões de pensamento e comportamento disfuncionais",
+              "Ensinar habilidades de resolução de problemas e gerenciamento de estresse",
+              "Treinar habilidades de vida, como comunicação eficaz e resolução de problemas de relacionamento, para melhorar as relações interpessoais e a qualidade de vida",
+              "Identificar problemas de saúde mental e recomendar tratamentos adequados",
+              "Colaborar com outros profissionais de saúde para fornecer tratamento integrado e abrangente"
+            ],
+            "conclusion": ""
+          },
+          "skills": [
+            "TCC (Terapia cognitivo-comportamental)",
+            "Psicoterapia",
+            "Escuta ativa",
+            "Escuta terapêutica",
+            "Intervenções psicológicas",
+            "Testes psicológicos",
+            "Avaliação psicológica",
+            "Avaliação psicométrica",
+            "Exames psicológicos",
+            "Psicometria",
+            "Gestão de conflitos",
+            "Atendimento ao cliente"
+          ]
+        }
+      ]
+    },
+    {
+      "job_title": "Neuropsicólogo",
+      "date_start": "2018-07-01",
+      "date_end": "2021-12-20",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "Avaliação Neuropsicológica",
+          "project:": "",
+          "job_level": "Especialista",
+          "squad": "",
+          "description": {
+            "intro": "Como Neuropsicólogo, atuo com Avaliação Neuropsicológica e realizo Acompanhamento Terapêutico de pacientes e familiares. É meu compromisso:",
+            "tasks": [
+              "Realizar avaliações neuropsicológicas para formar um perfil cognitivo do paciente",
+              "Desenvolver e implementar planos de tratamento individualizados baseados em avaliações neuropsicológicas",
+              "Acompanhar terapeuticamente pacientes e familiares para ajudá-los a enfrentar os desafios e melhorar a qualidade de vida",
+              "Colaborar com outros profissionais de saúde, como médicos e terapeutas, para fornecer tratamento integrado e abrangente aos pacientes"
+            ],
+            "conclusion": ""
+          },
+          "skills": [
+            "Neuropsicologia",
+            "Escuta ativa",
+            "Escuta terapêutica",
+            "Avaliação neuropsicológica",
+            "Testes neuropsicológicos",
+            "Avaliação psicométrica",
+            "Exames psicológicos",
+            "Análise de dados estatísticos",
+            "Microsoft Excel",
+            "Psicometria"
+          ]
+        }
+      ]
+    }
+  ]
+}
