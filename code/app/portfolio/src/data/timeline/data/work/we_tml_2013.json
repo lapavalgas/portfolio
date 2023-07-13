@@ -21,10 +21,14 @@
       "display": true,
       "projects": [
         {
-          "department": "",
+          "department": null,
           "project:": "Aulas de teclado",
           "job_level": "Autônomo",
           "squad": "",
+          "date_start": "2013-02-01",
+          "date_end": "2014-12-20",
+          "link": "",
+          "display": true,
           "description": {
             "intro": "",
             "tasks": [

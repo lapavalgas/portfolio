@@ -25,6 +25,10 @@
           "project:": "",
           "job_level": "Bolsista",
           "squad": "",
+          "date_start": "2001-02-01",
+          "date_end": "2001-09-01",
+          "link": "",
+          "display": true,
           "description": {
             "intro": "Como bolsista de Suporte Técnico, tive a responsabilidade de prestar suporte para resolução de problemas de hardware, software e rede de computadores. Eram minhas atribuições:",
             "tasks": [

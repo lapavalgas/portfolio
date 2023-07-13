@@ -25,6 +25,10 @@
           "project:": "",
           "job_level": "Especialista",
           "squad": "",
+          "date_start": "2016-01-01",
+          "date_end": "2021-12-20",
+          "link": "",
+          "display": true,
           "description": {
             "intro": "Como Psicólogo, atuo com Psicoterapia Cognitivo-Comportamental (TCC) e realizo Avaliações Psicológicas. É meu compromisso:",
             "tasks": [
@@ -54,7 +58,7 @@
       ]
     },
     {
-      "job_title": "Neuropsicólogo",
+      "job_title": "Estágio Supervisionado",
       "date_start": "2018-07-01",
       "date_end": "2021-12-20",
       "link": "",
@@ -65,6 +69,10 @@
           "project:": "",
           "job_level": "Especialista",
           "squad": "",
+          "date_start": "2018-07-01",
+          "date_end": "2021-12-20",
+          "link": "",
+          "display": true,
           "description": {
             "intro": "Como Neuropsicólogo, atuo com Avaliação Neuropsicológica e realizo Acompanhamento Terapêutico de pacientes e familiares. É meu compromisso:",
             "tasks": [

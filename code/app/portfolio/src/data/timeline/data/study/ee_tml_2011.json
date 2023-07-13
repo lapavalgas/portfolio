@@ -1,29 +1,29 @@
 {
   "year": "2011",
-  "type": "education experience",
+  "type": "Education Experience",
   "institution_name": "Centro Universitário Estácio de Santa Catarina",
   "abbreviation_name": "Estácio",
   "location": {
     "city": "São José",
     "state": "Santa Catarina",
-    "country": "Brasoç"
+    "country": "Brasil"
   },
-  "date_start": "2011-07-01",
+  "date_start": "2011-06-01",
   "date_end": "2016-07-30",
   "display": true,
   "link": [],
   "course_name": "Bacharelado em Psicologia",
-  "department": "",
+  "department": "Departamento de Psicologia",
   "internship": [
     {
-      "job_title": "Psicólogo",
+      "job_title": "Estágio",
       "date_start": "2015-01-01",
       "date_end": "2015-06-30",
       "link": "",
       "display": true,
       "projects": [
         {
-          "institution_name": "Instituto Guga Kuerten",
+          "department": "Instituto Guga Kuerten",
           "project:": "Campeões da Vida / Núcleo do Itacurubi",
           "job_level": "Estagiário",
           "squad": "",
@@ -48,14 +48,14 @@
   ],
   "required_internship": [
     {
-      "job_title": "Neuropsicólogo",
+      "job_title": "Estágio Supervisionado",
       "date_start": "2015-01-01",
       "date_end": "2016-05-30",
       "link": "",
       "display": true,
       "projects": [
         {
-          "department": "Neuropsicologia",
+          "department": "Serviço de Psicologia Aplicado (SPA)",
           "project:": "",
           "job_level": "Estagiário",
           "squad": "",
@@ -79,7 +79,7 @@
   ],
   "classroom_monitor": [
     {
-      "job_title": "Monitor de Laboratório",
+      "job_title": "Monitor",
       "date_start": "2015-01-01",
       "date_end": "2016-06-20",
       "link": "",
@@ -117,7 +117,7 @@
       "display": true,
       "projects": [
         {
-          "department": "Neuropsicologia",
+          "department": "Serviço de Psicologia Aplicado (SPA)",
           "project:": "O papel da psicologia na reabilitação das pessoas com déficits neurológicos",
           "job_level": "Bolsista",
           "squad": "",
@@ -137,7 +137,7 @@
           "skills": []
         },
         {
-          "department": "Neuropsicologia",
+          "department": "Serviço de Psicologia Aplicado (SPA)",
           "project:": "O papel da neuropsicologia no diagnóstico de demência tipo Alzheimer",
           "job_level": "Bolsista",
           "squad": "",
@@ -158,7 +158,7 @@
           "skills": []
         },
         {
-          "department": "Psicologia",
+          "department": "Serviço de Psicologia Aplicado (SPA)",
           "project:": "Análise de impacto do Serviço de Psicologia Aplicada da Estácio",
           "job_level": "Bolsista",
           "squad": "",
@@ -179,7 +179,7 @@
           "skills": []
         },
         {
-          "department": "Neuropsicologia",
+          "department": "Serviço de Psicologia Aplicado (SPA)",
           "project:": "Funções executivas e intervenções musicais",
           "job_level": "Voluntário",
           "squad": "",
@@ -198,7 +198,7 @@
           "skills": []
         },
         {
-          "department": "Neuropsicologia",
+          "department": "Serviço de Psicologia Aplicado (SPA)",
           "project:": "Análise clínica da demência e doença de Parkinson na avaliação neuropsicológica: um estudo dos pacientes parkinsonianos da clínica de fisioterapia da Estácio",
           "job_level": "Bolsista",
           "squad": "",

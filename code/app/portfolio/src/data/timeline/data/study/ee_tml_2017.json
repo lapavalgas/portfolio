@@ -1,6 +1,6 @@
 {
   "year": "2017",
-  "type": "education experience",
+  "type": "Education Experience",
   "institution_name": "Centro Universitário Municipal de São José",
   "abbreviation_name": "USJ",
   "location": {
@@ -18,11 +18,12 @@
     "https://github.com/lapavalgas/undergraduate_repositories"
   ],
   "course_name": "Análise e Desenvolvimento de Sistemas",
-  "department": "",
+  "department": "Departamento de Informática",
+  "classroom_monitor": [],
   "internship": [
     {
-      "job_title": "Desenvolvedor Web",
-      "date_start": "",
+      "job_title": "Projeto de extensão",
+      "date_start": "2019-07-01",
       "date_end": "",
       "link": [
         "https://github.com/lapavalgas/undergraduate_repositories/tree/main/repositories/20190701_usj_internship_extensao_website",
@@ -33,12 +34,13 @@
       "display": true,
       "projects": [
         {
-          "department": "",
-          "project:": "",
+          "department": "Desenvolvimento Web",
+          "project:": "Melhorias para web site institucional",
           "job_level": "Estagiário",
           "squad": "",
           "date_start": "2019-07-01",
           "date_end": "2020-02-01",
+          "link": "",
           "display": true,
           "description": {
             "intro": "",
@@ -57,6 +59,103 @@
             "CSS",
             "Design UX/UI",
             "apresentar"
+          ]
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    },
+    {
+      "job_title": "Estágio",
+      "date_start": "2019-12-01",
+      "date_end": "2020-12-01",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "institution_name": "Dataprev",
+          "department": "Dataprev / Análise e Qualidade de Software",
+          "project:": "Equipe de Qualidade de Software UDSC / Manutenção da documentação legada",
+          "job_level": "Estagiário",
+          "squad": "Inter squad",
+          "date_start": "2019-12-01",
+          "date_end": "2020-04-30",
+          "link": "",
+          "display": true,
+          "description": {
+            "intro": "",
+            "tasks": [
+              "Manter a documentação de testes regressivos de sistemas legados atualizada utilizando IBM Rational Tools",
+              "Documentar testes através da metodologia BDD (Behavior Driven Development) utilizando IBM Rational Tools",
+              "Executar os testes regressivos manuais e automatizados",
+              "Realizar a correção dos testes automatizados regressivos que se tornaram instáveis ao longo do tempo"
+            ],
+            "conclusion": ""
+          },
+          "skills": [
+            "IBM Rational Tools",
+            "Testes regressivos",
+            "Testes funcionais",
+            "Testes manuais",
+            "Testes de performance",
+            "Java",
+            "Programação Orientada a Objetos (POO)",
+            "Clean Code",
+            "Padrões de projeto (Page Object)",
+            "Automatizar testes regressivos",
+            "Selenium",
+            "RestAssured",
+            "BDD (Behavior Driven Development)",
+            "Boas práticas na Qualidade de Software",
+            "SOLID"
+          ]
+        },
+        {
+          "institution_name": "Dataprev",
+          "department": "Dataprev / Análise e Qualidade de Software",
+          "project:": "Equipe de Qualidade de Software UDSC / Sistema interno de modernização da autenticação de funcionários",
+          "job_level": "Estagiário",
+          "squad": "Inter squad",
+          "date_start": "2020-05-01",
+          "date_end": "2020-12-01",
+          "link": "",
+          "display": true,
+          "description": {
+            "intro": "",
+            "tasks": [
+              "Documentar testes através da metodologia BDD (Behavior Driven Development) utilizando IBM Rational Tools",
+              "Levantar cenários de testes regressivos, funcionais e de performance",
+              "Realizar testes manuais de telas (Front-End) e API utilizando Navegadores WEB, Postman e Insomnia",
+              "Realizar testes exploratórios",
+              "Automatizar testes regressivos utilizando Java, Spring e Selenium",
+              "Automatizar testes regressivos de API utilizando Java, Spring e RestAssured",
+              "Automatizar testes de performance utilizando IBM Rational Performance Tester",
+              "Utilizar o portal de massas para produzir e distribuir a massa de dados de testes aos membros da squad"
+            ],
+            "conclusion": ""
+          },
+          "skills": [
+            "IBM Rational Tools",
+            "Java",
+            "Spring",
+            "Microsserviços",
+            "Programação Orientada a Objetos (POO)",
+            "Clean Code",
+            "Padrões de projeto (Page Object)",
+            "Automatizar testes regressivos",
+            "Automatizar testes funcionais",
+            "Automatizar testes de performance",
+            "Automatizar testes exploratórios",
+            "Selenium",
+            "RestAssured",
+            "BDD (Behavior Driven Development)",
+            "Testes de API com Postman e Insomnia",
+            "Boas práticas na Qualidade de Software",
+            "Testes manuais de telas",
+            "Testes manuais de API",
+            "Produzir e distribuir massa de dados de testes",
+            "Scrum",
+            "Portal de Massas (ferramenta interna Dataprev)",
+            "API síncronas"
           ]
         }
       ],

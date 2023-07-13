@@ -8,6 +8,8 @@
     "state": "Santa Catarina",
     "country": "Brasil"
   },
+  "date_start": "2012-01-01",
+  "date_end": "2018-12-01",
   "display": true,
   "link": [],
   "positions": [
@@ -23,6 +25,10 @@
           "project:": "Aulas de piano",
           "job_level": "Autônomo",
           "squad": "",
+          "date_start": "2012-01-01",
+          "date_end": "2018-12-01",
+          "link": "",
+          "display": true,
           "description": {
             "intro": "Como Professor de música, ministrei e planejei aulas particulares de piano erudito, teoria musical, harmonia e percepção musical, levando em consideração as necessidades dos meus alunos. Eram minhas atribuições:",
             "tasks": [

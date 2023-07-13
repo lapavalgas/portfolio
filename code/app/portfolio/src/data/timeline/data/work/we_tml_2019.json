@@ -1,120 +1,120 @@
-{
-  "year": "2019",
-  "type": "work experience",
-  "institution_name": "Dataprev",
-  "abbreviation_name": "",
-  "location": {
-    "city": "Florianópolis",
-    "state": "Santa Catarina",
-    "country": "Brasil"
-  },
-  "date_start": "2019-12-01",
-  "date_end": "2020-12-01",
-  "display": true,
-  "link": [],
-  "positions": [
-    {
-      "job_title": "Estágio em Análise e Qualidade de Software / Documentação",
-      "date_start": "2019-12-01",
-      "date_end": "2020-04-01",
-      "link": "",
-      "display": true,
-      "projects": [
-        {
-          "department": "Equipe de Qualidade de Software UDSC",
-          "project:": "Manutenção da documentação legada",
-          "job_level": "Estagiário",
-          "squad": "Inter squad",
-          "date_start": "2019-12-01",
-          "date_end": "2020-04-30",
-          "display": true,
-          "description": {
-            "intro": "",
-            "tasks": [
-              "Manter a documentação de testes regressivos de sistemas legados atualizada utilizando IBM Rational Tools",
-              "Documentar testes através da metodologia BDD (Behavior Driven Development) utilizando IBM Rational Tools",
-              "Executar os testes regressivos manuais e automatizados",
-              "Realizar a correção dos testes automatizados regressivos que se tornaram instáveis ao longo do tempo"
-            ],
-            "conclusion": ""
-          },
-          "skills": [
-            "IBM Rational Tools",
-            "Testes regressivos",
-            "Testes funcionais",
-            "Testes manuais",
-            "Testes de performance",
-            "Java",
-            "Programação Orientada a Objetos (POO)",
-            "Clean Code",
-            "Padrões de projeto (Page Object)",
-            "Automatizar testes regressivos",
-            "Selenium",
-            "RestAssured",
-            "BDD (Behavior Driven Development)",
-            "Boas práticas na Qualidade de Software",
-            "SOLID"
-          ]
-        }
-      ],
-      "linkedin": { "tasks": [], "skills": [] }
-    },
-    {
-      "job_title": "Estágio em Análise e Qualidade de Software / Automatização de Testes",
-      "date_start": "2020-05-01",
-      "date_end": "2020-12-01",
-      "link": "",
-      "display": true,
-      "projects": [
-        {
-          "department": "Equipe de Qualidade de Software UDSC",
-          "project:": "Sistema interno de modernização da autenticação de funcionários",
-          "job_level": "Estagiário",
-          "squad": "",
-          "date_start": "2020-05-01",
-          "date_end": "2020-12-01",
-          "display": true,
-          "description": {
-            "intro": "",
-            "tasks": [
-              "Documentar testes através da metodologia BDD (Behavior Driven Development) utilizando IBM Rational Tools",
-              "Levantar cenários de testes regressivos, funcionais e de performance",
-              "Realizar testes manuais de telas (Front-End) e API utilizando Navegadores WEB, Postman e Insomnia",
-              "Realizar testes exploratórios",
-              "Automatizar testes regressivos utilizando Java, Spring e Selenium",
-              "Automatizar testes regressivos de API utilizando Java, Spring e RestAssured",
-              "Automatizar testes de performance utilizando IBM Rational Performance Tester",
-              "Utilizar o portal de massas para produzir e distribuir a massa de dados de testes aos membros da squad"
-            ],
-            "conclusion": ""
-          },
-          "skills": [
-            "IBM Rational Tools",
-            "Java",
-            "Spring",
-            "Microsserviços",
-            "Programação Orientada a Objetos (POO)",
-            "Clean Code",
-            "Padrões de projeto (Page Object)",
-            "Automatizar testes regressivos",
-            "Automatizar testes funcionais",
-            "Automatizar testes de performance",
-            "Automatizar testes exploratórios",
-            "Selenium",
-            "RestAssured",
-            "BDD (Behavior Driven Development)",
-            "Testes de API com Postman e Insomnia",
-            "Boas práticas na Qualidade de Software",
-            "Testes manuais de telas",
-            "Testes manuais de API",
-            "Produzir e distribuir massa de dados de testes",
-            "Scrum",
-            "Portal de Massas (ferramenta interna Dataprev)",
-            "API síncronas"
-          ]
-        }
-      ],
-      "linkedin": { "tasks": [], "skills": [] }
-    }
-  ]
-}
+// {
+//   "year": "2019",
+//   "type": "work experience",
+//   "institution_name": "Dataprev",
+//   "abbreviation_name": "",
+//   "location": {
+//     "city": "Florianópolis",
+//     "state": "Santa Catarina",
+//     "country": "Brasil"
+//   },
+//   "date_start": "2019-12-01",
+//   "date_end": "2020-12-01",
+//   "display": true,
+//   "link": [],
+//   "positions": [
+//     {
+//       "job_title": "Estágio em Análise e Qualidade de Software / Documentação",
+//       "date_start": "2019-12-01",
+//       "date_end": "2020-04-01",
+//       "link": "",
+//       "display": true,
+//       "projects": [
+//         {
+//           "department": "Equipe de Qualidade de Software UDSC",
+//           "project:": "Manutenção da documentação legada",
+//           "job_level": "Estagiário",
+//           "squad": "Inter squad",
+//           "date_start": "2019-12-01",
+//           "date_end": "2020-04-30",
+//           "display": true,
+//           "description": {
+//             "intro": "",
+//             "tasks": [
+//               "Manter a documentação de testes regressivos de sistemas legados atualizada utilizando IBM Rational Tools",
+//               "Documentar testes através da metodologia BDD (Behavior Driven Development) utilizando IBM Rational Tools",
+//               "Executar os testes regressivos manuais e automatizados",
+//               "Realizar a correção dos testes automatizados regressivos que se tornaram instáveis ao longo do tempo"
+//             ],
+//             "conclusion": ""
+//           },
+//           "skills": [
+//             "IBM Rational Tools",
+//             "Testes regressivos",
+//             "Testes funcionais",
+//             "Testes manuais",
+//             "Testes de performance",
+//             "Java",
+//             "Programação Orientada a Objetos (POO)",
+//             "Clean Code",
+//             "Padrões de projeto (Page Object)",
+//             "Automatizar testes regressivos",
+//             "Selenium",
+//             "RestAssured",
+//             "BDD (Behavior Driven Development)",
+//             "Boas práticas na Qualidade de Software",
+//             "SOLID"
+//           ]
+//         }
+//       ],
+//       "linkedin": { "tasks": [], "skills": [] }
+//     },
+//     {
+//       "job_title": "Estágio em Análise e Qualidade de Software / Automatização de Testes",
+//       "date_start": "2020-05-01",
+//       "date_end": "2020-12-01",
+//       "link": "",
+//       "display": true,
+//       "projects": [
+//         {
+//           "department": "Equipe de Qualidade de Software UDSC",
+//           "project:": "Sistema interno de modernização da autenticação de funcionários",
+//           "job_level": "Estagiário",
+//           "squad": "",
+//           "date_start": "2020-05-01",
+//           "date_end": "2020-12-01",
+//           "display": true,
+//           "description": {
+//             "intro": "",
+//             "tasks": [
+//               "Documentar testes através da metodologia BDD (Behavior Driven Development) utilizando IBM Rational Tools",
+//               "Levantar cenários de testes regressivos, funcionais e de performance",
+//               "Realizar testes manuais de telas (Front-End) e API utilizando Navegadores WEB, Postman e Insomnia",
+//               "Realizar testes exploratórios",
+//               "Automatizar testes regressivos utilizando Java, Spring e Selenium",
+//               "Automatizar testes regressivos de API utilizando Java, Spring e RestAssured",
+//               "Automatizar testes de performance utilizando IBM Rational Performance Tester",
+//               "Utilizar o portal de massas para produzir e distribuir a massa de dados de testes aos membros da squad"
+//             ],
+//             "conclusion": ""
+//           },
+//           "skills": [
+//             "IBM Rational Tools",
+//             "Java",
+//             "Spring",
+//             "Microsserviços",
+//             "Programação Orientada a Objetos (POO)",
+//             "Clean Code",
+//             "Padrões de projeto (Page Object)",
+//             "Automatizar testes regressivos",
+//             "Automatizar testes funcionais",
+//             "Automatizar testes de performance",
+//             "Automatizar testes exploratórios",
+//             "Selenium",
+//             "RestAssured",
+//             "BDD (Behavior Driven Development)",
+//             "Testes de API com Postman e Insomnia",
+//             "Boas práticas na Qualidade de Software",
+//             "Testes manuais de telas",
+//             "Testes manuais de API",
+//             "Produzir e distribuir massa de dados de testes",
+//             "Scrum",
+//             "Portal de Massas (ferramenta interna Dataprev)",
+//             "API síncronas"
+//           ]
+//         }
+//       ],
+//       "linkedin": { "tasks": [], "skills": [] }
+//     }
+//   ]
+// }

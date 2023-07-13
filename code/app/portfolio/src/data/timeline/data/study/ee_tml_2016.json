@@ -1,6 +1,6 @@
 {
   "year": "2016",
-  "type": "education experience",
+  "type": "Education Experience",
   "institution_name": "Instituto Catarinense de Terapia Cognitiva",
   "abbreviation_name": "ICTC",
   "location": {
@@ -13,24 +13,25 @@
   "display": true,
   "link": [],
   "course_name": "Neuropsicologia Clínica",
-  "department": "",
+  "department": "Estudos clínicos",
+  "classroom_monitor": [],
   "internship": [],
   "required_internship": [],
   "research": [
     {
-      "job_title": "researcher",
+      "job_title": "Pesquisador",
       "date_start": "2017-06-01",
       "date_end": "2018-06-30",
       "link": "",
       "display": true,
       "projects": [
         {
-          "department": "",
-          "project:": "",
+          "department": "Trabalho de Conclusão de Curso",
+          "project:": "A informatização da neuropsicologia: uma revisão dos limites, obstáculos e potenciais da automatização",
           "job_level": "",
           "squad": "",
-          "date_start": "",
-          "date_end": "",
+          "date_start": "2017-06-01",
+          "date_end": "2018-06-30",
           "display": true,
           "description": {
             "intro": "Como Aluno Pesquisador, realizei uma revisão de literatura integrativa sobre o uso de informática na neuropsicologia de 1970 a 2017. O título da minha pesquisa foi: 'A informatização da neuropsicologia: uma revisão dos limites, obstáculos e potenciais da automatização'",

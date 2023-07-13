@@ -1,54 +1,57 @@
-{
-  "year": "2015",
-  "type": "work experience",
-  "institution_name": "Instituto Guga Kuerten",
-  "abbreviation_name": "IGK",
-  "location": {
-    "city": "Florianópolis",
-    "state": "Santa Catarina",
-    "country": "Brasil"
-  },
-  "date_start": "2015-01-01",
-  "date_end": "2015-06-01",
-  "display": true,
-  "link": [],
-  "positions": [
-    {
-      "job_title": "Estágio em Psicologia",
-      "date_start": "2015-01-01",
-      "date_end": "2015-06-01",
-      "display": true,
-      "projects": [
-        {
-          "department": "",
-          "project:": "Campeões da Vida",
-          "job_level": "Estagiário",
-          "squad": "",
-          "description": {
-            "intro": "Como Estagiário em Psicologia, tive a responsabilidade de atuar no programa Campeões da Vida, do Instituto Guga Kuerten, no núcleo do Itacorubi em Florianópolis. Eram minhas atribuições:",
-            "tasks": [
-              "Mediar as reuniões de planejamento semanalmente das atividades",
-              "Acompanhar a realização das atividades e contribuir para o engajamento das crianças",
-              "Oferecer suporte emocional e psicológico às crianças que precisavam",
-              "Coletar informações que pudessem auxiliar no planejamento das próximas atividades"
-            ],
-            "conclusion": "Esse trabalho foi fundamental para manter a equipe unida e o planejamento das atividades aderente à realidade das crianças que participavam do programa Campeões da Vida, do IGK. Além disso, me permitiu desenvolver, pela primeira vez, as habilidades de escuta e apoio psicológico, bem como aprender sobre metodologias de planejamento de atividades e trabalho em equipe em projetos sociais."
-          },
-          "skills": [
-            "Microsoft Excel",
-            "Habilidades de apresentação",
-            "Gestão de conflitos",
-            "Desenvolvimento de pessoal",
-            "Planejamento de aulas",
-            "Escuta terapêutica",
-            "Escuta ativa"
-          ],
-          "date_start": "2015-01-01",
-          "date_end": "2015-06-01",
-          "link": "",
-          "display": true
-        }
-      ]
-    }
-  ]
-}
+// {
+//   "year": "2015",
+//   "type": "work experience",
+//   "institution_name": "Instituto Guga Kuerten",
+//   "abbreviation_name": "IGK",
+//   "location": {
+//     "city": "Florianópolis",
+//     "state": "Santa Catarina",
+//     "country": "Brasil"
+//   },
+//   "date_start": "2015-01-01",
+//   "date_end": "2015-06-01",
+//   "display": true,
+//   "link": [],
+//   "positions": [
+//     {
+//       "job_title": "Estágio em Psicologia",
+//       "date_start": "2015-01-01",
+//       "date_end": "2015-06-01",
+//       "display": true,
+//       "projects": [
+//         {
+//           "department": null,
+//           "project:": "Campeões da Vida",
+//           "job_level": "Estagiário",
+//           "squad": "",
+//           "date_start": "2015-01-01",
+//           "date_end": "2015-06-01",
+//           "display": true,
+//           "description": {
+//             "intro": "Como Estagiário em Psicologia, tive a responsabilidade de atuar no programa Campeões da Vida, do Instituto Guga Kuerten, no núcleo do Itacorubi em Florianópolis. Eram minhas atribuições:",
+//             "tasks": [
+//               "Mediar as reuniões de planejamento semanalmente das atividades",
+//               "Acompanhar a realização das atividades e contribuir para o engajamento das crianças",
+//               "Oferecer suporte emocional e psicológico às crianças que precisavam",
+//               "Coletar informações que pudessem auxiliar no planejamento das próximas atividades"
+//             ],
+//             "conclusion": "Esse trabalho foi fundamental para manter a equipe unida e o planejamento das atividades aderente à realidade das crianças que participavam do programa Campeões da Vida, do IGK. Além disso, me permitiu desenvolver, pela primeira vez, as habilidades de escuta e apoio psicológico, bem como aprender sobre metodologias de planejamento de atividades e trabalho em equipe em projetos sociais."
+//           },
+//           "skills": [
+//             "Microsoft Excel",
+//             "Habilidades de apresentação",
+//             "Gestão de conflitos",
+//             "Desenvolvimento de pessoal",
+//             "Planejamento de aulas",
+//             "Escuta terapêutica",
+//             "Escuta ativa"
+//           ],
+//           "date_start": "2015-01-01",
+//           "date_end": "2015-06-01",
+//           "link": "",
+//           "display": true
+//         }
+//       ]
+//     }
+//   ]
+// }

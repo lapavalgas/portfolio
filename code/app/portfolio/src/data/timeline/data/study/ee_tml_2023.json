@@ -1,6 +1,6 @@
 {
   "year": "2023",
-  "type": "education experience",
+  "type": "Education Experience",
   "institution_name": "Universidade Federal de Santa Catarina",
   "abbreviation_name": "UFSC",
   "location": {
@@ -14,6 +14,7 @@
   "link": [],
   "course_name": "Letras Italiano",
   "department": "Centro de Comunicação e Expressão",
+  "classroom_monitor": [],
   "internship": [],
   "required_internship": [],
   "research": []

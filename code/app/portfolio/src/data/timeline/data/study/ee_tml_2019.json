@@ -1,6 +1,6 @@
 {
   "year": "2019",
-  "type": "education experience",
+  "type": "Education Experience",
   "institution_name": "Universidade Federal de Santa Catarina",
   "abbreviation_name": "UFSC",
   "location": {
@@ -15,37 +15,48 @@
   "link": [],
   "course_name": "Mestrado Profissional em Informática em Saúde",
   "department": "Centro de Ciencias da Saude",
+  "classroom_monitor": [],
   "internship": [],
   "required_internship": [],
   "research": [
     {
-      "job_title": "researcher",
-      "department": "",
-      "project_name:": "O prontuário eletrônico e a avaliação neuropsicológica: uma proposta de sistema de gestão da avaliação neuropsicológica hospitalar",
+      "job_title": "Pesquisador",
       "date_start": "2019-06-01",
       "date_end": "2021-12-20",
+      "links": [],
       "display": true,
-      "links": [
-        "https://repositorio.ufsc.br/handle/123456789/231148",
-        "https://www.youtube.com/watch?v=JuxrG9Eq8Zg&ab_channel=RafaelLapaValgas"
+      "projects": [
+        {
+          "department": "Mestrado Profissional em Informática em Saúde",
+          "project:": "O prontuário eletrônico e a avaliação neuropsicológica: uma proposta de sistema de gestão da avaliação neuropsicológica hospitalar",
+          "job_level": "",
+          "squad": "",
+          "date_start": "2019-06-01",
+          "date_end": "2021-12-20",
+          "links": [
+            "https://repositorio.ufsc.br/handle/123456789/231148",
+            "https://www.youtube.com/watch?v=JuxrG9Eq8Zg&ab_channel=RafaelLapaValgas"
+          ],
+          "display": true,
+          "description": {
+            "intro": "Durante o meu mestrado tive a oportunidade de convergir minhas duas formações em um projeto que vinha amadurecendo desde 2015. Na pesquisa desenvolvi uma proposta de sistema informatizado destinado à prática da avaliação neuropsicológica hospitalar e também com o objetivo de digitalizar e integrar os dados neuropsicológicos aos demais sistemas de saúde, como os prontuários eletrônicos e a RNDS. O sistema foi documentado na minha dissertação de mestrado com título “O prontuário eletrônico e a avaliação neuropsicológica: uma proposta de sistema de gestão da avaliação neuropsicológica hospitalar” publicado na biblioteca da universidade. Nesse processo desempenhei o papel de pesquisador, analista de sistemas, engenheiro de software e desenvolvedor front-end para viabilizar a execução da pesquisa.",
+            "tasks": [
+              "Levantar requisitos",
+              "Modelar sistema: criar fluxogramas, histórias de usuário, casos de uso, modelagem de dados relacional, diagrama de classes",
+              "Desenvolver protótipos de baixo nível (draw.io)",
+              "Desenvolver protótipo funcional",
+              "Desenvolver MVP (Front-End funcional) de um PEP (prontuário eletrônico) WEB utilizando Vue.Js, TypeScript, JavaScript, Bootstrap e CSS",
+              "Arquitetura em micro serviços",
+              "Arquitetura de interoperabilidade entre sistemas de saúde",
+              "Modelar produto utilizando metodos de design e usabilidade (UX/UI)"
+            ],
+            "conclusion": "O sistema modelado foi utilizado na pesquisa para o desenvolvimento de um MVP e validação de usabilidade com neuropsicólogos experientes."
+          },
+          "lattes_description": "O objetivo da pesquisa é desenvolver um protótipo funcional de sistema de gestão da avaliação neuropsicológica que sirva como um prontuário eletrônico neuropsicológico com a finalidade de registrar e compartilhar a avaliação neuropsicológica de adultos em contexto hospitalar. A expectativa é que o protótipo possa ser utilizado no acompanhamento das avaliações neuropsicológicas, na produção de uma base de dados e em pesquisas futuras..",
+          "linkedin_description": "",
+          "skills": []
+        }
       ],
-      "description": {
-        "intro": "Durante o meu mestrado tive a oportunidade de convergir minhas duas formações em um projeto que vinha amadurecendo desde 2015. Na pesquisa desenvolvi uma proposta de sistema informatizado destinado à prática da avaliação neuropsicológica hospitalar e também com o objetivo de digitalizar e integrar os dados neuropsicológicos aos demais sistemas de saúde, como os prontuários eletrônicos e a RNDS. O sistema foi documentado na minha dissertação de mestrado com título “O prontuário eletrônico e a avaliação neuropsicológica: uma proposta de sistema de gestão da avaliação neuropsicológica hospitalar” publicado na biblioteca da universidade. Nesse processo desempenhei o papel de pesquisador, analista de sistemas, engenheiro de software e desenvolvedor front-end para viabilizar a execução da pesquisa.",
-        "tasks": [
-          "Levantar requisitos",
-          "Modelar sistema: criar fluxogramas, histórias de usuário, casos de uso, modelagem de dados relacional, diagrama de classes",
-          "Desenvolver protótipos de baixo nível (draw.io)",
-          "Desenvolver protótipo funcional",
-          "Desenvolver MVP (Front-End funcional) de um PEP (prontuário eletrônico) WEB utilizando Vue.Js, TypeScript, JavaScript, Bootstrap e CSS",
-          "Arquitetura em micro serviços",
-          "Arquitetura de interoperabilidade entre sistemas de saúde",
-          "Modelar produto utilizando metodos de design e usabilidade (UX/UI)"
-        ],
-        "conclusion": "O sistema modelado foi utilizado na pesquisa para o desenvolvimento de um MVP e validação de usabilidade com neuropsicólogos experientes."
-      },
-      "lattes_description": "O objetivo da pesquisa é desenvolver um protótipo funcional de sistema de gestão da avaliação neuropsicológica que sirva como um prontuário eletrônico neuropsicológico com a finalidade de registrar e compartilhar a avaliação neuropsicológica de adultos em contexto hospitalar. A expectativa é que o protótipo possa ser utilizado no acompanhamento das avaliações neuropsicológicas, na produção de uma base de dados e em pesquisas futuras..",
-      "linkedin_description": "",
-      "skills": [],
       "linkedin": { "tasks": [], "skills": [] }
     }
   ]

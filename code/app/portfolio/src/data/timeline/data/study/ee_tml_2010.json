@@ -1,6 +1,6 @@
 {
   "year": "2010",
-  "type": "education experience",
+  "type": "Education Experience",
   "institution_name": "Universidade do Estado de Santa Catarina",
   "abbreviation_name": "UDESC",
   "location": {
@@ -18,7 +18,7 @@
   "department": "Centro de Artes (CEART) / Departamento de Música (DMU)",
   "classroom_monitor": [
     {
-      "job_title": "Monitor de Disciplina",
+      "job_title": "Monitor",
       "date_start": "2013-06-01",
       "date_end": "2014-12-20",
       "link": "",
@@ -76,9 +76,7 @@
       "display": true,
       "projects": [
         {
-          "institution_name": "Instituto Federal de Santa Catarina",
-          "abbreviation_name": "IFSC",
-          "department": "Música",
+          "department": "Instituto Federal de Santa Catarina",
           "project:": "",
           "job_level": "Estagiário",
           "squad": "",
@@ -99,9 +97,7 @@
           "skills": []
         },
         {
-          "institution_name": "Escola Livre de Mùsica de Florianópolis",
-          "abbreviation_name": "ELMF",
-          "department": "Música",
+          "department": "Escola Livre de Mùsica de Florianópolis",
           "project:": "",
           "job_level": "Estagiário",
           "squad": "",

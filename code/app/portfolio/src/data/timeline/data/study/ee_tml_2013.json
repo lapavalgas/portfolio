@@ -1,6 +1,6 @@
 {
   "year": "2013",
-  "type": "education experience",
+  "type": "Education Experience",
   "institution_name": "Instituto Federal de Santa Catarina",
   "abbreviation_name": "IFSC",
   "location": {
@@ -16,14 +16,14 @@
   "department": "Música",
   "classroom_monitor": [
     {
-      "job_title": "Monitor de Orquestra",
+      "job_title": "Monitor",
       "date_start": "2013-06-01",
       "date_end": "2013-12-20",
       "link": "",
       "display": true,
       "projects": [
         {
-          "department": "Música",
+          "department": "Orquestra Escola FIC",
           "project:": "",
           "job_level": "Bolsista",
           "squad": "",

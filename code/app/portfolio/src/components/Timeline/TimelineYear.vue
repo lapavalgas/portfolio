@@ -1,201 +1,36 @@
 <script setup lang="ts">
-import TimelineCareerCard from "./TimelineCareerCard.vue";
-import TimelineEducationCard from "./TimelineEducationCard.vue";
-import TimelineCertificatesCardVue from "./TimelineCertificatesCard.vue";
+import Card from "./Card.vue";
 
-import metadata from "@/data/timeline/portuguese.json";
+import { useLoaderTmlStore } from "@/stores/loader_tml";
 
-const EDUCATION = "Educação";
-const CERTIFICATION = "Certificação";
-const CAREER = "Carreira";
+const loader = useLoaderTmlStore();
 
-const JAN = "Janeiro";
-const FEV = "Fevereiro";
-const MAR = "Março";
-const APR = "Abril";
-const MAY = "Maio";
-const JUN = "Junho";
-const JUL = "Julho";
-const AUG = "Agosto";
-const SEP = "Setembro";
-const OCT = "Outubro";
-const NOV = "Novembro";
-const DEC = "Dezembro";
+var data = loader.getAllCards();
 
-const MONTHS: Record<string, string> = {
-  "01": JAN,
-  "02": FEV,
-  "03": MAR,
-  "04": APR,
-  "05": MAY,
-  "06": JUN,
-  "07": JUL,
-  "08": AUG,
-  "09": SEP,
-  "10": OCT,
-  "11": NOV,
-  "12": DEC,
-};
-function getFullMonth(date: string) {
-  return MONTHS[date.substring(5, 7)];
-}
-
-function getFullLocal(city: string, state: string, country: string) {
-  return city + ", " + state + " - " + country;
-}
-
-function getFullInstitutionName(institution: string, abbreviation: string) {
-  return institution + " / " + abbreviation;
-}
-
-function getRandomId(): Number {
-  const LONGNUMBER = 1000000000000000000000000;
-  const SMALLNUMBER = 5;
-  const ID = (Math.random() * LONGNUMBER) | SMALLNUMBER;
-  return ID <= 0 ? getRandomId() : ID;
-}
-
-function metadataProcessing() {
-  const educationCards = metadata.timeline
-    .map((element) => {
-      if (
-        // element.display &&
-        element.type &&
-        element.type.includes(EDUCATION)
-      ) {
-        return {
-          id: getRandomId(),
-          display: element.display,
-          type: EDUCATION,
-          date: element.date_start,
-          year: element.year,
-          month: getFullMonth(element.date_start),
-          institution: getFullInstitutionName(
-            element.institution_name,
-            element.abbreviation_name
-          ),
-          local: getFullLocal(element.city, element.state, element.country),
-          title: element.course_title,
-          level: element.course_level,
-          description: element.description,
-          link: element.link,
-        };
-      }
-    })
-    .filter((element) => element !== undefined);
-
-  const certificationCards = metadata.timeline
-    .map((element) => {
-      if (
-        // element.certification.display &&
-        element.certification
-      ) {
-        return {
-          id: getRandomId(),
-          display: element.certification.display,
-          type: CERTIFICATION,
-          date: element.certification.date_start,
-          year: element.certification.year,
-          month: getFullMonth(element.certification.date_start),
-          course: element.course_title,
-          institution: getFullInstitutionName(
-            element.institution_name,
-            element.abbreviation_name
-          ),
-          local: getFullLocal(element.city, element.state, element.country),
-          title: "Conclusão do " + element.certification.certification_title,
-          description: element.certification.certification_description,
-          link: element.certification.link,
-        };
-      }
-    })
-    .filter((element) => element !== undefined);
-
-  const careerCards = metadata.timeline
-    .map((element) => {
-      if (
-        element.type &&
-        // element.display &&
-        element.type.includes(CAREER)
-      ) {
-        return {
-          id: getRandomId(),
-          display: element.display,
-          type: CAREER,
-          date: element.date_start,
-          year: element.year,
-          month: getFullMonth(element.date_start),
-          institution: getFullInstitutionName(
-            element.institution_name,
-            element.abbreviation_name
-          ),
-          local: getFullLocal(element.city, element.state, element.country),
-          title: element.job_title,
-          level: element.job_level,
-          description: element.description,
-          link: element.link,
-        };
-      }
-    })
-    .filter((element) => element !== undefined);
-
-  const cards = new Array()
-    .concat(educationCards)
-    .concat(certificationCards)
-    .concat(careerCards)
-    .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
-
-  let listControl: string[] = [];
-  const years = cards
-    .map((t) => {
-      const newObj = {
-        year: t.year,
-        month: t.month,
-      };
-      if (!listControl.includes(JSON.stringify(newObj))) {
-        listControl.push(JSON.stringify(newObj));
-        return newObj;
-      }
-      return undefined;
-    })
-    .filter((value) => {
-      return value !== undefined;
-    });
-
-  return years.map((element_year) => {
-    {
-      return {
-        year: element_year.year,
-        month: element_year.month,
-        cards: cards.filter(
-          (element_card) =>
-            element_card.year === element_year.year &&
-            element_card.month === element_year.month
-        ),
-      };
+function startCardFirst(list: []) {
+  for (const el of list) {
+    if (!el.isEndCard && el.isStartCard) {
+      const index = list.indexOf(el);
+      list.splice(index, 1);
+      list.push(el);
     }
-  });
+  }
+  return list;
 }
-const years = metadataProcessing();
-// console.log(years);
 </script>
 <template>
   <div class="container">
-    <span v-for="year in years" :value="year">
+    <span v-for="year in data" :value="year" :key="year">
       <div class="timeline">
         <div class="timeline-year">
           <span>{{ year.month }} de {{ year.year }}</span>
         </div>
-        <span v-for="card in year.cards" :valu="card">
-          <span v-if="card.type === EDUCATION">
-            <TimelineEducationCard :data="card" />
-          </span>
-          <span v-if="card.type === CERTIFICATION">
-            <TimelineCertificatesCardVue :data="card" />
-          </span>
-          <span v-if="card.type === CAREER">
-            <TimelineCareerCard :data="card" />
-          </span>
+        <span
+          v-for="card in startCardFirst(year.cards)"
+          :value="card"
+          :key="card"
+        >
+          <Card :data="card" />
         </span>
       </div>
     </span>
