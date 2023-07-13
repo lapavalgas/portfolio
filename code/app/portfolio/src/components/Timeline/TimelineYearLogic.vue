@@ -1,118 +1,141 @@
 <script setup lang="ts">
-import TimelineYearLogic from "./TimelineYearLogic.vue";
+import Card from "./Card.vue";
 
-import { useLoaderTmlStore } from "@/stores/loader_tml";
-import { ref } from "vue";
-const loader = useLoaderTmlStore();
+const props = defineProps({
+  data: Object,
+  filterYears: String,
+  filterCategory: Array,
+});
 
-var cards = loader.getAllCards();
+function startCardFirst(list: []) {
+  for (const el of list) {
+    if (!el.isEndCard && el.isStartCard) {
+      const index = list.indexOf(el);
+      list.splice(index, 1);
+      list.push(el);
+    }
+  }
+  return list;
+}
 
-let filterYearsComponentKey = ref(0);
+let filterYears = props.filterYears;
+let filterCategory = props.filterCategory;
 
-let filterYears = "";
+function isAValidYear(year) {
+  if (filterYears === undefined || filterYears === "") {
+    return true;
+  }
+  let filterYearsList = filterYears
+    .replaceAll(".", ";")
+    .replaceAll("/", ";")
+    .replaceAll("\\", ";")
+    .replaceAll("|", ";")
+    .replaceAll(" ", ";")
+    .replaceAll("`", ";")
+    .replaceAll("´", ";")
+    .replaceAll("[", ";")
+    .replaceAll("]", ";")
+    .replaceAll("~", ";")
+    .replaceAll("^", ";")
+    .replaceAll(":", ";")
+    .replaceAll("<", ";")
+    .replaceAll(">", ";")
+    .replaceAll(".", ";")
+    .replaceAll("-", ";")
+    .replaceAll("=", ";")
+    .replaceAll(" ", ";")
+    .replaceAll(";;", ";")
+    .split(";");
+  if (filterYearsList.length === 2) {
+    filterYearsList.sort(
+      (objA, objB) =>
+        Number(objB.pointInTimeline) - Number(objA.pointInTimeline)
+    );
+    if (year >= filterYearsList[0] && year <= filterYearsList[1]) {
+      return true;
+    }
+  }
+  if (filterYearsList.indexOf(year) !== -1) {
+    return true;
+  }
+}
 
-let filterMusic = false;
-let filterPsychology = false;
-let filterInformatic = false;
-let filterLanguage = false;
+function isAValidCategory(category) {
+  if (category === "musica" && filterCategory.filterMusic) {
+    return true;
+  }
+  if (category === "psicologia" && filterCategory.filterPsychology) {
+    return true;
+  }
+  if (category === "informatica" && filterCategory.filterInformatic) {
+    return true;
+  }
+  if (category === "letras" && filterCategory.filterLanguage) {
+    return true;
+  }
+  if (
+    !filterCategory.filterMusic &&
+    !filterCategory.filterPsychology &&
+    !filterCategory.filterInformatic &&
+    !filterCategory.filterLanguage
+  ) {
+    return true;
+  }
+}
 
-let filterCategory = {};
+function isAValidCategoryList(categoryList) {
+  if (typeof categoryList == "string") {
+    return isAValidCategory(categoryList);
+  }
+  if (Array.isArray(categoryList)) {
+    let is_valid = false;
+    for (const category of categoryList) {
+      is_valid = isAValidCategory(category);
+      if (is_valid) {
+        return true;
+      }
+    }
+    return false;
+  }
+}
 
-function filterAndReloadCardsComponent() {
-  filterCategory = {
-    filterMusic: filterMusic,
-    filterPsychology: filterPsychology,
-    filterInformatic: filterInformatic,
-    filterLanguage: filterLanguage,
-  };
-  filterYearsComponentKey.value += 1;
+function isCurrentDate(card) {
+  const date = new Date();
+  date.setDate(2);
+  let year = date.getFullYear();
+  let month = date.getMonth() + 1;
+  let cardYear = Number(card.year);
+  let cardMonth = Number(card.month);
+  if (year === cardYear && month === cardMonth) {
+    return true;
+  }
 }
 </script>
 <template>
   <div class="container">
-    <div class="timeline-filters">
-      <span>
-        <input
-          type="text"
-          class="timeline-filters-input-filterYears"
-          id="filterYearsInpur"
-          aria-describedby="filterYears"
-          placeholder="filter by year"
-          v-model="filterYears"
-          v-on:keyup.enter="filterAndReloadCardsComponent"
-        />
-        <button
-          type="button"
-          class="btn btn-primary"
-          @click="filterAndReloadCardsComponent"
-        >
-          Filter
-        </button>
+    <span v-for="year in data" :value="year" :key="year">
+      <span v-if="isAValidYear(year.year) && !isCurrentDate(year)">
+        <div class="timeline">
+          <div class="timeline-year">
+            <span>{{ year.month }} de {{ year.year }}</span>
+          </div>
+          <span
+            v-for="card in startCardFirst(year.cards)"
+            :value="card"
+            :key="card"
+          >
+            <span v-if="isAValidCategoryList(card.category)">
+              <Card :data="card" />
+            </span>
+          </span>
+        </div>
       </span>
-      <br />
-      <span>
-        <span>
-          <input
-            class="form-check-input"
-            type="checkbox"
-            :value="filterMusic"
-            id="filterMusic"
-            v-model="filterMusic"
-          />
-          <label class="form-check-label" for="filterMusic"> Música </label>
-        </span>
-        <span>
-          <input
-            class="form-check-input"
-            type="checkbox"
-            :value="filterPsychology"
-            id="filterPsychology"
-            v-model="filterPsychology"
-          />
-          <label class="form-check-label" for="filterPsychology">
-            Psicologia
-          </label>
-        </span>
-        <span>
-          <input
-            class="form-check-input"
-            type="checkbox"
-            :value="filterInformatic"
-            id="filterInformatic"
-            v-model="filterInformatic"
-          />
-          <label class="form-check-label" for="filterInformatic">
-            Informática
-          </label>
-        </span>
-        <!-- <span>
-          <input
-            class="form-check-input"
-            type="checkbox"
-            :value="filterLanguage"
-            id="filterLanguage"
-            v-model="filterLanguage"
-          />
-          <label class="form-check-label" for="filterLanguage">
-            Letras Italiano
-          </label>
-        </span> -->
-      </span>
-    </div>
-    <span>
-      <TimelineYearLogic
-        :data="cards"
-        :filterYears="filterYears"
-        :filterCategory="filterCategory"
-        :key="filterYearsComponentKey"
-      />
     </span>
   </div>
 </template>
 <style>
 .timeline-filters-input-filterYears {
-  margin: 0 6px 0 6px;
-  width: 400px;
+  width: 100%;
 }
 .timeline-filters {
   margin: 8px;

@@ -18,23 +18,6 @@ import we_TML_2016 from "@/data/timeline/data/work/we_tml_2016.json";
 import we_TML_2017 from "@/data/timeline/data/work/we_tml_2017.json";
 import we_TML_2020 from "@/data/timeline/data/work/we_tml_2020.json";
 
-interface Card {
-  isToDisplay: boolean;
-  isStartCard: boolean;
-  type: string;
-  dataStart: string;
-  dataEnd: string;
-  title: string;
-  subTitle: string;
-  localParteA: string;
-  localParteB: string;
-  localParteC: string;
-  txtStart: string;
-  txtFullText: string;
-  txtTopics: [];
-  txtLinks: [];
-}
-
 export const useLoaderTmlStore = defineStore("loaderTml", {
   state: () => ({
     study_list: [
@@ -62,6 +45,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
   actions: {
     getAllCards() {
       let cardsList: any[] = [];
+      let id = 0;
 
       // STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY
       for (const study of this.study_list) {
@@ -77,11 +61,14 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
           ", " +
           study.location.country;
 
+        const _category = study.category;
+
         let startCard = {
           isToDisplay: study.display,
           isStartCard: true,
           isEndCard: false,
           type: study.type,
+          category: _category,
           dataStart: study.date_start,
           dataEnd: study.date_end,
           title: null,
@@ -93,28 +80,19 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
           txtFullText: null,
           txtTopics: null,
           txtLinks: null,
+          id: id,
         };
-
-        if (
-          startCard.txtStart ===
-          "Iniciou os estudos no curso de Bacharelado em Psicologia"
-        ) {
-          console.log("");
-        }
-
+        id += 1;
         cardsList.push(startCard);
 
         for (const classroomMonitor of classroomMonitorList) {
-          if (classroomMonitor.job_title === "Monitor") {
-            console.log("")
-          }
-
           for (const project of classroomMonitor.projects) {
             let card = {
               isToDisplay: project.display,
               isStartCard: false,
               isEndCard: false,
               type: study.type,
+              category: _category,
               dataStart: project.date_start,
               dataEnd: project.date_end,
               title: classroomMonitor.job_title,
@@ -129,8 +107,9 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
                 project.description.conclusion,
               txtTopics: project.description.tasks,
               txtLinks: study.link,
+              id: id,
             };
-
+            id += 1;
             cardsList.push(card);
           }
         }
@@ -142,6 +121,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
               isStartCard: false,
               isEndCard: false,
               type: study.type,
+              category: _category,
               dataStart: project.date_start,
               dataEnd: project.date_end,
               title: requiredInternship.job_title,
@@ -156,8 +136,9 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
                 project.description.conclusion,
               txtTopics: project.description.tasks,
               txtLinks: study.link,
+              id: id,
             };
-
+            id += 1;
             cardsList.push(card);
           }
         }
@@ -169,6 +150,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
               isStartCard: false,
               isEndCard: false,
               type: study.type,
+              category: _category,
               dataStart: project.date_start,
               dataEnd: project.date_end,
               title: internship.job_title,
@@ -183,8 +165,9 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
                 project.description.conclusion,
               txtTopics: project.description.tasks,
               txtLinks: study.link,
+              id: id,
             };
-
+            id += 1;
             cardsList.push(card);
           }
         }
@@ -196,6 +179,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
               isStartCard: false,
               isEndCard: false,
               type: study.type,
+              category: _category,
               dataStart: project.date_start,
               dataEnd: project.date_end,
               title: research.job_title,
@@ -210,8 +194,9 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
                 project.description.conclusion,
               txtTopics: project.description.tasks,
               txtLinks: study.link,
+              id: id,
             };
-
+            id += 1;
             cardsList.push(card);
           }
         }
@@ -227,11 +212,14 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
           ", " +
           work.location.country;
 
+        const _category = work.category;
+
         let startCard = {
           isToDisplay: work.display,
           isStartCard: true,
           isEndCard: false,
           type: work.type,
+          category: _category,
           dataStart: work.date_start,
           dataEnd: work.date_end,
           title: null,
@@ -243,8 +231,9 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
           txtFullText: null,
           txtTopics: null,
           txtLinks: null,
+          id: id,
         };
-
+        id += 1;
         cardsList.push(startCard);
 
         for (const position of positionsList) {
@@ -254,6 +243,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
               isStartCard: false,
               isEndCard: false,
               type: work.type,
+              category: _category,
               dataStart: project.date_start,
               dataEnd: project.date_end,
               title: position.job_title,
@@ -268,8 +258,9 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
                 project.description.conclusion,
               txtTopics: project.description.tasks,
               txtLinks: work.link,
+              id: id,
             };
-
+            id += 1;
             cardsList.push(card);
           }
         }
@@ -283,6 +274,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
           isStartCard: true,
           isEndCard: true,
           type: card.type,
+          category: card.category,
           dataStart: card.dataStart,
           dataEnd: card.dataEnd,
           title: null,
@@ -294,8 +286,9 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
           txtFullText: null,
           txtTopics: null,
           txtLinks: null,
+          id: id,
         };
-
+        id += 1;
         cardsList.push(endCard);
       }
 
@@ -364,8 +357,3 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
     },
   },
 });
-
-interface Cards2 {
-  year: string;
-  month: [];
-}

@@ -1,6 +1,7 @@
 {
   "year": "2019",
   "type": "Education Experience",
+  "category": ["psicologia", "informatica"],
   "institution_name": "Universidade Federal de Santa Catarina",
   "abbreviation_name": "UFSC",
   "location": {
