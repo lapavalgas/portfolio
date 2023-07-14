@@ -17,7 +17,7 @@
       "title": "Sobre mim",
       "card": {
         "title": "EXPERIÊNCIAS",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+        "description": "Sou um profissional experiente e versátil, com formação em Análise e Desenvolvimento de Sistemas e mestrado em Informática em Saúde. Com cinco anos de experiência, atuo como Engenheiro de Software, Analista de Sistemas, Desenvolvedor Full Stack, Analista de Qualidade e Automatizador de Testes. Tenho um perfil generalista, o que me permite lidar com diversos desafios e contribuir de forma eficaz em projetos de desenvolvimento de software. Meu foco é entregar soluções eficientes e de alta qualidade, sempre buscando inovação e aprimoramento contínuo."
       }
     },
     "skills": {
@@ -25,16 +25,16 @@
       "cards": [
         {
           "title": "ENGENHEIRO DE SOFTWARE",
-          "description": "orem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+          "description": "Sou um Engenheiro de Software com habilidades sólidas em análise, desenvolvimento, teste e manutenção de sistemas. Tenho experiência em várias linguagens de programação e frameworks, além de conhecimentos em metodologias ágeis e práticas de engenharia de software. Meu foco é entregar soluções eficientes, escaláveis e de alta qualidade, buscando sempre a excelência técnica e a satisfação do cliente."
         },
         {
           "title": "FULLSTACK DEVELOPER",
 
-          "description": "orem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+          "description": "Sou um Desenvolvedor Full Stack com experiência em diversas tecnologias, incluindo Java, Python, JavaScript, TypeScript, VueJs, React e Angular. Tenho habilidades sólidas em desenvolvimento de front-end e back-end, além de conhecimentos em bancos de dados e integração de APIs síncrona e assíncrona. Com um mindset ágil e orientado a soluções, estou sempre em busca de inovação e qualidade para entregar produtos de alta performance e experiência do usuário excepcional."
         },
         {
           "title": "QUALITY ASSURANCE",
-          "description": "orem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+          "description": "Como Analista de Qualidade, possuo habilidades em automatização de testes para frontend, backend, APIs e mainframe. Utilizo técnicas e ferramentas modernas para garantir a qualidade e o desempenho dos sistemas. Minha expertise inclui a criação de casos de teste, execução de testes funcionais e não funcionais, além da elaboração de relatórios precisos. Com foco na excelência, colaboro para entregar software confiável e de alto padrão."
         }
       ]
     },
@@ -105,7 +105,6 @@
           "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
           "techstack": ["JavaScript", "CSS", "Java"],
           "link": "https://github.com/lapavalgas"
-        
         },
         {
           "title": "SOFTWARE ENGINEER",

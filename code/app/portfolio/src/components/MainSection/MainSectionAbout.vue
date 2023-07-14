@@ -111,6 +111,7 @@ const loader = useLoaderStore();
   }
 
   .about-card-img > img {
+    margin-top: 45px;
     max-width: 75%;
     box-shadow: 40px 40px 5px rgba(0, 0, 0, 0.03);
     transition: all 1s linear;

@@ -110,6 +110,45 @@ function isCurrentDate(card) {
     return true;
   }
 }
+
+function getMonthInFull(month) {
+  if (month === "01") {
+    return "Janeiro";
+  }
+  if (month === "02") {
+    return "Fevereiro";
+  }
+  if (month === "03") {
+    return "Marco";
+  }
+  if (month === "04") {
+    return "Abril";
+  }
+  if (month === "05") {
+    return "Maio";
+  }
+  if (month === "06") {
+    return "Junho";
+  }
+  if (month === "07") {
+    return "Julho";
+  }
+  if (month === "08") {
+    return "Agosto";
+  }
+  if (month === "09") {
+    return "Setembro";
+  }
+  if (month === "10") {
+    return "Outubro";
+  }
+  if (month === "11") {
+    return "Novembro";
+  }
+  if (month === "12") {
+    return "Dezembro";
+  }
+}
 </script>
 <template>
   <div class="container">
@@ -117,7 +156,7 @@ function isCurrentDate(card) {
       <span v-if="isAValidYear(year.year) && !isCurrentDate(year)">
         <div class="timeline">
           <div class="timeline-year">
-            <span>{{ year.month }} de {{ year.year }}</span>
+            <span>{{ getMonthInFull(year.month) }} de {{ year.year }}</span>
           </div>
           <span
             v-for="card in startCardFirst(year.cards)"

@@ -66,9 +66,10 @@ const loader = useLoaderStore();
 
 /* media query for desktops */
 @media (min-width: 1025px) and (min-height: 625px) {
-  .skill-card {
+  .skill-card {    max-width: 320px;
+    min-width: 320px;
     margin: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     font-size: initial;
   }
 

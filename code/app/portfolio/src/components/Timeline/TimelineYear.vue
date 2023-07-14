@@ -32,6 +32,11 @@ function filterAndReloadCardsComponent() {
   <div class="container">
     <div class="timeline-filters">
       <span>
+        <button type="button" class="btn btn-primary">
+          <router-link to="/" tag="button">Voltar</router-link>
+        </button></span
+      >
+      <span style="margin-left: 20px">
         <input
           type="text"
           class="timeline-filters-input-filterYears"
@@ -50,8 +55,8 @@ function filterAndReloadCardsComponent() {
         </button>
       </span>
       <br />
-      <span>
-        <span>
+      <span style="margin-left: 20px">
+        <span style="margin-left: 3.95em">
           <input
             class="form-check-input"
             type="checkbox"
@@ -112,7 +117,7 @@ function filterAndReloadCardsComponent() {
 <style>
 .timeline-filters-input-filterYears {
   margin: 0 6px 0 6px;
-  width: 400px;
+  width: 185px;
 }
 .timeline-filters {
   margin: 8px;
