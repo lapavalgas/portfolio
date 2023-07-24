@@ -20,35 +20,35 @@ import we_TML_2020 from "@/data/timeline/data/work/we_tml_2020.json";
 
 export const useLoaderTmlStore = defineStore("loaderTml", {
   state: () => ({
-    study_list: [
-      EE_TML_2010,
-      EE_TML_2011,
-      EE_TML_2013,
-      EE_TML_2016,
-      EE_TML_2017,
-      EE_TML_2019,
-      EE_TML_2023,
-    ],
-    work_list: [
-      we_TML_2001,
-      we_TML_2007,
-      we_TML_2012,
-      we_TML_2013,
-      we_TML_2016,
-      we_TML_2017,
-      we_TML_2020,
-    ],
+    // study_list: [
+    //   EE_TML_2010,
+    //   EE_TML_2011,
+    //   EE_TML_2013,
+    //   EE_TML_2016,
+    //   EE_TML_2017,
+    //   EE_TML_2019,
+    //   EE_TML_2023,
+    // ],
+    // work_list: [
+    //   we_TML_2001,
+    //   we_TML_2007,
+    //   we_TML_2012,
+    //   we_TML_2013,
+    //   we_TML_2016,
+    //   we_TML_2017,
+    //   we_TML_2020,
+    // ],
   }),
 
   getters: {},
 
   actions: {
-    getAllCards() {
+    getAllCards(study_list, work_list) {
       let cardsList: any[] = [];
       let id = 0;
 
       // STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY
-      for (const study of this.study_list) {
+      for (const study of study_list) {
         const classroomMonitorList = study.classroom_monitor;
         const requiredInternshipList = study.required_internship;
         const internshipList = study.internship;
@@ -202,7 +202,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
         }
       }
 
-      for (const work of this.work_list) {
+      for (const work of work_list) {
         const positionsList = work.positions;
 
         const _local =

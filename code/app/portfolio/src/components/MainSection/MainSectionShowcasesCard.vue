@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useLoaderStore } from "@/stores/loader";
 const loader = useLoaderStore();
+
+const BTN_VER_MAIS = "VER MAIS";
 </script>
 <template>
   <div
@@ -9,7 +11,7 @@ const loader = useLoaderStore();
     :value="showcaseCard"
   >
     <div class="showcase-card-img">
-      <img src="@/assets/HNAMS_02.png" alt="" />
+      <img :src="showcaseCard.img" alt="" />
     </div>
     <div class="showcase-card-txt">
       <h3 class="title-section-content title-section-content-showcases">
@@ -18,7 +20,9 @@ const loader = useLoaderStore();
       <p>
         {{ showcaseCard.description }}
       </p>
-      <a class="showcase-btn" href="">VER MAIS</a>
+      <a target="_blank" class="showcase-btn" :href="showcaseCard.link">{{
+        BTN_VER_MAIS
+      }}</a>
     </div>
   </div>
 </template>

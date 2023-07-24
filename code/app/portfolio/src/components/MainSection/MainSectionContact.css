@@ -1,0 +1,93 @@
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+/* BACKUP DOS MEDIA QUERYS */
+
+
+/* media query for landscap and tablet */
+@media (orientation: landscape) and (min-width: 640px),
+  (min-width: 768px) and (max-width: 1024px) {
+
+    .title-section-content-contact{
+      margin: 0;
+    }
+  .contact-card-img {
+    margin: auto;
+    max-width: 50%;
+  }
+  .contact-card-txt {
+    margin: auto;
+    max-width: 50%;
+  }
+  .contact-card {
+    padding: 50px 0 100px 0;
+  }
+
+}
+
+/* media query for ajusts in this component  */
+@media (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* media query for ajusts in landscape and tablet */
+@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
+  (min-width: 768px) and (max-width: 1024px) {
+  .contact-card {
+    padding: 0;
+    padding-bottom: 40px;
+    display: flex;
+  }
+  .contact-card-img > img {
+    /* margin-top: 15%; */
+    max-width: 70%;
+  }
+  .contact-card-txt {
+    /* margin-left: 20px; */
+    margin: auto;
+    max-width: 50%;
+  }
+}
+
+/* media query for desktops */
+@media (min-width: 1025px) and (min-height: 625px) {
+  #contact {
+    height: 100vh;
+  }
+
+  .contact-card {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 40px;
+    display: flex;
+  }
+  .contact-card-img > img {
+    margin-top: 15%;
+  }
+  .contact-card-txt {
+    margin-left: 20px;
+  }
+}
+
+/* media query for ajusts in desktops */
+@media (min-width: 1445px) {
+}
+
+/* media query for ajusts in desktops */
+@media (min-width: 1600px) {

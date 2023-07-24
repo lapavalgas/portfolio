@@ -14,7 +14,7 @@ const GRAY = "gray";
 const BLACK = "black";
 
 const techstackDotColor: Record<string, string> = {
-  Java: ORANGE,
+  Java: RED,
   Spring: GREEN,
   Hibernate: GRAY,
   Kotlin: BLUE,
@@ -27,12 +27,13 @@ const techstackDotColor: Record<string, string> = {
   MySQL: BLACK,
   MongoDB: GREEN,
   HTML: RED,
-  CSS: BLUE,
+  CSS: YELLOW,
   JavaScript: YELLOW,
   TypeScript: BLUE,
   ExpressJs: BLACK,
   Angular: RED,
   React: BLUE,
+  Vue: GREEN,
   VueJs: GREEN,
   VueX: GREEN,
   Pinia: YELLOW,
@@ -42,6 +43,7 @@ const techstackDotColor: Record<string, string> = {
   Selenium: GREEN,
   PHP: VIOLET,
   Wordpress: BLUE,
+
 };
 
 function setupDotColor(techstack: string) {

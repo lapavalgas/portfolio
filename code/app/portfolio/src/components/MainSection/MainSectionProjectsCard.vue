@@ -10,20 +10,22 @@ const loader = useLoaderStore();
     v-for="projectCard in loader.selectedLanguageData.sections.projects.cards"
     :value="projectCard"
   >
-    <p>
-      <a :href="projectCard.link" class="project-card-link" target="_blank">
+    <a :href="projectCard.link" class="project-card-link" target="_blank">
+      <p>
         <span class="project-card-icon">
           <IconProjectCardVue />
         </span>
         <span class="title-section-content-projects">{{
           projectCard.title
         }}</span>
-      </a>
-    </p>
-    <p>
-      {{ projectCard.description }}
-    </p>
-    <MainSectionProjectsCardTechstackVue :techstacks="projectCard.techstack" />
+      </p>
+      <p>
+        {{ projectCard.description }}
+      </p>
+      <MainSectionProjectsCardTechstackVue
+        :techstacks="projectCard.techstack"
+      />
+    </a>
   </div>
 </template>
 <style>
@@ -44,6 +46,7 @@ margin: 4rem 0;
   padding: 0.5rem;
   border: var(--border-cards);
   font-size: var(--fs-small);
+  background-color: #00000003;
 }
 
 .project-card > p {
@@ -78,7 +81,7 @@ margin: 4rem 0;
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  --background:rgba(0, 0, 0, 0);
+  --background: rgba(0, 0, 0, 0);
   background: var(--background);
 }
 

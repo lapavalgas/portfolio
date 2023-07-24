@@ -1,6 +1,50 @@
 <script setup lang="ts">
 import { useLoaderStore } from "@/stores/loader";
 const loader = useLoaderStore();
+
+const LINKEDIN_TXT = "LinkedIn";
+const EMAIL_TXT = "e-mail";
+const RESUME_TXT = "resume";
+
+const PORTUGUESE = "Português";
+const ENGLISH = "English";
+const ITALIANO = "Italiano";
+
+function checkLinks(str) {
+  const linkedin_link = document.createElement("a");
+  const email_link = document.createElement("a");
+  const resume_link = document.createElement("a");
+  if (str.includes("[linkedin]")) {
+    linkedin_link.href = loader.selectedLanguageData.footer.linkedin_link;
+    linkedin_link.text = "LinkedIn";
+  }
+  if (str.includes("[email]")) {
+    email_link.href = loader.selectedLanguageData.footer.email_link;
+    email_link.text = "e-mail";
+  }
+  if (str.includes("[resume]")) {
+    email_link.href = loader.selectedLanguageData.footer.resume_link;
+    switch (loader.selectedLanguage) {
+      case PORTUGUESE:
+        email_link.text = "currículum";
+        break;
+      case ENGLISH:
+        email_link.text = "resume";
+        break;
+      case ITALIANO:
+        email_link.text = "curriculum";
+        break;
+      default:
+        email_link.text = "resume";
+        break;
+    }
+    const span = document.createElement("span");
+    span.textContent = str.slice(0, str.indexOf("[linkedin]"));
+    span.append(linkedin_link);
+
+    return span;
+  }
+}
 </script>
 <template>
   <section id="contact" class="">
@@ -11,13 +55,33 @@ const loader = useLoaderStore();
         </h2>
         <div class="content-area">
           <div class="contact-card">
-            <p
-              v-for="p in loader.selectedLanguageData.sections.contact.card
-                .descriptions"
-              :value="p"
-            >
-              {{ p }}
-            </p>
+            <div class="contact-card-img">
+              <img src="@/assets/eumesmo.jpg" alt="" />
+            </div>
+            <div class="contact-card-txt">
+              <h3 class="title-section-content title-section-content-contact">
+                {{
+                  loader.selectedLanguageData.sections.contact.card_farewell
+                    .title
+                }}
+              </h3>
+              <p class="">
+                {{
+                  loader.selectedLanguageData.sections.contact.card_farewell
+                    .description
+                }}
+              </p>
+              <p>
+                {{
+                  loader.selectedLanguageData.sections.contact.card_psychology
+                    .description
+                }}
+                <a class="contact-card-link" href="">{{
+                  loader.selectedLanguageData.sections.contact.card_psychology
+                    .link_description
+                }}</a>
+              </p>
+            </div>
           </div>
           <div id="contact-area-id"></div>
         </div>
@@ -30,7 +94,7 @@ const loader = useLoaderStore();
         CONTACT
 -------------------------------------------------------***/
 #contact {
-  height: 100%;
+  /* height: 100%; */
   color: var(--clr-base-white);
 }
 
@@ -39,7 +103,87 @@ const loader = useLoaderStore();
   background: var(--bg-clr-contact);
 }
 
-/* media query for landscap and tablet */
+.contact-card {
+  padding: 20px 0 40px 0;
+}
+
+.contact-card-img {
+  margin: auto;
+  max-width: 100%;
+}
+
+.contact-card-img > img {
+  max-width: 60%;
+}
+
+.contact-card-link {
+  color: rgb(162, 193, 235);
+}
+
+/* media query for landscap smarts and tablet */
+@media (orientation: landscape) and (min-width: 640px) {
+  .contact-card-img {
+    max-width: 98%;
+    margin: auto;
+  }
+
+  .contact-card-img > img {
+    max-width: 40%;
+  }
+}
+
+/* media query for landscap smarts  and tablet */
+@media (min-width: 769px) {
+  .contact-card {
+    display: flex;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .contact-card-img {
+    max-width: 50%;
+    min-width: 50%;
+    margin: auto;
+    margin-top: 0%;
+  }
+  .contact-card-img > img {
+    max-width: 50%;
+  }
+  .contact-card-txt {
+    max-width: 60%;
+    min-width: 50%;
+    margin-top: 0;
+    margin-left: -5%;
+    
+  }
+  .title-section-content-contact {
+    margin: 0;
+  }
+}
+
+/* media query for landscap smarts  and tablet */
+@media (min-width: 915px) {
+  .contact-card {
+  }
+  /* .about-card-img {
+    margin-top: 2%;
+  }
+  .about-card-img > img {
+    max-width: 90%;
+  } */
+}
+
+/* media query for landscap smarts  and tablet */
+@media (min-width: 1180px) {
+  .contact-card {
+    padding: 0;
+  }
+  /* .about-card-img {
+  }
+  .about-card-img > img {
+  } */
+}
+
 @media (orientation: landscape) and (min-width: 640px),
   (min-width: 768px) and (max-width: 1024px) {
 }
@@ -55,13 +199,6 @@ const loader = useLoaderStore();
 
 /* media query for desktops */
 @media (min-width: 1025px) and (min-height: 625px) {
-  #contact {
-    height: 100vh;
-  }
-
-  .contact-card {
-    width: 100%;
-  }
 }
 
 /* media query for ajusts in desktops */

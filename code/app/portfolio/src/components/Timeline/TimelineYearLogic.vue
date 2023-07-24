@@ -149,15 +149,26 @@ function getMonthInFull(month) {
     return "Dezembro";
   }
 }
+
+// let newYearControl = [];
+// function isNewYear(cardYear) {
+//   for (const yearControl of newYearControl) {
+//     if (yearControl === cardYear) {
+//       return false;
+//     }
+//   }
+//   newYearControl.push(cardYear);
+//   return true;
+// this not work properly because the html is rendering from top to botton
+// is necessary here control the total of a cards by year and rendering this in the last one;
+// will be very easy if this logic came from the service context by a boolean
+// }
 </script>
 <template>
   <div class="container">
     <span v-for="year in data" :value="year" :key="year">
       <span v-if="isAValidYear(year.year) && !isCurrentDate(year)">
         <div class="timeline">
-          <div class="timeline-year">
-            <span>{{ getMonthInFull(year.month) }} de {{ year.year }}</span>
-          </div>
           <span
             v-for="card in startCardFirst(year.cards)"
             :value="card"
@@ -167,12 +178,20 @@ function getMonthInFull(month) {
               <Card :data="card" />
             </span>
           </span>
+          <div class="timeline-year">
+            <span>{{ getMonthInFull(year.month) }} de {{ year.year }}</span>
+            <!-- <br /><span v-if="isNewYear(year.year)">{{ year.year }}</span> -->
+          </div>
         </div>
       </span>
     </span>
   </div>
 </template>
 <style>
+/* 
+<div v-if="isNewYear(year.year)" class="timeline-year">
+              <span>{{ year.year }}</span>
+            </div> */
 .timeline-filters-input-filterYears {
   width: 100%;
 }

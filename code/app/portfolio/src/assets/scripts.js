@@ -8,6 +8,11 @@ const __default_main_color_black = "#212529";
 const __default_main_color_white = "#fcf8f4";
 const __menuFormSelectColor_black = "1px solid rgba(0, 0, 0, 0.082)";
 const __menuFormSelectColor_white = "1px solid rgba(243, 243, 243, 0.16)";
+
+const __default_footer_size = "24px";
+const __default_footer_level = "0px";
+const __default_footer_size_at_contact_session = "24px";
+const __default_footer_level_at_contact_session = "70px";
 const bottomHeightToChangeFooterColors = 250;
 
 /***-------------------------------------------------------
@@ -77,7 +82,11 @@ function footerTransformToContactComponent() {
   let array = document.getElementsByClassName("icon");
   for (let element of array) {
     element.style.fill = __default_main_color_white;
+    element.style.width = __default_footer_size_at_contact_session;
+    element.style.height = __default_footer_size_at_contact_session;
+    element.style.paddingBottom = __default_footer_level_at_contact_session;
   }
+  document.getElementById("author").style.opacity = 1;
 }
 
 function footerTransformToFooterComponent() {
@@ -86,7 +95,11 @@ function footerTransformToFooterComponent() {
   let array = document.getElementsByClassName("icon");
   for (let element of array) {
     element.style.fill = __default_main_color_black;
+    element.style.width = __default_footer_size;
+    element.style.height = __default_footer_size;
+    element.style.paddingBottom = __default_footer_level;
   }
+  document.getElementById("author").style.opacity = 0;
 }
 
 function menuTransformColorWhite() {

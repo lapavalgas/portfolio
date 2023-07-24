@@ -12,9 +12,6 @@ const loader = useLoaderStore();
         <div class="content-area">
           <div class="about-card">
             <div class="about-card-txt">
-              <h3 class="title-section-content title-left hidden-mobile">
-                {{ loader.selectedLanguageData.sections.about.card.title }}
-              </h3>
               <p>
                 {{
                   loader.selectedLanguageData.sections.about.card.description
@@ -34,103 +31,80 @@ const loader = useLoaderStore();
 /***-------------------------------------------------------
         ABOUT 
 -------------------------------------------------------***/
-/* 
-#about {
-    margin-top: 3rem;
-} */
-
 #about-wallpaper {
   background: var(--bg-clr-base-white);
 }
+.about-card {
+  margin-top: 0.5rem;
+  align-items: center;
+}
+.about-card-img {
+  overflow: hidden;
+}
+.about-card-txt {
+  overflow: hidden;
+}
+.about-card-img > img {
+  object-fit: fill;
+  min-width: 100%;
+}
 
-/* .about-card-img>img {
-    max-width: 100%;
-} */
-
-/* media query for landscap and tablet */
-@media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
   .about-card {
+    align-items: normal;
     display: flex;
+    flex-direction: row-reverse;
   }
-
-  .about-card > div {
+  .about-card-txt {
     max-width: 50%;
   }
-
   .about-card-txt > p {
-    padding-right: 1rem;
-    margin-top: 0;
-    min-width: 546px;
+    margin-left: -2rem;
+    padding-left: 2rem;
   }
-
   .about-card-img {
-    margin-top: 1rem;
-    /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
+    overflow: visible;
+    padding: 20px;
+    max-width: 50%;
+    min-height: 100%;
   }
-}
-
-/* media query for ajusts in lineheight in about text */
-@media (orientation: landscape) and (min-width: 1024px) and (max-width: 1024px) {
-  .about-card-txt > p {
-    line-height: calc(var(--lh-body) + 0.65);
-  }
-}
-
-/* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
   .about-card-img > img {
-    max-width: 80%;
-  }
-
-  .about-card-txt > p {
-    padding-right: 0;
-    margin-top: 1rem;
+    min-height: 100%;
   }
 }
-
-/* media query for desktops */
-@media (min-width: 1025px) and (min-height: 625px) {
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .about-card {
+  }
   .about-card-txt {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
   }
-
   .about-card-txt > p {
-    padding: 0;
-    line-height: calc(var(--lh-body) + 0.85);
-    margin-bottom: 1rem;
+    line-height: 2em;
+    margin-left: -1em;
   }
-
-  .about-card-img {
-    margin-top: 0;
-  }
-
   .about-card-img > img {
-    margin-top: 45px;
-    max-width: 75%;
-    box-shadow: 40px 40px 5px rgba(0, 0, 0, 0.03);
+    box-shadow: 18px 18px 14px rgba(0, 0, 0, 0.08);
     transition: all 1s linear;
   }
 }
-
-/* media query for ajusts in desktops */
-@media (min-width: 1445px) {
-  .about-card-img > img {
-    max-width: 65%;
-  }
-
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
   .about-card-txt > p {
-    padding-right: 0;
-    margin-top: 1rem;
   }
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1600px) {
+  .about-card-img {
+    padding: 25px;
+  }
+  .about-card-img > img {
+  }
 }
 </style>

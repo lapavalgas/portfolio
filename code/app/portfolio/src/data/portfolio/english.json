@@ -1,40 +1,41 @@
 {
   "menu": {
-    "cover": "english TESTE",
-    "about": "english TESTE",
-    "skills": "english TESTE",
-    "showcases": "english TESTE",
-    "projects": "english TESTE",
-    "contact": "english TESTE",
+    "cover": "Profile",
+    "about": "About",
+    "skills": "Skills",
+    "showcases": "Showcases",
+    "projects": "Projects",
+    "contact": "Contact",
+    "timeline": "Timeline",
     "resume": "resume"
   },
   "sections": {
     "cover": {
-      "name": "Rafael Lapavalgas",
-      "profession": "SOFTWARE ENGINEER"
+      "name": "Rafael Lapa Valgas",
+      "profession": "Software Engineer"
     },
     "about": {
-      "title": "Sobre mim",
+      "title": "About",
       "card": {
-        "title": "EXPERIÊNCIAS",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+        "title": "",
+        "description": "I am a software engineer with extensive experience in developing, maintaining, and ensuring the quality of synchronous and asynchronous APIs for mainframe, web, and mobile environments. I worked as a consultant at the largest financial institution in Latin America, Itaú Unibanco, where I was involved in anti-fraud systems, internal data distribution, and customer service channels. I hold a professional master's degree in Health Informatics, during which I led a project to computerize neuropsychology in hospital settings, focusing on usability and user experience. I have a passion for working with technology because I believe in its potential to improve people's lives. As a software engineer, my motivation is to work in engaged teams and contribute to the success of innovative projects. Besides being a software engineer, I'm also a psychologist, but that's another story..."
       }
     },
     "skills": {
-      "title": "Habilidades",
+      "title": "Skills",
       "cards": [
         {
           "title": "SOFTWARE ENGINEER",
-          "description": "orem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+          "description": "As a software engineer, I lead projects and teams with a focus on delivering results. I plan, coordinate, and communicate effectively with stakeholders. I manage resources, risks, and deadlines to achieve objectives. I encourage collaboration and motivation, fostering a positive work environment. My commitment is to deliver innovative and high-quality projects, driving the success of both the team and the organization. 🚀👨‍💻🤝"
         },
         {
           "title": "FULLSTACK DEVELOPER",
 
-          "description": "orem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+          "description": "As a full-stack developer, I am responsible for creating comprehensive and innovative solutions. On the front-end, I use technologies like React, Angular, or Vue.js to develop user-friendly and engaging interfaces. On the back-end, I work with Node.js, Python, or Java to ensure the robustness and efficiency of APIs. My objective is to deliver high-quality products, collaborating at every stage of development and ensuring an exceptional user experience. 🚀💻🎨"
         },
         {
           "title": "QUALITY ASSURANCE",
-          "description": "orem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic, mollitia, magni, nobis accusantium dolorem provident deleniti fugit aliquid aut beatae maxime quos voluptates illo nihil sed molestiae culpa quo."
+          "description": "As a quality analyst, my mission is to ensure the excellence of the developed products. I conduct thorough testing on various platforms, such as web and mobile, using tools like Selenium and Postman. I document results, report bugs, and collaborate with the development team to improve the usability and performance of the systems. My commitment is to deliver reliable and high-standard products, ensuring user satisfaction. 🕵️‍♂️🔍💡"
         }
       ]
     },
@@ -42,89 +43,77 @@
       "title": "Showcases",
       "cards": [
         {
-          "title": "NEUROPSYCHOLOGY EHR SYSTEM",
-          "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint velnon est mollitia optio rem neque, vitae ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint vel non est mollitia optio rem neque.",
-          "img": "",
-          "link": ""
+          "title": "Neuropsychological Assessment Management System",
+          "description": "My master's research focused on the feasibility of a hospital neuropsychological assessment management system. Using the Design Science Research methodology, I developed a functional prototype with Vue.js to evaluate usability. The results indicated improvements in neuropsychological practice, emphasizing the need for data transfer standards. My complete dissertation is available in the university's online library. I am available to discuss this research. 🧠💻🎓",
+          "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_neuropsychology_prototype/main/resources/HNAMS_02.png",
+          "link": "https://github.com/lapavalgas/undergraduate_neuropsychology_prototype"
         },
         {
-          "title": "NEUROPSYCHOLOGY EHR SYSTEM",
-          "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint velnon est mollitia optio rem neque, vitae ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint vel non est mollitia optio rem neque.",
-          "img": "",
-          "link": ""
+          "title": "Customer Registration System and Check ZIP Code",
+          "description": "I participated in a technical challenge to showcase my full-stack development skills. I developed an application using Java, Spring Boot, and Vue.js for customer registration, validating addresses through the Correios API using CEP (zip code). I utilized GraphQL for API communication and H2 as the database. To ensure quality, I implemented unit tests with jUnit and interface tests with Cypress. Additionally, I made the project available as a Docker Compose image. 🚀💻📅",
+          "img": "https://raw.githubusercontent.com/lapavalgas/technical_showcase_zip_code_app/main/resources/ZC_03.jpeg",
+          "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app"
         },
         {
-          "title": "NEUROPSYCHOLOGY EHR SYSTEM",
-          "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint velnon est mollitia optio rem neque, vitae ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sint vel non est mollitia optio rem neque.",
-          "img": "",
-          "link": ""
+          "title": "Fast Service System / Course Completion Project",
+          "description": "In my final graduation project, I developed the MVP Fast Service system, a service marketplace. The backend, built with Java and Spring, was deployed on Heroku, while the frontend, developed with Vue.js, was hosted on Vercel. For local development, I utilized Docker and MySQL. The learning experience was rewarding, preparing me for new challenges ahead. 🚀💼💻",
+          "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_fastservice/main/resources/fastservice_01.png",
+          "link": "https://github.com/lapavalgas/undergraduate_fastservice"
         }
       ]
     },
     "projects": {
-      "title": "Projetos ",
+      "title": "Projects ",
       "cards": [
         {
-          "title": "SOFTWARE ENGINEER",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
-          "techstack": ["JavaScript", "CSS", "Angular"],
-          "link": "https://github.com/lapavalgas"
+          "title": "masterdegree_neuropsychology_prototype",
+          "description": "About the research and the prototype developed during the master's degree.",
+          "techstack": ["TypeScript", "Vue", "CSS", "Docker"],
+          "link": "https://github.com/lapavalgas/masterdegree_neuropsychology_prototype"
         },
         {
-          "title": "SOFTWARE ENGINEER",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
-          "techstack": ["JavaScript", "CSS", "Java"],
-          "link": "https://github.com/lapavalgas"
+          "title": "technical_showcase_zip_code_app",
+          "description": "This was a technical challenge for a Java Full Stack job interview",
+          "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
+          "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app"
         },
         {
-          "title": "SOFTWARE ENGINEER",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
-          "techstack": ["JavaScript", "CSS", "Java"],
-          "link": "https://github.com/lapavalgas"
+          "title": "undergraduate_fastservice",
+          "description": "Final project of the undergraduate course in Systems Analysis and Development",
+          "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
+          "link": "https://github.com/lapavalgas/undergraduate_fastservice"
         },
         {
-          "title": "SOFTWARE ENGINEER",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
-          "techstack": ["JavaScript", "CSS", "Java"],
-          "link": "https://github.com/lapavalgas"
+          "title": "undergraduate_repositories",
+          "description": "This repository contains the projects I had made during the university graduation.",
+          "techstack": ["Java", "Python", "JavaScript", "CSS", "Docker"],
+          "link": "https://github.com/lapavalgas/undergraduate_repositories"
         },
         {
-          "title": "SOFTWARE ENGINEER",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
-          "techstack": ["JavaScript", "CSS", "Java"],
-          "link": "https://github.com/lapavalgas"
-        },
-        {
-          "title": "SOFTWARE ENGINEER",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
-          "techstack": ["JavaScript", "CSS", "Java"],
-          "link": "https://github.com/lapavalgas"
-        },
-        {
-          "title": "SOFTWARE ENGINEER",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio natus minima nobis?",
-          "techstack": ["JavaScript", "CSS", "Java"],
-          "link": "https://github.com/lapavalgas"
+          "title": "Scripts",
+          "description": "Set of useful scripts I developed for daily use, for example organize files, photos and images",
+          "techstack": ["Python"],
+          "link": "https://github.com/lapavalgas/scripts"
         }
       ]
     },
     "contact": {
-      "title": "Contate-me",
+      "title": "Contact",
       "card": {
-        "title": "Contact!",
-        "descriptions": [
-          "Say hello... See my work, My Shelf, My Resume...",
-          "If you want to know more about me or my work, or if you would just like to say hello, Just give me a call or send me an email. I'd love to hear from you.",
-          "Feel free to reach out if you want a to build something together, have a question, or just want to connect."
-        ]
+        "title": "Get in touch!",
+        "descriptions": ""
       }
     }
   },
   "footer": {
     "linkedin": "LinkedIn",
+    "linkedin_link": "https://www.linkedin.com/in/lapavalgas/",
     "github": "Github",
+    "github_link": "https://github.com/lapavalgas",
     "email": "E-mail",
+    "email_link": "lapavalgas@gmail.com",
     "resume": "Resume",
+    "resume_link": "",
     "scrolldown": "scrolldown"
   }
 }

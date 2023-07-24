@@ -16,7 +16,7 @@ const loader = useLoaderStore();
         class="link"
         target="_blank"
         loader.selectedLanguageData.footer-title="LinkedIn"
-        href="https://www.linkedin.com/in/lapavalgas/"
+        :href="loader.selectedLanguageData.footer.linkedin_link"
       >
         <IconLinkedinVue />
         <div id="linkedin">
@@ -27,7 +27,7 @@ const loader = useLoaderStore();
         class="link"
         target="_blank"
         loader.selectedLanguageData.footer-title="GitHub"
-        href="https://github.com/lapavalgas"
+        :href="loader.selectedLanguageData.footer.github_link"
       >
         <IconGithubVue />
         <div id="github">{{ loader.selectedLanguageData.footer.github }}</div>
@@ -36,7 +36,7 @@ const loader = useLoaderStore();
         class="link"
         target="_blank"
         loader.selectedLanguageData.footer-title="E-mail"
-        href="mailto:lapavalgas@gmail.com"
+        :href="loader.selectedLanguageData.footer.email_link"
       >
         <IconEmailVue />
         <div id="email">{{ loader.selectedLanguageData.footer.email }}</div>
@@ -45,7 +45,7 @@ const loader = useLoaderStore();
         class="link"
         target="_blank"
         loader.selectedLanguageData.footer-title="Resume"
-        href="resume"
+        :href="loader.selectedLanguageData.footer.resume_link"
       >
         <IconResumeVue />
         <div id="curriculum">
@@ -53,13 +53,22 @@ const loader = useLoaderStore();
         </div>
       </a>
     </div>
+    <div id="author">Rafael Lapa Valgas / lapavalgas / Italo-brasiliani</div>
   </footer>
 </template>
 <style>
 /***-------------------------------------------------------
         FOOTER
 --------------------------------------------------------***/
-
+#author {
+  position: absolute;
+  bottom: 30px;
+  color: var(--clr-base-white);
+  opacity: 0;
+  transform: translate(0, 0%);
+  -webkit-transition: 0.9s 0s ease-in-out;
+  transition: 0.9s 0s ease-in-out;
+}
 footer {
   z-index: 10;
   position: fixed;
@@ -98,6 +107,9 @@ footer {
   fill: rgb(80, 80, 80);
   color: black;
   margin-top: 1rem;
+  transform: translate(0, 0%);
+  -webkit-transition: 0.9s 0s ease-in-out;
+  transition: 0.9s 0s ease-in-out;
 }
 
 .social-media > .link:hover > .icon {

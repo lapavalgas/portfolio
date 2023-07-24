@@ -13,6 +13,22 @@ function handleChange(e: any) {
     );
   }
 }
+
+const ENGLISH = "english";
+const ENGLISH_ABB = "en";
+const PORTUGUESE = "português";
+const PORTUGUESE_ABB = "pt";
+
+function getTimelineLanguage() {
+  switch (loader.selectedLanguage.toLowerCase()) {
+    case ENGLISH.toLowerCase():
+      return ENGLISH_ABB;
+    case PORTUGUESE.toLowerCase():
+      return PORTUGUESE_ABB;
+    default:
+      return navigator.language;
+  }
+}
 </script>
 <template>
   <header>
@@ -43,6 +59,11 @@ function handleChange(e: any) {
         <li class="nav-item" onclick="menuToggle()">
           <a href="#contact-link">{{
             loader.selectedLanguageData.menu.contact
+          }}</a>
+        </li>
+        <li class="nav-item" onclick="menuToggle()">
+          <a target="_blank" :href="'/tml/' + getTimelineLanguage()">{{
+            loader.selectedLanguageData.menu.timeline
           }}</a>
         </li>
         <!-- <li class="nav-item" onclick="menuToggle()">

@@ -8,8 +8,12 @@ const loader = useLoaderStore();
       <div class="section-content">
         <div class="cover-content-area">
           <div class="cover-card">
-            <h1 class="cover-card-name">{{ loader.selectedLanguageData.sections.cover.name }}</h1>
-            <p class="cover-card-profession">{{ loader.selectedLanguageData.sections.cover.profession }}</p>
+            <h1 class="cover-card-name">
+              {{ loader.selectedLanguageData.sections.cover.name }}
+            </h1>
+            <p class="cover-card-profession">
+              {{ loader.selectedLanguageData.sections.cover.profession }}
+            </p>
           </div>
         </div>
       </div>
@@ -90,8 +94,9 @@ const loader = useLoaderStore();
   }
 
   .cover-card-profession {
-    margin-top: 2rem;
-    letter-spacing: 0.4rem;
+    margin-top: 8rem;
+    /* margin-top: 2rem; */
+    letter-spacing: 0.2rem;
     font-size: 1.5vw;
   }
 }
