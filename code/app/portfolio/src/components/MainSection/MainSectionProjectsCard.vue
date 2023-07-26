@@ -43,6 +43,12 @@ margin: 4rem 0;
   background: var(--bg-clr-base-white);
 }
 
+.project-card:hover{
+    transition: all 0.47s linear;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.04);
+
+}
+
 .project-card {
   margin: 0.5rem 0;
   padding: 0.5rem;

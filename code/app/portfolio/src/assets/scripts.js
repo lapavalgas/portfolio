@@ -13,7 +13,18 @@ const __default_footer_size = "24px";
 const __default_footer_level = "0px";
 const __default_footer_size_at_contact_session = "24px";
 const __default_footer_level_at_contact_session = "70px";
+
 const bottomHeightToChangeFooterColors = 250;
+
+const SCREEN_COVER = "#cover-link";
+const SCREEN_ABOUT = "#about";
+const SCREEN_SKILLS = "#skills";
+const SCREEN_SHOWCASES = "#showcases";
+const SCREEN_PROJECTS = "#projects";
+const SCREEN_CONTACT = "#contact";
+
+const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
 
 /***-------------------------------------------------------
           PAGE BEHAVIOUR
@@ -141,81 +152,7 @@ function scrollDownTransformToHidden() {
           GENERAL PORTFOLIO BEHAVIOUR
 --------------------------------------------------------***/
 
-// SCROLLING LOGIC CONTROLS
-
-function readElementsInViewPort() {
-  const viewportWidth =
-    window.innerWidth || document.documentElement.clientWidth;
-  const viewportHeight =
-    window.innerHeight || document.documentElement.clientHeight;
-
-  const portfolioScreens = [
-    document.querySelector("#cover-link"),
-    document.querySelector("#about"),
-    document.querySelector("#skills"),
-    document.querySelector("#showcases"),
-    document.querySelector("#projects"),
-    document.querySelector("#contact"),
-  ];
-
-  const portfolioScreensRect = portfolioScreens.map((e) => ({
-    screen: e.id,
-    screenRect: e.getBoundingClientRect(),
-  }));
-
-  return portfolioScreensRect.map((e) => ({
-    screen: e.screen,
-    isVisible:
-      e.screenRect.top >= 0 &&
-      e.screenRect.left >= 0 &&
-      e.screenRect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      e.screenRect.right <=
-        (window.innerWidth || document.documentElement.clientWidth),
-  }));
-}
-
-function navContentSelectMenuByViewport() {
-  let id;
-  const portfolioScreensInViewport = readElementsInViewPort();
-  for (const e of portfolioScreensInViewport) {
-    if (e.isVisible) {
-      navContentSelectMenuById(e.screen);
-      id = e.screen;
-    }
-  }
-  return id;
-}
-
-function scrollFunction() {
-  navContentUnselectAllMenu();
-  navContentSelectMenuByViewport();
-  // to hidden footer in cover component
-  if (isUserInCoverComponent()) {
-    footerTransformToHidden();
-    logoTransformOpacityZero();
-    scrollDownTransformToVisible();
-  } else {
-    footerTransformToVisible();
-    logoTransformOpacityOne();
-    scrollDownTransformToHidden();
-  }
-  // to merge footer to contact component
-  if (isUserInFooterComponent()) {
-    footerTransformToContactComponent();
-    logoTransformColorWhite();
-    if (!isUserInMobileDevice()) {
-      menuTransformColorWhite();
-    }
-  } else {
-    footerTransformToFooterComponent();
-    logoTransformColorBlack();
-    menuTransformColorBlack();
-  }
-}
-
 // NAV MENU LOGIC CONTROLS
-
 function hiddenMenuFunction() {
   let array = document.getElementsByClassName("hidden-mobile");
   if (isUserInMobileDevice()) {
@@ -256,6 +193,45 @@ function navContentSelectMenuById(id) {
   document.getElementById(id + "-menu-link").classList.add("selected");
 }
 
+function readElementsInViewPort() {
+  const portfolioScreens = [
+    document.querySelector(SCREEN_COVER),
+    document.querySelector(SCREEN_ABOUT),
+    document.querySelector(SCREEN_SKILLS),
+    document.querySelector(SCREEN_SHOWCASES),
+    document.querySelector(SCREEN_PROJECTS),
+    document.querySelector(SCREEN_CONTACT),
+  ];
+
+  const portfolioScreensRect = portfolioScreens.map((e) => ({
+    screen: e.id,
+    screenRect: e.getBoundingClientRect(),
+  }));
+
+  return portfolioScreensRect.map((e) => ({
+    screen: e.screen,
+    isVisible:
+      e.screenRect.top >= 0 &&
+      e.screenRect.left >= 0 &&
+      e.screenRect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      e.screenRect.right <=
+        (window.innerWidth || document.documentElement.clientWidth),
+  }));
+}
+
+function navContentSelectMenuByViewport() {
+  let id;
+  const portfolioScreensInViewport = readElementsInViewPort();
+  for (const e of portfolioScreensInViewport) {
+    if (e.isVisible) {
+      navContentSelectMenuById(e.screen);
+      id = e.screen;
+    }
+  }
+  return id;
+}
+
 function menuToggle(id) {
   navContentUnselectAllMenu();
   navContentSelectMenuById(id);
@@ -269,5 +245,33 @@ function menuToggle(id) {
         footerTransformToVisible();
       }
     }
+  }
+}
+
+// SCROLLING LOGIC CONTROLS
+function scrollFunction() {
+  navContentUnselectAllMenu();
+  navContentSelectMenuByViewport();
+  // to hidden footer in cover component
+  if (isUserInCoverComponent()) {
+    footerTransformToHidden();
+    logoTransformOpacityZero();
+    scrollDownTransformToVisible();
+  } else {
+    footerTransformToVisible();
+    logoTransformOpacityOne();
+    scrollDownTransformToHidden();
+  }
+  // to merge footer to contact component
+  if (isUserInFooterComponent()) {
+    footerTransformToContactComponent();
+    logoTransformColorWhite();
+    if (!isUserInMobileDevice()) {
+      menuTransformColorWhite();
+    }
+  } else {
+    footerTransformToFooterComponent();
+    logoTransformColorBlack();
+    menuTransformColorBlack();
   }
 }
