@@ -34,6 +34,7 @@ const loader = useLoaderStore();
 
 .showcases-card {
   width: 100%;
+  /* height: 100%; */
   margin-top: 2rem;
 }
 
@@ -41,50 +42,62 @@ const loader = useLoaderStore();
   max-width: 100%;
 }
 
-/* .showcase-card-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
+.showcase-card-img {
+  min-height: 100%;
+}
 
 .showcase-card-img > img {
   max-width: 95%;
+  min-height: 100%;
 }
 
 .showcase-card-txt {
   width: 90vw;
-  max-width: calc(100vw - 10%);
+  height: 100%;
   padding: 0.75rem;
+  padding-bottom: 2rem;
   margin-bottom: 1rem;
   color: var(--clr-base-white);
+  justify-items: center;
 }
 
 .showcase-btn {
-  width: 75px;
-  padding: 0.6rem;
-  text-decoration: none;
+  margin: auto;
+  width: 175px;
   text-align: center;
   font-weight: 600;
-  font-size: 0.75rem;
+  padding: 0.3rem;
   color: var(--clr-base-link);
   background-color: var(--bg-clr-base-white);
   border-radius: var(--border-radius);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
+.showcase-btn > a {
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
 .showcase-btn:hover {
   box-shadow: 2px 2px 15px rgba(35, 35, 35, 1);
 }
 
-/* media query for landscap and tablet */
-@media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 720px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops  961 961 961 */
   .showcase-card {
     display: flex;
   }
 
   .showcase-card > div {
-    height: 300px;
     max-width: 50%;
   }
 
@@ -93,37 +106,31 @@ const loader = useLoaderStore();
   }
 
   .showcase-card-txt {
-    padding-top: 0;
+    position: relative;
+    height: 300px;
   }
 
-  /* .showcase-card-txt>h3 {
-        margin-top: 0;
-        text-align: left;
-    } */
+  .showcase-btn {
+    position: absolute;
+    margin: 0;
+    bottom: -1rem;
+    left: 0;
+  }
 }
-
-/* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
-}
-
-/* media query for desktops */
-@media (min-width: 1025px) and (min-height: 625px) {
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .showcase-card-img {
+    padding-left: 10%;
+  }
   .showcase-card-img > img {
-    max-width: 70%;
+    object-fit: fill;
+    transform: translate(-35px, 0px);
   }
 
   .showcase-card-txt {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
   }
-
-  /* .showcase-card-txt>h3 {
-        text-align: left;
-        font-size: 1.2rem;
-        margin: 2rem 0;
-    } */
 
   .showcase-card-txt > p {
     max-width: 80%;
@@ -131,8 +138,11 @@ const loader = useLoaderStore();
   }
 
   .showcase-btn {
-    padding: 0.2rem;
+    /* margin-bottom: 0.5rem; */
   }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
 }
 
 /* media query for ajusts in desktops */
@@ -150,19 +160,19 @@ const loader = useLoaderStore();
 /* media query for ajusts in desktops */
 @media (min-width: 1600px) {
   /* .flickity-slider {
-    max-width: 60% !important;
-  } */
+      max-width: 60% !important;
+    } */
   .showcase-card-txt > p {
     max-width: 60%;
   }
 }
 
 /***-------------------------------------------------------
-        FLICKITY
--------------------------------------------------------***/
+          FLICKITY
+  -------------------------------------------------------***/
 
 .flickity-page-dots {
-  bottom: -1rem !important;
+  bottom: -3rem !important;
 }
 
 .flickity-page-dots .dot {
@@ -184,44 +194,5 @@ const loader = useLoaderStore();
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
-}
-
-/* media query for landscap and tablet */
-@media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
-  .flickity-page-dots {
-    bottom: -0rem !important;
-  }
-}
-
-/* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
-}
-
-/* media query for desktops */
-@media (min-width: 1025px) and (min-height: 625px) {
-  .flickity-page-dots {
-    position: absolute !important;
-    margin-bottom: -70px !important;
-  }
-
-  .flickity-prev-next-button.previous {
-    display: initial !important;
-    left: -100px !important;
-  }
-
-  .flickity-prev-next-button.next {
-    display: initial !important;
-    right: -100px !important;
-  }
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1445px) {
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1600px) {
 }
 </style>

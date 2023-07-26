@@ -36,28 +36,32 @@ function getTimelineLanguage() {
     <nav class="nav-content-hidden">
       <ul class="nav-content">
         <li class="nav-item" onclick="menuToggle()">
-          <a href="#cover-link">{{ loader.selectedLanguageData.menu.cover }}</a>
+          <a id="cover-menu-link" href="#cover-link">{{
+            loader.selectedLanguageData.menu.cover
+          }}</a>
         </li>
-        <li class="nav-item" onclick="menuToggle()">
-          <a href="#about-link">{{ loader.selectedLanguageData.menu.about }}</a>
+        <li class="nav-item" onclick="menuToggle('about')">
+          <a id="about-menu-link" href="#about-link">{{
+            loader.selectedLanguageData.menu.about
+          }}</a>
         </li>
-        <li class="nav-item hidden-mobile" onclick="menuToggle()">
-          <a href="#skills-link">{{
+        <li class="nav-item hidden-mobile" onclick="menuToggle('skills')">
+          <a id="skills-menu-link" href="#skills-link">{{
             loader.selectedLanguageData.menu.skills
           }}</a>
         </li>
-        <li class="nav-item" onclick="menuToggle()">
-          <a href="#showcases-link">{{
+        <li class="nav-item" onclick="menuToggle('showcases')">
+          <a id="showcases-menu-link" href="#showcases-link">{{
             loader.selectedLanguageData.menu.showcases
           }}</a>
         </li>
-        <li class="nav-item" onclick="menuToggle()">
-          <a href="#projects-link">{{
+        <li class="nav-item" onclick="menuToggle('projects')">
+          <a id="projects-menu-link" href="#projects-link">{{
             loader.selectedLanguageData.menu.projects
           }}</a>
         </li>
-        <li class="nav-item" onclick="menuToggle()">
-          <a href="#contact-link">{{
+        <li class="nav-item" onclick="menuToggle('contact')">
+          <a id="contact-menu-link" href="#contact-link">{{
             loader.selectedLanguageData.menu.contact
           }}</a>
         </li>
@@ -221,6 +225,13 @@ header {
         HEADER HAMBURGUER
 --------------------------------------------------------***/
 
+.selected {
+  color: var(--clr-base-link);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 0.35rem;
+  /* transition: all 1s linear; */
+}
+
 nav {
   position: absolute;
   margin: 0;
@@ -328,8 +339,8 @@ nav {
 
   .nav-item > a:hover {
     color: var(--clr-base-link);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 0.75rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    padding-bottom: 0.35rem;
   }
 
   .nav-item-select {

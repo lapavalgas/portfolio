@@ -53,7 +53,7 @@ const loader = useLoaderStore();
         </div>
       </a>
     </div>
-    <div id="author">Rafael Lapa Valgas / lapavalgas / Italo-brasiliani</div>
+    <div id="author"> {{ loader.selectedLanguageData.footer.txt }}</div>
   </footer>
 </template>
 <style>

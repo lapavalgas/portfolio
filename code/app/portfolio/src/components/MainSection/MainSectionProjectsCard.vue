@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import MainSectionProjectsCardTechstackVue from "./MainSectionProjectsCardTechstack.vue";
-import IconProjectCardVue from "@/components/MainSection/icons/IconProjectCard.vue";
+// import IconProjectCardVue from "@/components/MainSection/icons/IconProjectCard.vue";
+import IconGithubVue from "@/components/MainSection/icons/IconGithub.vue";
 import { useLoaderStore } from "@/stores/loader";
 const loader = useLoaderStore();
 </script>
@@ -13,7 +14,8 @@ const loader = useLoaderStore();
     <a :href="projectCard.link" class="project-card-link" target="_blank">
       <p>
         <span class="project-card-icon">
-          <IconProjectCardVue />
+          <!-- <IconProjectCardVue /> -->
+          <IconGithubVue />
         </span>
         <span class="title-section-content-projects">{{
           projectCard.title
@@ -62,7 +64,8 @@ margin: 4rem 0;
 
 .project-card-icon {
   position: absolute;
-  margin-top: 3px;
+  margin-top: -15px;
+  margin-left: -3px;
 }
 
 .project-card-techstack {

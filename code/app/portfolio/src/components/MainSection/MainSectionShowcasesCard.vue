@@ -2,7 +2,7 @@
 import { useLoaderStore } from "@/stores/loader";
 const loader = useLoaderStore();
 
-const BTN_VER_MAIS = "VER MAIS";
+const BTN_VER_MAIS = "SAIBA MAIS";
 </script>
 <template>
   <div
@@ -20,9 +20,9 @@ const BTN_VER_MAIS = "VER MAIS";
       <p>
         {{ showcaseCard.description }}
       </p>
-      <a target="_blank" class="showcase-btn" :href="showcaseCard.link">{{
-        BTN_VER_MAIS
-      }}</a>
+      <div target="_blank" class="showcase-btn">
+        <a :href="showcaseCard.link"> {{ BTN_VER_MAIS }}</a>
+      </div>
     </div>
   </div>
 </template>

@@ -93,7 +93,7 @@ const loader = useLoaderStore();
     margin-left: -1em;
   }
   .about-card-img > img {
-    box-shadow: 18px 18px 14px rgba(0, 0, 0, 0.08);
+    box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.08);
     transition: all 1s linear;
   }
 }

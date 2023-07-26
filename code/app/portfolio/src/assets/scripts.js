@@ -143,7 +143,53 @@ function scrollDownTransformToHidden() {
 
 // SCROLLING LOGIC CONTROLS
 
+function readElementsInViewPort() {
+  const viewportWidth =
+    window.innerWidth || document.documentElement.clientWidth;
+  const viewportHeight =
+    window.innerHeight || document.documentElement.clientHeight;
+
+  const portfolioScreens = [
+    document.querySelector("#cover-link"),
+    document.querySelector("#about"),
+    document.querySelector("#skills"),
+    document.querySelector("#showcases"),
+    document.querySelector("#projects"),
+    document.querySelector("#contact"),
+  ];
+
+  const portfolioScreensRect = portfolioScreens.map((e) => ({
+    screen: e.id,
+    screenRect: e.getBoundingClientRect(),
+  }));
+
+  return portfolioScreensRect.map((e) => ({
+    screen: e.screen,
+    isVisible:
+      e.screenRect.top >= 0 &&
+      e.screenRect.left >= 0 &&
+      e.screenRect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      e.screenRect.right <=
+        (window.innerWidth || document.documentElement.clientWidth),
+  }));
+}
+
+function navContentSelectMenuByViewport() {
+  let id;
+  const portfolioScreensInViewport = readElementsInViewPort();
+  for (const e of portfolioScreensInViewport) {
+    if (e.isVisible) {
+      navContentSelectMenuById(e.screen);
+      id = e.screen;
+    }
+  }
+  return id;
+}
+
 function scrollFunction() {
+  navContentUnselectAllMenu();
+  navContentSelectMenuByViewport();
   // to hidden footer in cover component
   if (isUserInCoverComponent()) {
     footerTransformToHidden();
@@ -198,7 +244,21 @@ function navContentTransformToVisible() {
   scrollingDisable();
 }
 
-function menuToggle() {
+function navContentUnselectAllMenu(id) {
+  let elementsToUnselect = document.getElementsByClassName("nav-item");
+  for (let el of elementsToUnselect) {
+    el.firstElementChild.classList.remove("selected");
+  }
+}
+
+function navContentSelectMenuById(id) {
+  navContentUnselectAllMenu();
+  document.getElementById(id + "-menu-link").classList.add("selected");
+}
+
+function menuToggle(id) {
+  navContentUnselectAllMenu();
+  navContentSelectMenuById(id);
   if (isUserInMobileDevice()) {
     if (isNavContentHidden()) {
       navContentTransformToVisible();

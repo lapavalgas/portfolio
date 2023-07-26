@@ -114,6 +114,8 @@ function checkLinks(str) {
 
 .contact-card-img > img {
   max-width: 60%;
+  box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.08);
+  transition: all 1s linear;
 }
 
 .contact-card-link {
@@ -154,10 +156,15 @@ function checkLinks(str) {
     min-width: 50%;
     margin-top: 0;
     margin-left: -5%;
-    
   }
   .title-section-content-contact {
     margin: 0;
+  }
+  .contact-card-img {
+    transform: translate(-20px, 30px);
+  }
+  .contact-card-txt {
+    transform: translate(-20px, 0px);
   }
 }
 
@@ -173,10 +180,25 @@ function checkLinks(str) {
   } */
 }
 
+@media (min-width: 1024px) {
+  .contact-card-img {
+    transform: translate(-55px, -0px);
+  }
+  .contact-card-txt {
+    transform: translate(-55px, 0px);
+  }
+}
+
 /* media query for landscap smarts  and tablet */
 @media (min-width: 1180px) {
   .contact-card {
     padding: 0;
+  }
+  .contact-card-img {
+    transform: translate(-55px, -7px);
+  }
+  .contact-card-txt {
+    transform: translate(-55px, 0px);
   }
   /* .about-card-img {
   }

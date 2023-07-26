@@ -190,7 +190,7 @@ const loader = useLoaderStore();
 @media (orientation: landscape) and (min-width: 640px),
   (min-width: 768px) and (max-width: 1024px) {
   .flickity-page-dots {
-    bottom: -0rem !important;
+    /* bottom: -0rem !important; */
   }
 }
 
