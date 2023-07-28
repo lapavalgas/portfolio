@@ -12,107 +12,79 @@
   "sections": {
     "cover": {
       "name": "Rafael Lapa Valgas",
-      "profession": "Ingegnere del Software"
+      "profession": "Software Engineer"
     },
     "about": {
-      "title": "Su di me",
+      "title": "",
       "card": {
-        "title": "",
-        "description": "Sono un ingegnere software con ampia esperienza nello sviluppo, manutenzione e qualità delle API sia sincrone che asincrone per ambienti mainframe, web e mobile. Ho lavorato come consulente presso la più grande istituzione finanziaria dell'America Latina, Itaú Unibanco, dove mi sono occupato di sistemi antifrode, distribuzione interna dei dati e canali di assistenza clienti. Possiedo un master professionale in Informatica per la Salute, durante il quale ho condotto un progetto di informatizzazione della neuropsicologia in contesti ospedalieri, con particolare attenzione all'usabilità e all'esperienza utente. Sento una grande passione nel lavorare con la tecnologia, poiché credo nel suo potenziale di migliorare la vita delle persone. La mia motivazione come ingegnere software è lavorare in squadre motivate e contribuire al successo di progetti innovativi. Oltre ad essere un ingegnere software, sono anche uno psicologo, ma questa è un'altra storia..."
+        "title": ", ",
+        "description": ""
       }
     },
     "skills": {
-      "title": "Abilità",
+      "title": "",
       "cards": [
         {
-          "title": "INGEGNERE DEL SOFTWARE",
-          "description": "Come ingegnere software, guido progetti e team con l'obiettivo di ottenere risultati. Pianifico, coordino e comunico in modo efficace con gli stakeholder. Gestisco risorse, rischi e scadenze per raggiungere gli obiettivi. Promuovo la collaborazione e la motivazione, incentivando un ambiente di lavoro positivo. Il mio impegno è consegnare progetti innovativi e di alta qualità, spingendo il successo del team e dell'organizzazione. 🚀👨‍💻🤝"
+          "title": "",
+          "description": ""
         },
         {
-          "title": "SVILUPPATORE FULL STACK",
-          "description": "Come sviluppatore fullstack, sono responsabile per la creazione di soluzioni complete e innovative. Sul front-end, utilizzo tecnologie come React, Angular o Vue.js per sviluppare interfacce amichevoli e accattivanti. Sul back-end, lavoro con Node.js, Python o Java, garantendo la robustezza e l'efficienza delle API. Il mio obiettivo è fornire prodotti di alta qualità, collaborando in tutte le fasi dello sviluppo e garantendo un'esperienza eccezionale per l'utente. 🚀💻🎨"
+          "title": "",
+
+          "description": ""
         },
         {
-          "title": "GARANZIA DI QUALITÀ",
-          "description": "Come analista di qualità, la mia missione è garantire l'eccellenza dei prodotti sviluppati. Effettuo test dettagliati su diverse piattaforme, come web e mobile, utilizzando strumenti come Selenium e Postman. Documento i risultati, segnalo i bug e collaboro con il team di sviluppo per migliorare l'usabilità e le prestazioni dei sistemi. Il mio impegno è consegnare prodotti affidabili e di alto livello, assicurando la soddisfazione degli utenti. 🕵️‍♂️🔍💡"
+          "title": "",
+          "description": ""
         }
       ]
     },
     "showcases": {
-      "title": "Esempi",
+      "title": "",
       "cards": [
         {
-          "title": "Sistema di gestione della valutazione neuropsicologica",
-          "description": "La mia ricerca di master si è concentrata sulla fattibilità di un sistema di gestione per valutazioni neuropsicologiche ospedaliere. Utilizzando la metodologia Design Science Research, ho sviluppato un prototipo funzionale con VueJs per valutare l'usabilità. I risultati hanno indicato miglioramenti nella pratica neuropsicologica, evidenziando la necessità di standard per il trasferimento di dati. La mia tesi completa è disponibile nella biblioteca online dell'università. Sono disponibile a discutere questa ricerca. 🧠💻",
-          "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_neuropsychology_prototype/main/resources/HNAMS_02.png",
-          "link": "https://github.com/lapavalgas/undergraduate_neuropsychology_prototype"
-        },
-        {
-          "title": "Sistema di registrazione clienti e convalida CAP",
-          "description": "Partecipai a una sfida tecnica per dimostrare le mie competenze nello sviluppo fullstack. Ho sviluppato un'applicazione con Java, Spring Boot e VueJs per la registrazione dei clienti, con la validazione degli indirizzi tramite il CEP utilizzando l'API dei Correios. Ho utilizzato Graphql per la comunicazione tra le API e H2 come database. Ho sviluppato test unitari con jUnit e test di interfaccia con Cypress. Ho reso il progetto disponibile come immagine di Docker Compose. 🚀💻📅",
-          "img": "https://raw.githubusercontent.com/lapavalgas/technical_showcase_zip_code_app/main/resources/ZC_03.jpeg",
-          "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app"
-        },
-        {
-          "title": "Sistema di servizio rapido / Progetto di completamento del corso",
-          "description": "No Progetto finale della laurea, ho sviluppato il sistema MVP Fast Service, un marketplace di servizi. Il backend in Java con Spring è stato pubblicato su Heroku, mentre il frontend in VueJs su Vercel. Ho utilizzato Docker e MySQL in locale. L'apprendimento è stato gratificante e mi ha preparato per nuove sfide. 🚀💼💻",
-          "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_fastservice/main/resources/fastservice_01.png",
-          "link": "https://github.com/lapavalgas/undergraduate_fastservice"
+          "title": "",
+          "description": " ",
+          "img": "",
+          "link": ""
         }
       ]
     },
     "projects": {
-      "title": "Progetti ",
+      "title": "Projetos ",
       "cards": [
         {
-          "title": "masterdegree_neuropsychology_prototype",
-          "description": "About the research and the prototype developed during the master's degree.",
-          "techstack": ["TypeScript", "Vue", "CSS", "Docker"],
-          "link": "https://github.com/lapavalgas/masterdegree_neuropsychology_prototype"
-        },
-        {
-          "title": "technical_showcase_zip_code_app",
-          "description": "This was a technical challenge for a Java Full Stack job interview",
-          "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
-          "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app"
-        },
-        {
-          "title": "undergraduate_fastservice",
-          "description": "Final project of the undergraduate course in Systems Analysis and Development",
-          "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
-          "link": "https://github.com/lapavalgas/undergraduate_fastservice"
-        },
-        {
-          "title": "undergraduate_repositories",
-          "description": "This repository contains the projects I had made during the university graduation.",
-          "techstack": ["Java", "Python", "JavaScript", "CSS", "Docker"],
-          "link": "https://github.com/lapavalgas/undergraduate_repositories"
-        },
-        {
-          "title": "Scripts",
-          "description": "Set of useful scripts I developed for daily use, for example organize files, photos and images",
-          "techstack": ["Python"],
-          "link": "https://github.com/lapavalgas/scripts"
+          "title": "",
+          "description": "",
+          "techstack": [],
+          "link": ""
         }
       ]
     },
     "contact": {
-      "title": "Contatti",
-      "card": {
-        "title": "Contact!",
-        "descriptions": ""
+      "title": "",
+      "card_farewell": {
+        "title": "!",
+        "description": ""
+      },
+      "card_psychology": {
+        "title": "",
+        "description": "",
+        "link_description": "",
+        "link": ""
       }
     }
   },
   "footer": {
-    "linkedin": "LinkedIn",
-    "linkedin_link": "https://www.linkedin.com/in/lapavalgas/",
-    "github": "Github",
-    "github_link": "https://github.com/lapavalgas",
-    "email": "E-mail",
-    "email_link": "lapavalgas@gmail.com",
-    "resume": "Resume",
+    "linkedin": "",
+    "linkedin_link": "",
+    "github": "",
+    "github_link": "",
+    "email": "E-",
+    "email_link": "",
+    "resume": "",
     "resume_link": "",
-    "scrolldown": "scrolldown"
+    "scrolldown": "",
+    "txt": ""
   }
 }
