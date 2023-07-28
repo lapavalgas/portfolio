@@ -3,8 +3,6 @@ import MainSectionShowcasesCardVue from "@/components/MainSection/MainSectionSho
 import { useLoaderStore } from "@/stores/loader";
 const loader = useLoaderStore();
 </script>
-
-<!-- data-flickity-options='{"wrapAround":false, "pageDots":true,"adaptiveHeight":false,}' -->
 <template>
   <section id="showcases">
     <div class="section-wallpaper section-padding-8" id="showcases-wallpaper">
@@ -82,15 +80,6 @@ const loader = useLoaderStore();
   box-shadow: 2px 2px 15px rgba(35, 35, 35, 1);
 }
 
-@media (min-width: 320px) {
-  /* smartphones, iPhone, portrait 480x320 phones */
-}
-@media (min-width: 481px) {
-  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-}
-@media (min-width: 641px) {
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-}
 @media (min-width: 720px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops  961 961 961 */
   .showcase-card {
@@ -159,40 +148,8 @@ const loader = useLoaderStore();
 
 /* media query for ajusts in desktops */
 @media (min-width: 1600px) {
-  /* .flickity-slider {
-      max-width: 60% !important;
-    } */
   .showcase-card-txt > p {
     max-width: 60%;
   }
-}
-
-/***-------------------------------------------------------
-          FLICKITY
-  -------------------------------------------------------***/
-
-.flickity-page-dots {
-  bottom: -3rem !important;
-}
-
-.flickity-page-dots .dot {
-  background: var(--clr-base-white) !important;
-}
-
-.flickity-prev-next-button.previous {
-  display: none !important;
-}
-
-.flickity-prev-next-button.next {
-  display: none !important;
-}
-
-.scrollable-place {
-  height: 3000px;
-}
-
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
 }
 </style>

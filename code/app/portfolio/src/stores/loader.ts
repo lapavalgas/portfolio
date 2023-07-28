@@ -35,7 +35,7 @@ export const useLoaderStore = defineStore("loader", {
           this.selectedLanguageData = portuguese;
           break;
         case ITALIAN:
-          this.selectedLanguageData = italian; // o italian json está errado
+          this.selectedLanguageData = italian;
           break;
         default:
           break;

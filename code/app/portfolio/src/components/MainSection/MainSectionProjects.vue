@@ -23,11 +23,6 @@ const loader = useLoaderStore();
 /***-------------------------------------------------------
         PROJECTS
 -------------------------------------------------------***/
-
-/* #projects {
-    margin: 4rem 0;
-} */
-
 #projects-wallpaper {
   background: var(--bg-clr-base-white);
 }
@@ -81,23 +76,10 @@ const loader = useLoaderStore();
   }
 }
 
-/* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
-}
-
 /* media query for desktops */
 @media (min-width: 1025px) and (min-height: 625px) {
   .projects-card {
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1445px) {
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1600px) {
 }
 </style>

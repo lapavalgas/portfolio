@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useLoaderStore } from "@/stores/loader";
 const loader = useLoaderStore();
-
 const BTN_VER_MAIS = "SAIBA MAIS";
 </script>
 <template>

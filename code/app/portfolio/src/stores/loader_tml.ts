@@ -1,44 +1,7 @@
 import { defineStore } from "pinia";
 
-// STUDY
-import EE_TML_2010 from "@/data/timeline/data/study/ee_tml_2010.json";
-import EE_TML_2011 from "@/data/timeline/data/study/ee_tml_2011.json";
-import EE_TML_2013 from "@/data/timeline/data/study/ee_tml_2013.json";
-import EE_TML_2016 from "@/data/timeline/data/study/ee_tml_2016.json";
-import EE_TML_2017 from "@/data/timeline/data/study/ee_tml_2017.json";
-import EE_TML_2019 from "@/data/timeline/data/study/ee_tml_2019.json";
-import EE_TML_2023 from "@/data/timeline/data/study/ee_tml_2023.json";
-
-// WORK
-import we_TML_2001 from "@/data/timeline/data/work/we_tml_2001.json";
-import we_TML_2007 from "@/data/timeline/data/work/we_tml_2007.json";
-import we_TML_2012 from "@/data/timeline/data/work/we_tml_2012.json";
-import we_TML_2013 from "@/data/timeline/data/work/we_tml_2013.json";
-import we_TML_2016 from "@/data/timeline/data/work/we_tml_2016.json";
-import we_TML_2017 from "@/data/timeline/data/work/we_tml_2017.json";
-import we_TML_2020 from "@/data/timeline/data/work/we_tml_2020.json";
-
 export const useLoaderTmlStore = defineStore("loaderTml", {
-  state: () => ({
-    // study_list: [
-    //   EE_TML_2010,
-    //   EE_TML_2011,
-    //   EE_TML_2013,
-    //   EE_TML_2016,
-    //   EE_TML_2017,
-    //   EE_TML_2019,
-    //   EE_TML_2023,
-    // ],
-    // work_list: [
-    //   we_TML_2001,
-    //   we_TML_2007,
-    //   we_TML_2012,
-    //   we_TML_2013,
-    //   we_TML_2016,
-    //   we_TML_2017,
-    //   we_TML_2020,
-    // ],
-  }),
+  state: () => ({}),
 
   getters: {},
 
@@ -47,7 +10,6 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
       let cardsList: any[] = [];
       let id = 0;
 
-      // STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY STUDY
       for (const study of study_list) {
         const classroomMonitorList = study.classroom_monitor;
         const requiredInternshipList = study.required_internship;
@@ -301,13 +263,13 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
         return card;
       });
 
-      // SORT ASC
+      // TO SORT ASC
 
       // const sortedAsc = arr1.sort(
       //   (objA, objB) => Number(objA.date) - Number(objB.date),
       // );
 
-      // SORT DESC
+      // TO SORT DESC
 
       // const sortedDesc = arr1.sort(
       //   (objA, objB) => Number(objB.date) - Number(objA.date),

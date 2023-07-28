@@ -54,21 +54,6 @@ const loader = useLoaderStore();
   color: var(--default-color-text);
 }
 
-/* .scrolldown {
-  position: absolute;
-  width: 100%;
-  bottom: 1rem;
-  font-size: 0.7rem;
-  text-align: center;
-  letter-spacing: 0.15rem;
-  color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 1s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -moz-transition: all 1s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -ms-transition: all 1s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -o-transition: all 1s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  transition: all 1s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-} */
-
 /* media query for landscap and tablet */
 @media (orientation: landscape) and (min-width: 640px),
   (min-width: 768px) and (max-width: 1024px) {
@@ -80,11 +65,6 @@ const loader = useLoaderStore();
     letter-spacing: 0.2rem;
     font-size: 3vw;
   }
-}
-
-/* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
 }
 
 /* media query for desktops */
@@ -99,10 +79,6 @@ const loader = useLoaderStore();
     letter-spacing: 0.2rem;
     font-size: 1.5vw;
   }
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1445px) {
 }
 
 /* media query for ajusts in desktops */

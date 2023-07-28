@@ -7,10 +7,12 @@ import MainSectionProjectsVue from "./MainSectionProjects.vue";
 import MainSectionContactVue from "./MainSectionContact.vue";
 </script>
 <template>
-  <MainSectionCoverVue />
-  <MainSectionAboutVue />
-  <MainSectionSkillsVue />
-  <MainSectionShowcasesVue />
-  <MainSectionProjectsVue />
-  <MainSectionContactVue />
+  <span>
+    <MainSectionCoverVue />
+    <MainSectionAboutVue />
+    <MainSectionSkillsVue />
+    <MainSectionShowcasesVue />
+    <MainSectionProjectsVue />
+    <MainSectionContactVue />
+  </span>
 </template>

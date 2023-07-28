@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import MainSectionProjectsCardTechstackVue from "./MainSectionProjectsCardTechstack.vue";
-// import IconProjectCardVue from "@/components/MainSection/icons/IconProjectCard.vue";
 import IconGithubVue from "@/components/MainSection/icons/IconGithub.vue";
 import { useLoaderStore } from "@/stores/loader";
 const loader = useLoaderStore();
@@ -14,7 +13,6 @@ const loader = useLoaderStore();
     <a :href="projectCard.link" class="project-card-link" target="_blank">
       <p>
         <span class="project-card-icon">
-          <!-- <IconProjectCardVue /> -->
           <IconGithubVue />
         </span>
         <span class="title-section-content-projects">{{
@@ -34,19 +32,13 @@ const loader = useLoaderStore();
 /***-------------------------------------------------------
 PROJECTS
 -------------------------------------------------------***/
-
-/* #projects {
-margin: 4rem 0;
-} */
-
 #projects-wallpaper {
   background: var(--bg-clr-base-white);
 }
 
-.project-card:hover{
-    transition: all 0.47s linear;
-    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.04);
-
+.project-card:hover {
+  transition: all 0.47s linear;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.04);
 }
 
 .project-card {
@@ -107,23 +99,10 @@ margin: 4rem 0;
   }
 }
 
-/* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
-}
-
 /* media query for desktops */
 @media (min-width: 1025px) and (min-height: 625px) {
   .projects-card {
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1445px) {
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1600px) {
 }
 </style>

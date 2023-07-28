@@ -16,8 +16,12 @@ function handleChange(e: any) {
 
 const ENGLISH = "english";
 const ENGLISH_ABB = "en";
+
 const PORTUGUESE = "português";
 const PORTUGUESE_ABB = "pt";
+
+const ITALIANO = "Italiano";
+const ITALIANO_ABB = "it";
 
 function getTimelineLanguage() {
   switch (loader.selectedLanguage.toLowerCase()) {
@@ -25,6 +29,8 @@ function getTimelineLanguage() {
       return ENGLISH_ABB;
     case PORTUGUESE.toLowerCase():
       return PORTUGUESE_ABB;
+    case ITALIANO.toLowerCase():
+      return ITALIANO_ABB;
     default:
       return navigator.language;
   }
@@ -66,21 +72,17 @@ function getTimelineLanguage() {
           }}</a>
         </li>
         <li class="nav-item" onclick="menuToggle()">
-          <a target="_blank" :href="'/tml/' + getTimelineLanguage()">{{
+          <a target="_blank" :href="'/timeline/' + getTimelineLanguage()">{{
             loader.selectedLanguageData.menu.timeline
           }}</a>
         </li>
-        <!-- <li class="nav-item" onclick="menuToggle()">
-          <a href="/resume" target="_blank">{{
-            loader.selectedLanguageData.menu.resume
-          }}</a>
-        </li> -->
         <li class="nav-item-select">
           <select class="form-select" @change="handleChange">
             <option
               v-for="language in loader.menuLanguage"
               :value="language"
               :selected="isThislanguageTheUserLanguage(language)"
+              :key="language"
             >
               {{ language }}
             </option>
@@ -180,16 +182,6 @@ header {
   opacity: 0;
 }
 
-/* media query for landscap and tablet */
-@media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
-}
-
-/* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
-}
-
 /* media query for desktops */
 @media (min-width: 1025px) and (min-height: 625px) {
   header {
@@ -211,14 +203,6 @@ header {
     margin: 0;
     padding: 0;
   }
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1445px) {
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1600px) {
 }
 
 /***-------------------------------------------------------
@@ -285,16 +269,6 @@ nav {
 .form-select:hover {
   color: black;
   border-bottom: var(--border-cards);
-}
-
-/* media query for landscap and tablet */
-@media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
-}
-
-/* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
 }
 
 /* media query for desktops */

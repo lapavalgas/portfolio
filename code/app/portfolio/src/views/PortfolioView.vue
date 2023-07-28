@@ -7,9 +7,11 @@ const loader = useLoaderStore();
 loader.configUserLanguage();
 </script>
 <template>
-  <HeaderMenuVue />
-  <main>
-    <MainSectionVue />
-  </main>
-  <FooterLinksVue />
+  <span>
+    <HeaderMenuVue />
+    <main>
+      <MainSectionVue />
+    </main>
+    <FooterLinksVue />
+  </span>
 </template>

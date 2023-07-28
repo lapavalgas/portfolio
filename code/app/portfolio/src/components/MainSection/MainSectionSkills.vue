@@ -34,11 +34,6 @@ const loader = useLoaderStore();
   font-size: var(--fs-small);
 }
 
-/* .skill-card>h3 {
-    font-size: var(--fs-h5);
-    font-weight: 600;
-} */
-
 /* media query for landscap and tablet */
 @media (orientation: landscape) and (min-width: 640px),
   (min-width: 768px) and (max-width: 1024px) {
@@ -74,12 +69,6 @@ const loader = useLoaderStore();
     font-size: initial;
   }
 
-  /* .skill-card>h3 {
-        font-size: var(--fs-h4);
-        margin-top: 0;
-        margin-bottom: 2rem;
-    } */
-
   .skill-card > p {
     margin-top: 0;
     margin-bottom: 0;
@@ -92,9 +81,5 @@ const loader = useLoaderStore();
     margin-top: 1rem;
     display: flex;
   }
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1600px) {
 }
 </style>

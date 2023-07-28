@@ -14,13 +14,13 @@ import PT_EE_TML_2019 from "@/data/timeline/data/study/ee_tml_2019.json";
 import PT_EE_TML_2023 from "@/data/timeline/data/study/ee_tml_2023.json";
 
 // WORK
-import PT_we_TML_2001 from "@/data/timeline/data/work/we_tml_2001.json";
-import PT_we_TML_2007 from "@/data/timeline/data/work/we_tml_2007.json";
-import PT_we_TML_2012 from "@/data/timeline/data/work/we_tml_2012.json";
-import PT_we_TML_2013 from "@/data/timeline/data/work/we_tml_2013.json";
-import PT_we_TML_2016 from "@/data/timeline/data/work/we_tml_2016.json";
-import PT_we_TML_2017 from "@/data/timeline/data/work/we_tml_2017.json";
-import PT_we_TML_2020 from "@/data/timeline/data/work/we_tml_2020.json";
+import PT_WE_TML_2001 from "@/data/timeline/data/work/we_tml_2001.json";
+import PT_WE_TML_2007 from "@/data/timeline/data/work/we_tml_2007.json";
+import PT_WE_TML_2012 from "@/data/timeline/data/work/we_tml_2012.json";
+import PT_WE_TML_2013 from "@/data/timeline/data/work/we_tml_2013.json";
+import PT_WE_TML_2016 from "@/data/timeline/data/work/we_tml_2016.json";
+import PT_WE_TML_2017 from "@/data/timeline/data/work/we_tml_2017.json";
+import PT_WE_TML_2020 from "@/data/timeline/data/work/we_tml_2020.json";
 
 const props = defineProps({
   lang: Object,
@@ -40,7 +40,26 @@ let interfaceTxt = {
   txt_study: "Academic",
   txt_work: "Work",
 };
-let cards;
+let cards = loader.getAllCards(
+  [
+    PT_EE_TML_2010,
+    PT_EE_TML_2011,
+    PT_EE_TML_2013,
+    PT_EE_TML_2016,
+    PT_EE_TML_2017,
+    PT_EE_TML_2019,
+    PT_EE_TML_2023,
+  ],
+  [
+    PT_WE_TML_2001,
+    PT_WE_TML_2007,
+    PT_WE_TML_2012,
+    PT_WE_TML_2013,
+    PT_WE_TML_2016,
+    PT_WE_TML_2017,
+    PT_WE_TML_2020,
+  ]
+);
 switch (lang) {
   case "pt":
     interfaceTxt = {
@@ -65,37 +84,17 @@ switch (lang) {
         PT_EE_TML_2023,
       ],
       [
-        PT_we_TML_2001,
-        PT_we_TML_2007,
-        PT_we_TML_2012,
-        PT_we_TML_2013,
-        PT_we_TML_2016,
-        PT_we_TML_2017,
-        PT_we_TML_2020,
+        PT_WE_TML_2001,
+        PT_WE_TML_2007,
+        PT_WE_TML_2012,
+        PT_WE_TML_2013,
+        PT_WE_TML_2016,
+        PT_WE_TML_2017,
+        PT_WE_TML_2020,
       ]
     );
     break;
-  default: // TODO: here is to link the english files
-    cards = loader.getAllCards(
-      [
-        PT_EE_TML_2010,
-        PT_EE_TML_2011,
-        PT_EE_TML_2013,
-        PT_EE_TML_2016,
-        PT_EE_TML_2017,
-        PT_EE_TML_2019,
-        PT_EE_TML_2023,
-      ],
-      [
-        PT_we_TML_2001,
-        PT_we_TML_2007,
-        PT_we_TML_2012,
-        PT_we_TML_2013,
-        PT_we_TML_2016,
-        PT_we_TML_2017,
-        PT_we_TML_2020,
-      ]
-    );
+  default:
     break;
 }
 
@@ -127,7 +126,6 @@ function filterAndReloadCardsComponent() {
       <span>
         <button type="button" class="btn btn-primarytimeline-btn">
           <a href="/" tag="button">{{ interfaceTxt.btn_back }}</a>
-          <!-- <router-link to="/" tag="button">Voltar</router-link> -->
         </button></span
       >
       <span style="margin-left: 20px">
@@ -233,7 +231,6 @@ function filterAndReloadCardsComponent() {
 }
 :root {
   --background: white;
-  /* --background: #FAFEFF; */
 
   --background-timeline: rgb(180, 180, 180);
   --background-timeline-container: rgb(251, 251, 251);
@@ -243,10 +240,6 @@ function filterAndReloadCardsComponent() {
 
   --border-timeline-content-more: rgba(230, 230, 230, 0.502);
 }
-
-/* body {
-  background-color: var(--background);
-} */
 
 .timeline {
   position: relative;
@@ -325,8 +318,6 @@ function filterAndReloadCardsComponent() {
   box-shadow: 0px 0px 12px var(--shadow-hover-timeline-container);
 }
 
-/* ARROW TYPE LINE */
-
 .left .timeline-container-content .timeline-arrow::before {
   content: " ";
   position: absolute;
@@ -336,20 +327,6 @@ function filterAndReloadCardsComponent() {
   width: 20px;
   height: 1px;
 }
-
-/* ARROW TYPE TRIANGLE */
-
-/* .left .timeline-container-content .timeline-arrow::before {
-    content: " ";
-    position: absolute;
-    top: 21px;
-    margin-left: 30px;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid var(--background-timeline-container-arrow);
-} */
 
 .left .timeline-container-content .timeline-arrow::after {
   content: " ";
@@ -363,8 +340,6 @@ function filterAndReloadCardsComponent() {
   border: 1px solid var(--background-timeline);
 }
 
-/* ARROW TYPE LINE */
-
 .right .timeline-container-content .timeline-arrow::before {
   content: " ";
   position: absolute;
@@ -374,20 +349,6 @@ function filterAndReloadCardsComponent() {
   width: 23px;
   height: 1px;
 }
-
-/* ARROW TYPE TRIANGLE */
-
-/* .right .timeline-container-content .timeline-arrow::before {
-    content: " ";
-    position: absolute;
-    top: 21px;
-    margin-left: -40px;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid var(--background-timeline-container-arrow);
-} */
 
 .right .timeline-container-content .timeline-arrow::after {
   content: " ";
@@ -456,38 +417,13 @@ function filterAndReloadCardsComponent() {
     padding: 5px;
   }
 
-  /* ARROW TYPE LINE */
-
   .left .timeline-container-content .timeline-arrow::before {
     margin-left: -23px;
   }
 
-  /* ARROW TYPE TRIANGLE */
-
-  /*
-    .left .timeline-container-content .timeline-arrow::before {
-        border-left: 0px;
-        margin-left: -15px;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-right: 10px solid var(--background-timeline-container-arrow);
-    } */
-
-  /* ARROW TYPE LINE */
-
   .right .timeline-container-content .timeline-arrow::before {
     margin-left: -23px;
   }
-
-  /* ARROW TYPE TRIANGLE */
-
-  /*
-    .right .timeline-container-content .timeline-arrow::before {
-        margin-left: -15px;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-right: 10px solid var(--background-timeline-container-arrow);
-    } */
 
   .left .timeline-container-content .timeline-arrow::after {
     margin-left: -25px;

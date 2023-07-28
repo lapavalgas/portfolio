@@ -42,8 +42,6 @@ let toggle_card_is_active = false;
 let toggle_card_txt_links = false;
 let toggle_card_txt_txt = false;
 let toggle_card_txt_topics = true;
-// var toggle_ = false;
-// var toggle_ = false;
 </script>
 <template>
   <span v-if="data.isToDisplay">
@@ -140,7 +138,6 @@ let toggle_card_txt_topics = true;
 }
 .time-line-content-more-start {
   font-size: 1em;
-  /* font-weight: 600; */
 }
 .time-line-content-more {
   font-size: 0.75em;

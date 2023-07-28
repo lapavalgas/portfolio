@@ -11,7 +11,12 @@ const router = createRouter({
       component: PortfolioViewVue,
     },
     {
-      path: "/tml/:lang",
+      path: "/portfolio",
+      name: "portfolio-b",
+      component: PortfolioViewVue,
+    },
+    {
+      path: "/timeline/:lang",
       name: "timeline",
       component: TimelineViewVue,
       props: true,

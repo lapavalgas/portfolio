@@ -43,7 +43,6 @@ const techstackDotColor: Record<string, string> = {
   Selenium: GREEN,
   PHP: VIOLET,
   Wordpress: BLUE,
-
 };
 
 function setupDotColor(techstack: string) {
