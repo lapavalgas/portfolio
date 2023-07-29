@@ -11,11 +11,7 @@ const loader = useLoaderStore();
           {{ loader.selectedLanguageData.sections.showcases.title }}
         </h2>
         <div class="content-area">
-          <div class="showcases-card">
-            <div class="showcases-card-js-flickity js-flickity main-carousel">
-              <MainSectionShowcasesCardVue />
-            </div>
-          </div>
+          <MainSectionShowcasesCardVue />
         </div>
       </div>
     </div>
@@ -32,7 +28,6 @@ const loader = useLoaderStore();
 
 .showcases-card {
   width: 100%;
-  /* height: 100%; */
   margin-top: 2rem;
 }
 
@@ -125,17 +120,10 @@ const loader = useLoaderStore();
     max-width: 80%;
     margin-top: 0;
   }
-
-  .showcase-btn {
-    /* margin-bottom: 0.5rem; */
-  }
-}
-@media (min-width: 1281px) {
-  /* hi-res laptops and desktops */
 }
 
-/* media query for ajusts in desktops */
 @media (min-width: 1445px) {
+  /* media query for ajusts in desktops */
   .showcase-card-img > img {
     max-width: 60%;
     float: right;
@@ -146,8 +134,8 @@ const loader = useLoaderStore();
   }
 }
 
-/* media query for ajusts in desktops */
 @media (min-width: 1600px) {
+  /* media query for ajusts in desktops */
   .showcase-card-txt > p {
     max-width: 60%;
   }

@@ -5,27 +5,33 @@ import { useLoaderStore } from "@/stores/loader";
 const loader = useLoaderStore();
 </script>
 <template>
-  <div
-    class="project-card"
-    v-for="projectCard in loader.selectedLanguageData.sections.projects.cards"
-    :value="projectCard"
-  >
-    <a :href="projectCard.link" class="project-card-link" target="_blank">
-      <p>
-        <span class="project-card-icon">
-          <IconGithubVue />
-        </span>
-        <span class="title-section-content-projects">{{
-          projectCard.title
-        }}</span>
-      </p>
-      <p>
-        {{ projectCard.description }}
-      </p>
-      <MainSectionProjectsCardTechstackVue
-        :techstacks="projectCard.techstack"
-      />
-    </a>
+  <div class="content-area">
+    <div class="projects-card">
+      <div
+        class="project-card"
+        v-for="projectCard in loader.selectedLanguageData.sections.projects
+          .cards"
+        :value="projectCard"
+        :key="projectCard.title"
+      >
+        <a :href="projectCard.link" class="project-card-link" target="_blank">
+          <p>
+            <span class="project-card-icon">
+              <IconGithubVue />
+            </span>
+            <span class="title-section-content-projects">{{
+              projectCard.title
+            }}</span>
+          </p>
+          <p>
+            {{ projectCard.description }}
+          </p>
+          <MainSectionProjectsCardTechstackVue
+            :techstacks="projectCard.techstack"
+          />
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 <style>

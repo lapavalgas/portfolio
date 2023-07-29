@@ -18,7 +18,8 @@
       "title": "Sobre mim",
       "card": {
         "title": "Olá, ",
-        "description": "Sou engenheiro de software com ampla experiência no desenvolvimento, manutenção e qualidade de APIs síncronas e assíncronas para ambientes mainframe, web e mobile. Atuei como consultor na maior instituição financeira da América Latina, o Itaú Unibanco, onde atuei com sistemas antifraude, distribuição interna de dados e os canais de atendimento ao cliente. Possuo mestrado profissional em Informática em Saúde no qual conduzi um projeto de informatização da neuropsicologia em ambientes hospitalares, com foco na usabilidade e experiência do usuário. Sinto paixão por trabalhar com tecnologia, pois acredito no potencial que ela tem de melhorar a vida das pessoas. Minha motivação como engenheiro de software é trabalhar em equipes engajadas e contribuir para o sucesso de projetos inovadores. Além de engenheiro de software sou psicólogo, mas essa é outra história…"
+        "description": "Sou engenheiro de software com ampla experiência no desenvolvimento, manutenção e qualidade de APIs síncronas e assíncronas para ambientes mainframe, web e mobile. Atuei como consultor na maior instituição financeira da América Latina, o Itaú Unibanco, onde atuei com sistemas antifraude, distribuição interna de dados e os canais de atendimento ao cliente. Possuo mestrado profissional em Informática em Saúde no qual conduzi um projeto de informatização da neuropsicologia em ambientes hospitalares, com foco na usabilidade e experiência do usuário. Sinto paixão por trabalhar com tecnologia, pois acredito no potencial que ela tem de melhorar a vida das pessoas. Minha motivação como engenheiro de software é trabalhar em equipes engajadas e contribuir para o sucesso de projetos inovadores. Além de engenheiro de software sou psicólogo, mas essa é outra história…",
+        "link_img": "https://media.licdn.com/dms/image/D4D03AQEHpmO7L_ylZw/profile-displayphoto-shrink_800_800/0/1668777662832?e=1695859200&v=beta&t=38uEw1rlWF4Z7USp4ybs_oJ_W0SjMsls1EkmG_MdqmE"
       }
     },
     "skills": {
@@ -101,7 +102,8 @@
       "title": "Contate-me",
       "card_farewell": {
         "title": "Obrigado!",
-        "description": "Agradeço por acompanhar minha trajetória como Engenheiro de Software! Que tal trabalharmos juntos? 🤝 Ficarei feliz em conversar com você e compartilhar experiências! Entre em contato pelo LinkedIn, envie um e-mail ou acesse meu currículo. Espero conversarmos em breve! 📧📄"
+        "description": "Agradeço por acompanhar minha trajetória como Engenheiro de Software! Que tal trabalharmos juntos? 🤝 Ficarei feliz em conversar com você e compartilhar experiências! Entre em contato pelo LinkedIn, envie um e-mail ou acesse meu currículo. Espero conversarmos em breve! 📧📄",
+        "link_img": "https://media.licdn.com/dms/image/D4D03AQEHpmO7L_ylZw/profile-displayphoto-shrink_800_800/0/1668777662832?e=1695859200&v=beta&t=38uEw1rlWF4Z7USp4ybs_oJ_W0SjMsls1EkmG_MdqmE"
       },
       "card_psychology": {
         "title": "",

@@ -14,9 +14,7 @@ const loader = useLoaderStore();
           {{ loader.selectedLanguageData.sections.skills.title }}
         </h2>
         <div class="content-area">
-          <div class="skills-card">
-            <MainSectionSkillsCardVue />
-          </div>
+          <MainSectionSkillsCardVue />
         </div>
       </div>
     </div>
@@ -34,9 +32,8 @@ const loader = useLoaderStore();
   font-size: var(--fs-small);
 }
 
-/* media query for landscap and tablet */
 @media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
+  /* media query for landscap and tablet */ (min-width: 768px) and (max-width: 1024px) {
   .skills-card {
     margin-top: 0.5rem;
     display: flex;
@@ -50,17 +47,16 @@ const loader = useLoaderStore();
   }
 }
 
-/* media query for ajusts in landscape and tablet */
 @media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
+  /* media query for ajusts in landscape and tablet */ (min-width: 768px) and (max-width: 1024px) {
   .skills-card {
     margin-top: 1rem;
     display: flex;
   }
 }
 
-/* media query for desktops */
 @media (min-width: 1025px) and (min-height: 625px) {
+  /* media query for desktops */
   .skill-card {
     max-width: 320px;
     min-width: 320px;
@@ -75,8 +71,8 @@ const loader = useLoaderStore();
   }
 }
 
-/* media query for ajusts in desktops */
 @media (min-width: 1445px) {
+  /* media query for ajusts in desktops */
   .skills-card {
     margin-top: 1rem;
     display: flex;

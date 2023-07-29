@@ -12,7 +12,13 @@ const loader = useLoaderStore();
         <div class="content-area">
           <div class="contact-card">
             <div class="contact-card-img">
-              <img src="@/assets/eumesmo.jpg" alt="" />
+              <img
+                :src="
+                  loader.selectedLanguageData.sections.contact.card_farewell
+                    .link_img
+                "
+                alt=""
+              />
             </div>
             <div class="contact-card-txt">
               <h3 class="title-section-content title-section-content-contact">
@@ -50,7 +56,6 @@ const loader = useLoaderStore();
         CONTACT
 -------------------------------------------------------***/
 #contact {
-  /* height: 100%; */
   color: var(--clr-base-white);
 }
 
@@ -122,10 +127,6 @@ const loader = useLoaderStore();
   .contact-card-txt {
     transform: translate(-20px, 0px);
   }
-}
-
-/* media query for landscap smarts  and tablet */
-@media (min-width: 915px) {
 }
 
 @media (min-width: 1024px) {

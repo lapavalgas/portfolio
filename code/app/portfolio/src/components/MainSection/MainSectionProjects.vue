@@ -10,11 +10,7 @@ const loader = useLoaderStore();
         <h2 id="projects-link" class="projects-title title-section">
           {{ loader.selectedLanguageData.sections.projects.title }}
         </h2>
-        <div class="content-area">
-          <div class="projects-card">
             <MainSectionProjectsCardVue />
-          </div>
-        </div>
       </div>
     </div>
   </section>

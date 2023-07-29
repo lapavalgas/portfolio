@@ -45,7 +45,7 @@ const techstackDotColor: Record<string, string> = {
   Wordpress: BLUE,
 };
 
-function setupDotColor(techstack: string) {
+function setupDotColor(techstack: any) {
   return techstackDotColor[techstack];
 }
 </script>
@@ -55,6 +55,7 @@ function setupDotColor(techstack: string) {
       class="project-card-techstack-item"
       v-for="techstack in props.techstacks"
       :value="techstack"
+      :key="techstack[0]"
     >
       <div
         class="project-language"

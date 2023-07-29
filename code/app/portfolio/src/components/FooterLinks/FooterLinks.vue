@@ -7,58 +7,60 @@ import { useLoaderStore } from "@/stores/loader";
 const loader = useLoaderStore();
 </script>
 <template>
-  <div class="scrolldown">
-    {{ loader.selectedLanguageData.footer.scrolldown }}
-  </div>
-  <footer>
-    <div class="social-media">
-      <a
-        class="link"
-        target="_blank"
-        loader.selectedLanguageData.footer-title="LinkedIn"
-        :href="loader.selectedLanguageData.footer.linkedin_link"
-      >
-        <IconLinkedinVue />
-        <div id="linkedin">
-          {{ loader.selectedLanguageData.footer.linkedin }}
-        </div>
-      </a>
-      <a
-        class="link"
-        target="_blank"
-        loader.selectedLanguageData.footer-title="GitHub"
-        :href="loader.selectedLanguageData.footer.github_link"
-      >
-        <IconGithubVue />
-        <div id="github">{{ loader.selectedLanguageData.footer.github }}</div>
-      </a>
-      <a
-        class="link"
-        target="_blank"
-        loader.selectedLanguageData.footer-title="E-mail"
-        :href="loader.selectedLanguageData.footer.email_link"
-      >
-        <IconEmailVue />
-        <div id="email">{{ loader.selectedLanguageData.footer.email }}</div>
-      </a>
-      <a
-        class="link"
-        target="_blank"
-        loader.selectedLanguageData.footer-title="Resume"
-        :href="loader.selectedLanguageData.footer.resume_link"
-      >
-        <IconResumeVue />
-        <div id="curriculum">
-          {{ loader.selectedLanguageData.footer.resume }}
-        </div>
-      </a>
+  <span>
+    <div class="scrolldown">
+      {{ loader.selectedLanguageData.footer.scrolldown }}
     </div>
-    <div id="author"> {{ loader.selectedLanguageData.footer.txt }}</div>
-  </footer>
+    <footer>
+      <div class="social-media">
+        <a
+          class="link"
+          target="_blank"
+          loader.selectedLanguageData.footer-title="LinkedIn"
+          :href="loader.selectedLanguageData.footer.linkedin_link"
+        >
+          <IconLinkedinVue />
+          <div id="linkedin">
+            {{ loader.selectedLanguageData.footer.linkedin }}
+          </div>
+        </a>
+        <a
+          class="link"
+          target="_blank"
+          loader.selectedLanguageData.footer-title="GitHub"
+          :href="loader.selectedLanguageData.footer.github_link"
+        >
+          <IconGithubVue />
+          <div id="github">{{ loader.selectedLanguageData.footer.github }}</div>
+        </a>
+        <a
+          class="link"
+          target="_blank"
+          loader.selectedLanguageData.footer-title="E-mail"
+          :href="loader.selectedLanguageData.footer.email_link"
+        >
+          <IconEmailVue />
+          <div id="email">{{ loader.selectedLanguageData.footer.email }}</div>
+        </a>
+        <a
+          class="link"
+          target="_blank"
+          loader.selectedLanguageData.footer-title="Resume"
+          :href="loader.selectedLanguageData.footer.resume_link"
+        >
+          <IconResumeVue />
+          <div id="curriculum">
+            {{ loader.selectedLanguageData.footer.resume }}
+          </div>
+        </a>
+      </div>
+      <div id="author">{{ loader.selectedLanguageData.footer.txt }}</div>
+    </footer>
+  </span>
 </template>
 <style>
 /***-------------------------------------------------------
-        FOOTER
+FOOTER
 --------------------------------------------------------***/
 #author {
   position: absolute;
@@ -157,28 +159,6 @@ footer {
 .link:hover #email,
 .link:hover #curriculum {
   display: block;
-}
-
-/* media query for landscap and tablet */
-@media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
-}
-
-/* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
-}
-
-/* media query for desktops */
-@media (min-width: 1025px) and (min-height: 625px) {
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1445px) {
-}
-
-/* media query for ajusts in desktops */
-@media (min-width: 1600px) {
 }
 
 .scrolldown {
