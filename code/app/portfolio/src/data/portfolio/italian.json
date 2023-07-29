@@ -19,7 +19,8 @@
       "card": {
         "title": ", ",
         "description": "",
-        "link_img": ""
+        "img": "https://media.licdn.com/dms/image/D4D03AQEHpmO7L_ylZw/profile-displayphoto-shrink_800_800/0/1668777662832?e=1695859200&v=beta&t=38uEw1rlWF4Z7USp4ybs_oJ_W0SjMsls1EkmG_MdqmE",
+        "img_alt": "Imagem do meu primeiro setup"
       }
     },
     "skills": {
@@ -47,6 +48,7 @@
           "title": "",
           "description": " ",
           "img": "",
+          "img_alt": "",
           "link": ""
         }
       ]
@@ -67,7 +69,8 @@
       "card_farewell": {
         "title": "!",
         "description": "",
-        "link_img": "https://media.licdn.com/dms/image/D4D03AQEHpmO7L_ylZw/profile-displayphoto-shrink_800_800/0/1668777662832?e=1695859200&v=beta&t=38uEw1rlWF4Z7USp4ybs_oJ_W0SjMsls1EkmG_MdqmE"
+        "img": "https://media.licdn.com/dms/image/D4D03AQEHpmO7L_ylZw/profile-displayphoto-shrink_800_800/0/1668777662832?e=1695859200&v=beta&t=38uEw1rlWF4Z7USp4ybs_oJ_W0SjMsls1EkmG_MdqmE",
+        "img_alt": "Uma foto de perfil"
       },
       "card_psychology": {
         "title": "",

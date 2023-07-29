@@ -51,16 +51,11 @@ function isUserInMobileDevice() {
 }
 
 function isUserInCoverComponent() {
-  return !(
-    document.body.scrollTop > 70 || document.documentElement.scrollTop > 70
-  );
+  return !(document.body.scrollTop > 70 || document.documentElement.scrollTop > 70);
 }
 
 function isUserInFooterComponent() {
-  return (
-    window.innerHeight + window.scrollY >=
-    document.body.scrollHeight - bottomHeightToChangeFooterColors
-  );
+  return window.innerHeight + window.scrollY >= document.body.scrollHeight - bottomHeightToChangeFooterColors;
 }
 
 function isNavContentHidden() {
@@ -88,8 +83,7 @@ function footerTransformToVisible() {
 }
 
 function footerTransformToContactComponent() {
-  document.getElementsByTagName("footer")[0].style.backgroundColor =
-    __background_contact;
+  document.getElementsByTagName("footer")[0].style.backgroundColor = __background_contact;
   let array = document.getElementsByClassName("icon");
   for (let element of array) {
     element.style.fill = __default_main_color_white;
@@ -101,8 +95,7 @@ function footerTransformToContactComponent() {
 }
 
 function footerTransformToFooterComponent() {
-  document.getElementsByTagName("footer")[0].style.backgroundColor =
-    __background_white;
+  document.getElementsByTagName("footer")[0].style.backgroundColor = __background_white;
   let array = document.getElementsByClassName("icon");
   for (let element of array) {
     element.style.fill = __default_main_color_black;
@@ -114,17 +107,13 @@ function footerTransformToFooterComponent() {
 }
 
 function menuTransformColorWhite() {
-  document.getElementsByTagName("ul")[0].style.color =
-    __default_main_color_white;
-  document.getElementsByClassName("form-select")[0].style.border =
-    __menuFormSelectColor_white;
+  document.getElementsByTagName("ul")[0].style.color = __default_main_color_white;
+  document.getElementsByClassName("form-select")[0].style.border = __menuFormSelectColor_white;
 }
 
 function menuTransformColorBlack() {
-  document.getElementsByTagName("ul")[0].style.color =
-    __default_main_color_black;
-  document.getElementsByClassName("form-select")[0].style.border =
-    __menuFormSelectColor_black;
+  document.getElementsByTagName("ul")[0].style.color = __default_main_color_black;
+  document.getElementsByClassName("form-select")[0].style.border = __menuFormSelectColor_black;
 }
 
 function logoTransformOpacityZero() {
@@ -134,12 +123,10 @@ function logoTransformOpacityOne() {
   document.getElementsByClassName("logo")[0].style.opacity = 1;
 }
 function logoTransformColorBlack() {
-  document.getElementsByClassName("logo")[0].style.color =
-    __default_main_color_black;
+  document.getElementsByClassName("logo")[0].style.color = __default_main_color_black;
 }
 function logoTransformColorWhite() {
-  document.getElementsByClassName("logo")[0].style.color =
-    __default_main_color_white;
+  document.getElementsByClassName("logo")[0].style.color = __default_main_color_white;
 }
 function scrollDownTransformToVisible() {
   document.getElementsByClassName("scrolldown")[0].style.opacity = 1;
@@ -175,9 +162,7 @@ function navContentTransformToHidden() {
 }
 
 function navContentTransformToVisible() {
-  document
-    .getElementsByTagName("nav")[0]
-    .classList.remove("nav-content-hidden");
+  document.getElementsByTagName("nav")[0].classList.remove("nav-content-hidden");
   scrollingDisable();
 }
 
@@ -213,10 +198,8 @@ function readElementsInViewPort() {
     isVisible:
       e.screenRect.top >= 0 &&
       e.screenRect.left >= 0 &&
-      e.screenRect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      e.screenRect.right <=
-        (window.innerWidth || document.documentElement.clientWidth),
+      e.screenRect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      e.screenRect.right <= (window.innerWidth || document.documentElement.clientWidth),
   }));
 }
 
@@ -274,4 +257,12 @@ function scrollFunction() {
     logoTransformColorBlack();
     menuTransformColorBlack();
   }
+}
+
+/***-------------------------------------------------------
+          UUIDv4
+--------------------------------------------------------***/
+
+function uuidv4() {
+  return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) => (c ^ (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))).toString(16));
 }

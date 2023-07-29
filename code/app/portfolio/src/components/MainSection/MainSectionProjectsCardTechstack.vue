@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useLoaderStore } from "@/stores/loader";
+
 const loader = useLoaderStore();
+
 const props = defineProps({ techstacks: Array<String> });
 
 const RED = "red";
@@ -51,19 +53,30 @@ function setupDotColor(techstack: any) {
 </script>
 <template>
   <div class="project-card-techstack">
-    <div
-      class="project-card-techstack-item"
-      v-for="techstack in props.techstacks"
-      :value="techstack"
-      :key="techstack[0]"
-    >
-      <div
-        class="project-language"
-        :style="`--background: ${setupDotColor(techstack)}`"
-      ></div>
+    <div class="project-card-techstack-item" v-for="techstack in props.techstacks" :key="techstack[0]">
+      <div class="project-language" :style="`--background: ${setupDotColor(techstack)}`"></div>
       <div>
         {{ techstack }}
       </div>
     </div>
   </div>
 </template>
+<style scoped>
+.project-card-techstack {
+  display: flex;
+}
+.project-card-techstack-item {
+  margin-top: 0.65rem;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.project-language {
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  --background: rgba(0, 0, 0, 0);
+  background: var(--background);
+}
+</style>

@@ -2,46 +2,34 @@
 import MainSectionProjectsCardTechstackVue from "./MainSectionProjectsCardTechstack.vue";
 import IconGithubVue from "@/components/MainSection/icons/IconGithub.vue";
 import { useLoaderStore } from "@/stores/loader";
+
 const loader = useLoaderStore();
+
+function getCards() {
+  return loader.projectsInterface.cards;
+}
 </script>
 <template>
-  <div class="content-area">
-    <div class="projects-card">
-      <div
-        class="project-card"
-        v-for="projectCard in loader.selectedLanguageData.sections.projects
-          .cards"
-        :value="projectCard"
-        :key="projectCard.title"
-      >
-        <a :href="projectCard.link" class="project-card-link" target="_blank">
-          <p>
-            <span class="project-card-icon">
-              <IconGithubVue />
-            </span>
-            <span class="title-section-content-projects">{{
-              projectCard.title
-            }}</span>
-          </p>
-          <p>
-            {{ projectCard.description }}
-          </p>
-          <MainSectionProjectsCardTechstackVue
-            :techstacks="projectCard.techstack"
-          />
-        </a>
-      </div>
+  <div class="projects-card">
+    <div class="project-card" v-for="card in getCards()" :key="card.title">
+      <a :href="card.link" class="project-card-link" target="_blank">
+        <p>
+          <span class="project-card-icon">
+            <IconGithubVue />
+          </span>
+          <span class="title-section-content-projects">{{ card.title }}</span>
+        </p>
+        <p>
+          {{ card.description }}
+        </p>
+        <span class="content-area-inside">
+          <MainSectionProjectsCardTechstackVue :techstacks="card.techstack" />
+        </span>
+      </a>
     </div>
   </div>
 </template>
-<style>
-/***-------------------------------------------------------
-PROJECTS
--------------------------------------------------------***/
-#projects-wallpaper {
-  background: var(--bg-clr-base-white);
-}
-
+<style scoped>
 .project-card:hover {
   transition: all 0.47s linear;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.04);
@@ -72,29 +60,7 @@ PROJECTS
   margin-left: -3px;
 }
 
-.project-card-techstack {
-  display: flex;
-}
-
-.project-card-techstack-item {
-  margin-top: 0.65rem;
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.project-language {
-  margin-right: 5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  --background: rgba(0, 0, 0, 0);
-  background: var(--background);
-}
-
-/* media query for landscap and tablet */
-@media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
+@media (orientation: landscape) and (min-width: 640px), (min-width: 768px) and (max-width: 1024px) {
   .projects-card {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
@@ -105,7 +71,6 @@ PROJECTS
   }
 }
 
-/* media query for desktops */
 @media (min-width: 1025px) and (min-height: 625px) {
   .projects-card {
     grid-template-columns: repeat(3, minmax(200px, 1fr));

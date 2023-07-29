@@ -1,81 +1,29 @@
 <script setup lang="ts">
 import MainSectionProjectsCardVue from "@/components/MainSection/MainSectionProjectsCard.vue";
 import { useLoaderStore } from "@/stores/loader";
+
 const loader = useLoaderStore();
+
+function getTitle() {
+  return loader.projectsInterface.title;
+}
 </script>
 <template>
   <section id="projects">
     <div class="section-wallpaper section-padding-8" id="projects-wallpaper">
       <div class="section-content">
         <h2 id="projects-link" class="projects-title title-section">
-          {{ loader.selectedLanguageData.sections.projects.title }}
+          {{ getTitle() }}
         </h2>
-            <MainSectionProjectsCardVue />
+        <div class="content-area">
+          <MainSectionProjectsCardVue />
+        </div>
       </div>
     </div>
   </section>
 </template>
 <style scoped>
-/***-------------------------------------------------------
-        PROJECTS
--------------------------------------------------------***/
 #projects-wallpaper {
   background: var(--bg-clr-base-white);
-}
-
-.project-card {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  border: var(--border-cards);
-  font-size: var(--fs-small);
-}
-
-.project-card > p {
-  margin: 0;
-  padding: 5px 0;
-}
-
-.project-card-icon {
-  position: absolute;
-  margin-top: 3px;
-}
-
-.project-card-techstack {
-  display: flex;
-}
-
-.project-card-techstack-item {
-  margin-top: 0.65rem;
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.project-language {
-  margin-right: 5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  background: #f1e05a;
-}
-
-/* media query for landscap and tablet */
-@media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
-  .projects-card {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-  }
-
-  .project-card {
-    margin: 0.5rem;
-  }
-}
-
-/* media query for desktops */
-@media (min-width: 1025px) and (min-height: 625px) {
-  .projects-card {
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-  }
 }
 </style>

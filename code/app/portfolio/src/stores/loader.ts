@@ -17,6 +17,13 @@ export const useLoaderStore = defineStore("loader", {
 
   getters: {
     menuLanguage: (state) => languages.list,
+
+    coverInterface: (state) => state.selectedLanguageData.sections.cover,
+    aboutInterface: (state) => state.selectedLanguageData.sections.about,
+    skillsInterface: (state) => state.selectedLanguageData.sections.skills,
+    showcasesInterface: (state) => state.selectedLanguageData.sections.showcases,
+    projectsInterface: (state) => state.selectedLanguageData.sections.projects,
+    contatInterface: (state) => state.selectedLanguageData.sections.contact,
   },
 
   actions: {

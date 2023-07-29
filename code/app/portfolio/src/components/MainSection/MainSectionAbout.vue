@@ -1,25 +1,40 @@
 <script setup lang="ts">
 import { useLoaderStore } from "@/stores/loader";
+
 const loader = useLoaderStore();
+
+function getTitle() {
+  return loader.aboutInterface.title;
+}
+function getCardTitle() {
+  return loader.aboutInterface.card.title;
+}
+function getCardDescription() {
+  return loader.aboutInterface.card.description;
+}
+function getCardImg() {
+  return loader.aboutInterface.card.img;
+}
+function getCardImgAlt() {
+  return loader.aboutInterface.card.img_alt;
+}
 </script>
 <template>
   <section id="about">
     <div class="section-wallpaper section-margin-top-8" id="about-wallpaper">
       <div class="section-content">
         <h2 id="about-link" class="about-title title-section">
-          {{ loader.selectedLanguageData.sections.about.title }}
+          {{ getTitle() }}
         </h2>
         <div class="content-area">
           <div class="about-card">
             <div class="about-card-txt">
               <p>
-                {{
-                  loader.selectedLanguageData.sections.about.card.description
-                }}
+                {{ getCardDescription() }}
               </p>
             </div>
             <div class="about-card-img">
-              <img src="@/assets/aboutmeimg.jpg" alt="" />
+              <img :src="getCardImg()" :alt="getCardImgAlt()" />
             </div>
           </div>
         </div>
@@ -27,10 +42,7 @@ const loader = useLoaderStore();
     </div>
   </section>
 </template>
-<style>
-/***-------------------------------------------------------
-        ABOUT 
--------------------------------------------------------***/
+<style scoped>
 #about-wallpaper {
   background: var(--bg-clr-base-white);
 }
@@ -48,9 +60,7 @@ const loader = useLoaderStore();
   object-fit: fill;
   min-width: 100%;
 }
-
 @media (min-width: 961px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
   .about-card {
     align-items: normal;
     display: flex;
@@ -74,7 +84,6 @@ const loader = useLoaderStore();
   }
 }
 @media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
   .about-card {
   }
   .about-card-txt {
@@ -89,7 +98,6 @@ const loader = useLoaderStore();
   }
 }
 @media (min-width: 1281px) {
-  /* hi-res laptops and desktops */
   .about-card-txt > p {
   }
   .about-card-img {
