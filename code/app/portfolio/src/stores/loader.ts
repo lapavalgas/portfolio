@@ -9,6 +9,10 @@ const ENGLISH = languages.list[0];
 const PORTUGUESE = languages.list[1];
 const ITALIAN = languages.list[2];
 
+const ENGLISH_ABB = "en";
+const PORTUGUESE_ABB = "pt";
+const ITALIAN_ABB = "it";
+
 export const useLoaderStore = defineStore("loader", {
   state: () => ({
     selectedLanguage: "english",
@@ -16,6 +20,14 @@ export const useLoaderStore = defineStore("loader", {
   }),
 
   getters: {
+    ENGLISH: (state) => ENGLISH,
+    PORTUGUESE: (state) => PORTUGUESE,
+    ITALIAN: (state) => ITALIAN,
+
+    ENGLISH_ABB: (state) => ENGLISH_ABB,
+    PORTUGUESE_ABB: (state) => PORTUGUESE_ABB,
+    ITALIAN_ABB: (state) => ITALIAN_ABB,
+
     menuLanguage: (state) => languages.list,
 
     coverInterface: (state) => state.selectedLanguageData.sections.cover,

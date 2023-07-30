@@ -1,12 +1,30 @@
 import { defineStore } from "pinia";
 
+import languages from "@/data/languages.json";
+
+const ENGLISH = languages.list[0];
+const PORTUGUESE = languages.list[1];
+const ITALIAN = languages.list[2];
+
+const ENGLISH_ABB = "en";
+const PORTUGUESE_ABB = "pt";
+const ITALIAN_ABB = "it";
+
 export const useLoaderTmlStore = defineStore("loaderTml", {
   state: () => ({}),
 
-  getters: {},
+  getters: {
+    ENGLISH: (state) => ENGLISH,
+    PORTUGUESE: (state) => PORTUGUESE,
+    ITALIAN: (state) => ITALIAN,
+
+    ENGLISH_ABB: (state) => ENGLISH_ABB,
+    PORTUGUESE_ABB: (state) => PORTUGUESE_ABB,
+    ITALIAN_ABB: (state) => ITALIAN_ABB,
+  },
 
   actions: {
-    getAllCards(study_list, work_list) {
+    getAllCards(study_list: any, work_list: any) {
       let cardsList: any[] = [];
       let id = 0;
 
@@ -16,12 +34,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
         const internshipList = study.internship;
         const researchList = study.research;
 
-        const _local =
-          study.location.city +
-          ", " +
-          study.location.state +
-          ", " +
-          study.location.country;
+        const _local = study.location.city + ", " + study.location.state + ", " + study.location.country;
 
         const _category = study.category;
 
@@ -63,10 +76,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
               localParteB: project.project,
               localParteC: _local,
               txtStart: null,
-              txtFullText:
-                project.description.intro +
-                " " +
-                project.description.conclusion,
+              txtFullText: project.description.intro + " " + project.description.conclusion,
               txtTopics: project.description.tasks,
               txtLinks: study.link,
               id: id,
@@ -92,10 +102,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
               localParteB: project.project,
               localParteC: _local,
               txtStart: null,
-              txtFullText:
-                project.description.intro +
-                " " +
-                project.description.conclusion,
+              txtFullText: project.description.intro + " " + project.description.conclusion,
               txtTopics: project.description.tasks,
               txtLinks: study.link,
               id: id,
@@ -121,10 +128,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
               localParteB: project.project,
               localParteC: _local,
               txtStart: null,
-              txtFullText:
-                project.description.intro +
-                " " +
-                project.description.conclusion,
+              txtFullText: project.description.intro + " " + project.description.conclusion,
               txtTopics: project.description.tasks,
               txtLinks: study.link,
               id: id,
@@ -150,10 +154,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
               localParteB: project.project,
               localParteC: _local,
               txtStart: null,
-              txtFullText:
-                project.description.intro +
-                " " +
-                project.description.conclusion,
+              txtFullText: project.description.intro + " " + project.description.conclusion,
               txtTopics: project.description.tasks,
               txtLinks: study.link,
               id: id,
@@ -167,12 +168,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
       for (const work of work_list) {
         const positionsList = work.positions;
 
-        const _local =
-          work.location.city +
-          ", " +
-          work.location.state +
-          ", " +
-          work.location.country;
+        const _local = work.location.city + ", " + work.location.state + ", " + work.location.country;
 
         const _category = work.category;
 
@@ -214,10 +210,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
               localParteB: project.project,
               localParteC: _local,
               txtStart: null,
-              txtFullText:
-                project.description.intro +
-                " " +
-                project.description.conclusion,
+              txtFullText: project.description.intro + " " + project.description.conclusion,
               txtTopics: project.description.tasks,
               txtLinks: work.link,
               id: id,
@@ -290,27 +283,16 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
         return card;
       });
 
-      cardsList = cardsList.sort(
-        (objA, objB) =>
-          Number(objB.pointInTimeline) - Number(objA.pointInTimeline)
-      );
+      cardsList = cardsList.sort((objA, objB) => Number(objB.pointInTimeline) - Number(objA.pointInTimeline));
 
       let cards_by_year_and_month: any[] = [];
 
       for (const card of cardsList) {
-        if (
-          !cards_by_year_and_month.find(
-            (obj) => obj.year === card.year && obj.month === card.month
-          )
-        ) {
+        if (!cards_by_year_and_month.find((obj) => obj.year === card.year && obj.month === card.month)) {
           cards_by_year_and_month.push({
             year: card.year,
             month: card.month,
-            cards: cardsList.filter(
-              (card_filter) =>
-                card_filter.year === card.year &&
-                card_filter.month === card.month
-            ),
+            cards: cardsList.filter((card_filter) => card_filter.year === card.year && card_filter.month === card.month),
           });
         }
       }

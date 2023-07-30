@@ -1,13 +1,37 @@
 <script setup lang="ts">
 import Card from "./Card.vue";
+import { useLoaderTmlStore } from "@/stores/loader_tml";
 
 const props = defineProps({
   data: Object,
+  lang: String,
   filterYears: String,
-  filterCategory: Array,
+  filterCategory: Object,
 });
 
-function startCardFirst(list: []) {
+const loader = useLoaderTmlStore();
+
+const lang = !props.lang ? loader.ENGLISH_ABB : props.lang.substring(0, 2);
+
+const filterYears = !props.filterYears ? "" : props.filterYears;
+
+const filterCategory = !props.filterCategory ? {} : props.filterCategory;
+
+const categoryFilters: Record<string, string> = {
+  musica: "filterMusic",
+  psicologia: "filterPsychology",
+  informatica: "filterInformatic",
+  letras: "filterLanguage",
+};
+
+interface Card {
+  isEndCard: boolean;
+  isStartCard: boolean;
+  category: string;
+  id: string;
+}
+
+function startCardFirst(list: Card[]) {
   for (const el of list) {
     if (!el.isEndCard && el.isStartCard) {
       const index = list.indexOf(el);
@@ -18,88 +42,32 @@ function startCardFirst(list: []) {
   return list;
 }
 
-let filterYears = props.filterYears;
-let filterCategory = props.filterCategory;
-
-function isAValidYear(year) {
-  if (filterYears === undefined || filterYears === "") {
+function cardYearIsAValidFilteredYear(cardYear: string) {
+  if (!filterYears || filterYears.trim() === "") {
     return true;
   }
-  let filterYearsList = filterYears
-    .replaceAll(".", ";")
-    .replaceAll("/", ";")
-    .replaceAll("\\", ";")
-    .replaceAll("|", ";")
-    .replaceAll(" ", ";")
-    .replaceAll("`", ";")
-    .replaceAll("´", ";")
-    .replaceAll("[", ";")
-    .replaceAll("]", ";")
-    .replaceAll("~", ";")
-    .replaceAll("^", ";")
-    .replaceAll(":", ";")
-    .replaceAll("<", ";")
-    .replaceAll(">", ";")
-    .replaceAll(".", ";")
-    .replaceAll("-", ";")
-    .replaceAll("=", ";")
-    .replaceAll(" ", ";")
-    .replaceAll(";;", ";")
-    .split(";");
+
+  // check if it is a range of years and validate the cards
+  let filterYearsList = filterYears.trim().split("-");
   if (filterYearsList.length === 2) {
-    filterYearsList.sort(
-      (objA, objB) =>
-        Number(objB.pointInTimeline) - Number(objA.pointInTimeline)
-    );
-    if (year >= filterYearsList[0] && year <= filterYearsList[1]) {
+    filterYearsList.sort((objA, objB) => Number(objB) - Number(objA));
+    if (cardYear <= filterYearsList[0] && cardYear >= filterYearsList[1]) {
       return true;
     }
   }
-  if (filterYearsList.indexOf(year) !== -1) {
+
+  // if not, separate the years and validate the cards
+  filterYearsList = filterYears
+    .replace(/[./\\| `´\[\]~^:<>.\-=;]+/g, ";")
+    .split(";")
+    .filter((e) => e !== "");
+
+  if (filterYearsList.indexOf(cardYear) !== -1) {
     return true;
   }
 }
 
-function isAValidCategory(category) {
-  if (category === "musica" && filterCategory.filterMusic) {
-    return true;
-  }
-  if (category === "psicologia" && filterCategory.filterPsychology) {
-    return true;
-  }
-  if (category === "informatica" && filterCategory.filterInformatic) {
-    return true;
-  }
-  if (category === "letras" && filterCategory.filterLanguage) {
-    return true;
-  }
-  if (
-    !filterCategory.filterMusic &&
-    !filterCategory.filterPsychology &&
-    !filterCategory.filterInformatic &&
-    !filterCategory.filterLanguage
-  ) {
-    return true;
-  }
-}
-
-function isAValidCategoryList(categoryList) {
-  if (typeof categoryList == "string") {
-    return isAValidCategory(categoryList);
-  }
-  if (Array.isArray(categoryList)) {
-    let is_valid = false;
-    for (const category of categoryList) {
-      is_valid = isAValidCategory(category);
-      if (is_valid) {
-        return true;
-      }
-    }
-    return false;
-  }
-}
-
-function isCurrentDate(card) {
+function cardDateIsCurrentDate(card: Record<string, string>) {
   const date = new Date();
   date.setDate(2);
   let year = date.getFullYear();
@@ -111,78 +79,118 @@ function isCurrentDate(card) {
   }
 }
 
-function getMonthInFull(month) {
-  if (month === "01") {
-    return "Janeiro";
+function isAValidCategory(cardCategory: string) {
+  // checks if filters are applied, otherwise it allows access to all categories
+  if (!Object.values(filterCategory).some(Boolean)) {
+    return true;
   }
-  if (month === "02") {
-    return "Fevereiro";
+  // checks if the cardcategory is valid
+  if (categoryFilters[cardCategory] && filterCategory[categoryFilters[cardCategory]]) {
+    return true;
   }
-  if (month === "03") {
-    return "Marco";
-  }
-  if (month === "04") {
-    return "Abril";
-  }
-  if (month === "05") {
-    return "Maio";
-  }
-  if (month === "06") {
-    return "Junho";
-  }
-  if (month === "07") {
-    return "Julho";
-  }
-  if (month === "08") {
-    return "Agosto";
-  }
-  if (month === "09") {
-    return "Setembro";
-  }
-  if (month === "10") {
-    return "Outubro";
-  }
-  if (month === "11") {
-    return "Novembro";
-  }
-  if (month === "12") {
-    return "Dezembro";
-  }
+  return false;
 }
 
-// let newYearControl = [];
-// function isNewYear(cardYear) {
-//   for (const yearControl of newYearControl) {
-//     if (yearControl === cardYear) {
-//       return false;
-//     }
-//   }
-//   newYearControl.push(cardYear);
-//   return true;
-// this not work properly because the html is rendering from top to botton
-// is necessary here control the total of a cards by year and rendering this in the last one;
-// will be very easy if this logic came from the service context by a boolean
-// }
+function cardCategoryIsAValidFilteredCategory(categoryList: string | string[]) {
+  if (typeof categoryList === "string") {
+    return isAValidCategory(categoryList);
+  }
+  if (Array.isArray(categoryList)) {
+    return categoryList.some(isAValidCategory);
+  }
+  return false;
+}
+
+function isPortugueseLanguage() {
+  return lang === loader.PORTUGUESE_ABB;
+}
+
+type MonthNames = {
+  en: string;
+  pt: string;
+};
+
+type MonthsMap = {
+  [month: string]: MonthNames;
+};
+
+function getMonthInFull(month: string) {
+  const months: MonthsMap = {
+    "01": { en: "January", pt: "Janeiro" },
+    "02": { en: "February", pt: "Fevereiro" },
+    "03": { en: "March", pt: "Março" },
+    "04": { en: "April", pt: "Abril" },
+    "05": { en: "May", pt: "Maio" },
+    "06": { en: "June", pt: "Junho" },
+    "07": { en: "July", pt: "Julho" },
+    "08": { en: "August", pt: "Agosto" },
+    "09": { en: "September", pt: "Setembro" },
+    "10": { en: "October", pt: "Outubro" },
+    "11": { en: "November", pt: "Novembro" },
+    "12": { en: "December", pt: "Dezembro" },
+  };
+
+  const language = isPortugueseLanguage() ? "pt" : "en";
+  return months[month]?.[language] || "Invalid Month";
+}
 </script>
 <template>
   <div class="container">
-    <span v-for="year in data" :value="year" :key="year">
-      <span v-if="isAValidYear(year.year) && !isCurrentDate(year)">
+    <span v-for="year in data" :key="year">
+      <span v-if="cardYearIsAValidFilteredYear(year.year) && !cardDateIsCurrentDate(year)">
         <div class="timeline">
-          <span
-            v-for="card in startCardFirst(year.cards)"
-            :value="card"
-            :key="card"
-          >
-            <span v-if="isAValidCategoryList(card.category)">
-              <Card :data="card" />
+          <span v-for="card in startCardFirst(year.cards)" :key="card.id">
+            <span v-if="cardCategoryIsAValidFilteredCategory(card.category)">
+              <Card :data="card" :lang="lang" />
             </span>
           </span>
           <div class="timeline-year">
-            <span>{{ getMonthInFull(year.month) }} de {{ year.year }}</span>
+            <span v-if="isPortugueseLanguage()">{{ getMonthInFull(year.month) }} de {{ year.year }}</span>
+            <span v-else>{{ getMonthInFull(year.month) }}, {{ year.year }}</span>
           </div>
         </div>
       </span>
     </span>
   </div>
 </template>
+<style scoped>
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline-year {
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  font-weight: 600;
+}
+.timeline-year > span {
+  padding: 1%;
+  background-color: var(--background);
+  z-index: 1;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: var(--background-timeline);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  box-shadow: 4px 4px 10px var(--shadow-timeline-container);
+}
+@media screen and (max-width: 600px) {
+  .timeline-year {
+    text-align: left;
+  }
+  .timeline-year > span {
+    margin-left: 10px;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+}
+</style>

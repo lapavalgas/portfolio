@@ -5,13 +5,11 @@
 -------------------------------------------------------***/
 
 /* media query for landscap and tablet */
-@media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
+@media (orientation: landscape) and (min-width: 640px), (min-width: 768px) and (max-width: 1024px) {
 }
 
 /* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
+@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px), (min-width: 768px) and (max-width: 1024px) {
 }
 
 /* media query for desktops */
@@ -40,18 +38,8 @@
 
   /* bg - background-color */
   --bg-clr-base-white: white;
-  --bg-clr-cover: linear-gradient(
-    180deg,
-    rgba(122, 174, 213, 1) 0%,
-    rgba(188, 213, 225, 1) 55%,
-    rgba(237, 234, 228, 1) 85%,
-    rgba(255, 255, 255, 0.5) 99%
-  );
-  --bg-clr-showcases: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    #405b70 70%
-  );
+  --bg-clr-cover: linear-gradient(180deg, rgba(122, 174, 213, 1) 0%, rgba(188, 213, 225, 1) 55%, rgba(237, 234, 228, 1) 85%, rgba(255, 255, 255, 0.5) 99%);
+  --bg-clr-showcases: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, #405b70 70%);
   --bg-clr-contact: #405b70;
 
   /* ff - font-family */
@@ -79,6 +67,15 @@
   --border-radius: 0.5rem;
 
   scroll-behavior: smooth;
+
+  /* timline bases */
+  --background: white;
+  --background-timeline: rgb(180, 180, 180);
+  --background-timeline-container: rgb(251, 251, 251);
+  --background-timeline-container-arrow: rgb(251, 251, 251);
+  --shadow-timeline-container: rgba(230, 230, 230, 0.685);
+  --shadow-hover-timeline-container: rgba(200, 200, 200, 0.765);
+  --border-timeline-content-more: rgba(230, 230, 230, 0.502);
 }
 
 /***-------------------------------------------------------
@@ -231,13 +228,11 @@ section {
 }
 
 /* media query for landscap and tablet */
-@media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
+@media (orientation: landscape) and (min-width: 640px), (min-width: 768px) and (max-width: 1024px) {
 }
 
 /* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
+@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px), (min-width: 768px) and (max-width: 1024px) {
 }
 
 /* media query for desktops */
@@ -395,8 +390,7 @@ img {
 }
 
 /* media query for landscap and tablet */
-@media (orientation: landscape) and (min-width: 640px),
-  (min-width: 768px) and (max-width: 1024px) {
+@media (orientation: landscape) and (min-width: 640px), (min-width: 768px) and (max-width: 1024px) {
   .title-section {
     padding-left: 2.2rem;
   }
@@ -408,8 +402,7 @@ img {
 }
 
 /* media query for ajusts in landscape and tablet */
-@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px),
-  (min-width: 768px) and (max-width: 1024px) {
+@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px), (min-width: 768px) and (max-width: 1024px) {
 }
 
 /* media query for desktops */
