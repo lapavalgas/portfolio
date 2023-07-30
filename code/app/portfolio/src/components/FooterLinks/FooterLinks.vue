@@ -8,50 +8,24 @@ const loader = useLoaderStore();
 </script>
 <template>
   <span>
-    <div class="scrolldown">
-      {{ loader.selectedLanguageData.footer.scrolldown }}
-    </div>
+    <div class="scrolldown">{{ loader.selectedLanguageData.footer.scrolldown }}</div>
     <footer>
       <div class="social-media">
-        <a
-          class="link"
-          target="_blank"
-          loader.selectedLanguageData.footer-title="LinkedIn"
-          :href="loader.selectedLanguageData.footer.linkedin_link"
-        >
+        <a class="link" target="_blank" :href="loader.selectedLanguageData.footer.linkedin_link">
           <IconLinkedinVue />
-          <div id="linkedin">
-            {{ loader.selectedLanguageData.footer.linkedin }}
-          </div>
+          <div id="linkedin">{{ loader.selectedLanguageData.footer.linkedin }}</div>
         </a>
-        <a
-          class="link"
-          target="_blank"
-          loader.selectedLanguageData.footer-title="GitHub"
-          :href="loader.selectedLanguageData.footer.github_link"
-        >
+        <a class="link" target="_blank" :href="loader.selectedLanguageData.footer.github_link">
           <IconGithubVue />
           <div id="github">{{ loader.selectedLanguageData.footer.github }}</div>
         </a>
-        <a
-          class="link"
-          target="_blank"
-          loader.selectedLanguageData.footer-title="E-mail"
-          :href="loader.selectedLanguageData.footer.email_link"
-        >
+        <a class="link" target="_blank" :href="loader.selectedLanguageData.footer.email_link">
           <IconEmailVue />
           <div id="email">{{ loader.selectedLanguageData.footer.email }}</div>
         </a>
-        <a
-          class="link"
-          target="_blank"
-          loader.selectedLanguageData.footer-title="Resume"
-          :href="loader.selectedLanguageData.footer.resume_link"
-        >
+        <a class="link" target="_blank" :href="loader.selectedLanguageData.footer.resume_link">
           <IconResumeVue />
-          <div id="curriculum">
-            {{ loader.selectedLanguageData.footer.resume }}
-          </div>
+          <div id="curriculum">{{ loader.selectedLanguageData.footer.resume }}</div>
         </a>
       </div>
       <div id="author">{{ loader.selectedLanguageData.footer.txt }}</div>
@@ -59,9 +33,6 @@ const loader = useLoaderStore();
   </span>
 </template>
 <style>
-/***-------------------------------------------------------
-FOOTER
---------------------------------------------------------***/
 #author {
   position: absolute;
   bottom: 30px;
@@ -86,23 +57,19 @@ footer {
   -webkit-transition: 0.9s 0s ease-in-out;
   transition: 0.9s 0s ease-in-out;
 }
-
 .social-media {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .social-media > a {
   color: var(--default-color-text);
   text-decoration: none;
 }
-
 .social-media > .link {
   position: relative;
   margin: 0 1.5rem 0 1.5rem;
 }
-
 .icon {
   width: 24px;
   height: 24px;
@@ -113,20 +80,16 @@ footer {
   -webkit-transition: 0.9s 0s ease-in-out;
   transition: 0.9s 0s ease-in-out;
 }
-
 .social-media > .link:hover > .icon {
   fill: black;
 }
-
 .social-media > .link:after,
 .social-media > .link:before {
   opacity: 0;
 }
-
 .link {
   position: absolute;
 }
-
 .link div {
   display: none;
   position: absolute;
@@ -139,7 +102,6 @@ footer {
   border-radius: var(--border-radius);
   border: var(--border-cards);
 }
-
 #linkedin::after,
 #github::after,
 #email::after,
@@ -153,14 +115,12 @@ footer {
   border-right: 6px solid transparent;
   border-top: 6px solid black;
 }
-
 .link:hover #linkedin,
 .link:hover #github,
 .link:hover #email,
 .link:hover #curriculum {
   display: block;
 }
-
 .scrolldown {
   position: absolute;
   width: 100%;
