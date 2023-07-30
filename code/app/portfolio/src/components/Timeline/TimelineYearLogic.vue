@@ -141,7 +141,7 @@ function getMonthInFull(month: string) {
         <div class="timeline">
           <span v-for="card in startCardFirst(year.cards)" :key="card.id">
             <span v-if="cardCategoryIsAValidFilteredCategory(card.category)">
-              <Card :data="card" :lang="lang" />
+              <Card :card="card" :lang="lang" />
             </span>
           </span>
           <div class="timeline-year">

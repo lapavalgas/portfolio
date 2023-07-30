@@ -2,7 +2,7 @@
 import { useLoaderTmlStore } from "@/stores/loader_tml";
 import interfaceTxtData from "@/data/timeline/data/interfaceTxt.json";
 
-const props = defineProps({ data: Object, lang: String });
+const props = defineProps({ card: Object, lang: String });
 
 const loader = useLoaderTmlStore();
 
@@ -68,55 +68,55 @@ function toggle_card_activity(id: string) {
 }
 </script>
 <template>
-  <span v-if="data && data.isToDisplay">
+  <span v-if="card && card.isToDisplay">
     <span>
-      <div class="timeline-container" :class="[isAStudyCard(data.type) ? 'left' : '', isAWorkCard(data.type) ? 'right' : '']">
-        <span v-if="data.isStartCard">
+      <div class="timeline-container" :class="[isAStudyCard(card.type) ? 'left' : '', isAWorkCard(card.type) ? 'right' : '']">
+        <span v-if="card.isStartCard">
           <div class="timeline-container-content">
-            <h5 class="display-none">{{ data.dataStart }}</h5>
+            <h5 class="display-none">{{ card.dataStart }}</h5>
             <span class="timeline-arrow"></span>
-            <p class="timeline-containter-content-type">{{ data.txtStart }}</p>
+            <p class="timeline-containter-content-type">{{ card.txtStart }}</p>
             <p></p>
           </div>
         </span>
-        <span v-else-if="data && data.id" v-on:click="toggle_card_activity('card_' + data.id)">
+        <span v-else v-on:click="toggle_card_activity('card_' + card?.id)">
           <div class="timeline-container-content">
-            <h5 class="display-none">{{ data.dataStart }}</h5>
+            <h5 class="display-none">{{ card.dataStart }}</h5>
             <span class="timeline-arrow"></span>
-            <p class="timeline-containter-content-type">{{ data.title }}</p>
+            <p class="timeline-containter-content-type">{{ card.title }}</p>
             <p></p>
-            <span class="timeline-containter-content-title">{{ data.subTitle }} <br /></span>
-            <span v-if="data.localParteA"> {{ data.localParteA }}<br /></span>
-            <span v-if="data.localParteB"> {{ data.localParteB }}<br /></span>
-            <span v-if="data.localParteC"> {{ data.localParteC }}<br /></span>
-            <span v-bind:id="'card_' + data.id" :class="CSS_CLASS_TOGGLE">
+            <span class="timeline-containter-content-title">{{ card.subTitle }} <br /></span>
+            <span v-if="card.localParteA"> {{ card.localParteA }}<br /></span>
+            <span v-if="card.localParteB"> {{ card.localParteB }}<br /></span>
+            <span v-if="card.localParteC"> {{ card.localParteC }}<br /></span>
+            <span v-bind:id="'card_' + card.id" :class="CSS_CLASS_TOGGLE">
               <div
                 :class="[
-                  isAStudyCard(data.type) ? 'time-line-content-more-description-left' : '',
-                  isAWorkCard(data.type) ? 'time-line-content-more-description-left' : '',
+                  isAStudyCard(card.type) ? 'time-line-content-more-description-left' : '',
+                  isAWorkCard(card.type) ? 'time-line-content-more-description-left' : '',
                 ]"
               >
                 <p>
-                  <span v-if="data.txtFullText && toggle_card_txt_txt">
-                    <span :class="[data._start_card ? 'time-line-content-more-start' : 'time-line-content-more']">
-                      {{ data.txtFullText }}
+                  <span v-if="card.txtFullText && toggle_card_txt_txt">
+                    <span :class="[card._start_card ? 'time-line-content-more-start' : 'time-line-content-more']">
+                      {{ card.txtFullText }}
                     </span>
                   </span>
-                  <span v-if="data.txtTopics && toggle_card_txt_topics">
+                  <span v-if="card.txtTopics && toggle_card_txt_topics">
                     <ul>
-                      <li v-for="task in data.txtTopics">{{ task }}</li>
+                      <li v-for="task in card.txtTopics">{{ task }}</li>
                     </ul>
                   </span>
-                  <span v-if="data.txtLinks && toggle_card_txt_links">
+                  <span v-if="card.txtLinks && toggle_card_txt_links">
                     <ul>
-                      <li v-for="link in data.txtLinks">{{ link }}</li>
+                      <li v-for="link in card.txtLinks">{{ link }}</li>
                     </ul>
                   </span>
                 </p>
               </div>
             </span>
             <br />
-            <span class="toggle-card-txt-link" v-bind:id="'card_' + data.id + '_ver_mais'"
+            <span class="toggle-card-txt-link" v-bind:id="'card_' + card.id + '_ver_mais'"
               ><a>{{ interfaceTxt.CARD_IS_INACTIVE_TXT }}</a></span
             >
           </div>
