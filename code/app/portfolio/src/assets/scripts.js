@@ -216,8 +216,6 @@ function navContentSelectMenuByViewport() {
 }
 
 function menuToggle(id) {
-  navContentUnselectAllMenu();
-  navContentSelectMenuById(id);
   if (isUserInMobileDevice()) {
     if (isNavContentHidden()) {
       navContentTransformToVisible();
@@ -227,6 +225,11 @@ function menuToggle(id) {
       if (!isUserInCoverComponent()) {
         footerTransformToVisible();
       }
+    }
+  } else {
+    if (id) {
+      navContentUnselectAllMenu();
+      navContentSelectMenuById(id);
     }
   }
 }
