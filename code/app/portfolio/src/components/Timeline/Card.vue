@@ -79,7 +79,7 @@ function toggle_card_activity(id: string) {
             <p></p>
           </div>
         </span>
-        <span v-else-if="data.id" v-on:click="toggle_card_activity('card_' + data.id)">
+        <span v-else-if="data && data.id" v-on:click="toggle_card_activity('card_' + data.id)">
           <div class="timeline-container-content">
             <h5 class="display-none">{{ data.dataStart }}</h5>
             <span class="timeline-arrow"></span>
