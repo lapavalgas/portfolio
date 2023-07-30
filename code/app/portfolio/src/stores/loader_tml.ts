@@ -10,36 +10,6 @@ const ENGLISH_ABB = "en";
 const PORTUGUESE_ABB = "pt";
 const ITALIAN_ABB = "it";
 
-interface Card {
-  isToDisplay: boolean;
-  isStartCard: boolean;
-  isEndCard: boolean;
-  type: string;
-  category: string;
-  dataStart: string;
-  dataEnd: string;
-  title: string | null;
-  subTitle: string | null;
-  localParteA: string | null;
-  localParteB: string | null;
-  localParteC: string | null;
-  txtStart: string | null;
-  txtFullText: string | null;
-  txtTopics: string | null;
-  txtLinks: string | null;
-  id: number;
-  pointInTimeline?: number;
-  year?: string;
-  month?: string;
-  day?: string;
-}
-
-interface CardsByYearAndMonth {
-  year: string | undefined;
-  month: string | undefined;
-  cards: Card[];
-}
-
 export const useLoaderTmlStore = defineStore("loaderTml", {
   state: () => ({}),
 
@@ -55,7 +25,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
 
   actions: {
     getAllCards(study_list: any, work_list: any) {
-      let cardsList: Card[] = [];
+      let cardsList: any[] = [];
       let id = 0;
 
       for (const study of study_list) {
@@ -68,7 +38,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
 
         const _category = study.category;
 
-        let startCard: Card = {
+        let startCard = {
           isToDisplay: study.display,
           isStartCard: true,
           isEndCard: false,
@@ -92,7 +62,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
 
         for (const classroomMonitor of classroomMonitorList) {
           for (const project of classroomMonitor.projects) {
-            let card: Card = {
+            let card = {
               isToDisplay: project.display,
               isStartCard: false,
               isEndCard: false,
@@ -118,7 +88,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
 
         for (const requiredInternship of requiredInternshipList) {
           for (const project of requiredInternship.projects) {
-            let card: Card = {
+            let card = {
               isToDisplay: project.display,
               isStartCard: false,
               isEndCard: false,
@@ -144,7 +114,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
 
         for (const internship of internshipList) {
           for (const project of internship.projects) {
-            let card: Card = {
+            let card = {
               isToDisplay: project.display,
               isStartCard: false,
               isEndCard: false,
@@ -170,7 +140,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
 
         for (const research of researchList) {
           for (const project of research.projects) {
-            let card: Card = {
+            let card = {
               isToDisplay: project.display,
               isStartCard: false,
               isEndCard: false,
@@ -202,7 +172,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
 
         const _category = work.category;
 
-        let startCard: Card = {
+        let startCard = {
           isToDisplay: work.display,
           isStartCard: true,
           isEndCard: false,
@@ -226,7 +196,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
 
         for (const position of positionsList) {
           for (const project of position.projects) {
-            let card: Card = {
+            let card = {
               isToDisplay: project.display,
               isStartCard: false,
               isEndCard: false,
@@ -254,7 +224,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
       var startCard = cardsList.filter((card) => card.isStartCard);
 
       for (const card of startCard) {
-        let endCard: Card = {
+        let endCard = {
           isToDisplay: card.isToDisplay,
           isStartCard: true,
           isEndCard: true,
@@ -267,7 +237,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
           localParteA: null,
           localParteB: null,
           localParteC: null,
-          txtStart: card.txtStart ? card.txtStart.replace("Iniciou", "Encerrou") : "",
+          txtStart: card.txtStart.replace("Iniciou", "Encerrou"),
           txtFullText: null,
           txtTopics: null,
           txtLinks: null,
@@ -315,7 +285,7 @@ export const useLoaderTmlStore = defineStore("loaderTml", {
 
       cardsList = cardsList.sort((objA, objB) => Number(objB.pointInTimeline) - Number(objA.pointInTimeline));
 
-      let cards_by_year_and_month: CardsByYearAndMonth[] = [];
+      let cards_by_year_and_month: any[] = [];
 
       for (const card of cardsList) {
         if (!cards_by_year_and_month.find((obj) => obj.year === card.year && obj.month === card.month)) {
