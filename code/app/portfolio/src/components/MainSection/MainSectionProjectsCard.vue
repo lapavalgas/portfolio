@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import MainSectionProjectsCardTechstackVue from "./MainSectionProjectsCardTechstack.vue";
-import IconGithubVue from "@/components/MainSection/icons/IconGithub.vue";
 import { useLoaderStore } from "@/stores/loader";
+import IconGithubVue from "./icons/IconGithub.vue";
+import MainSectionProjectsCardTechstackVue from "./MainSectionProjectsCardTechstack.vue";
 
 const loader = useLoaderStore();
 
@@ -14,17 +14,10 @@ function getCards() {
     <div class="project-card" v-for="card in getCards()" :key="card.title">
       <a :href="card.link" class="project-card-link" target="_blank">
         <p>
-          <span class="project-card-icon">
-            <IconGithubVue />
-          </span>
-          <span class="title-section-content-projects">{{ card.title }}</span>
+          <span class="project-card-icon"><IconGithubVue /></span> <span class="title-section-content-projects">{{ card.title }}</span>
         </p>
-        <p>
-          {{ card.description }}
-        </p>
-        <span class="content-area-inside">
-          <MainSectionProjectsCardTechstackVue :techstacks="card.techstack" />
-        </span>
+        <p>{{ card.description }}</p>
+        <span class="content-area-inside"><MainSectionProjectsCardTechstackVue :techstacks="card.techstack" /></span>
       </a>
     </div>
   </div>

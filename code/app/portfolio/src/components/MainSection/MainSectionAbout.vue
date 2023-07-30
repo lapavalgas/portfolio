@@ -23,15 +23,11 @@ function getCardImgAlt() {
   <section id="about">
     <div class="section-wallpaper section-margin-top-8" id="about-wallpaper">
       <div class="section-content">
-        <h2 id="about-link" class="about-title title-section">
-          {{ getTitle() }}
-        </h2>
+        <h2 id="about-link" class="about-title title-section">{{ getTitle() }}</h2>
         <div class="content-area">
           <div class="about-card">
             <div class="about-card-txt">
-              <p>
-                {{ getCardDescription() }}
-              </p>
+              <p>{{ getCardDescription() }}</p>
             </div>
             <div class="about-card-img">
               <img :src="getCardImg()" :alt="getCardImgAlt()" />

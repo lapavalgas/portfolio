@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import TimelineYearLogic from "./TimelineYearLogic.vue";
 import { useLoaderTmlStore } from "@/stores/loader_tml";
+import TimelineYearLogic from "./TimelineYearLogic.vue";
 
 // INTERFACE TXT
 import interfaceTxtData from "@/data/timeline/data/interfaceTxt.json";
@@ -24,11 +24,11 @@ import PT_WE_TML_2016 from "@/data/timeline/data/work/we_tml_2016.json";
 import PT_WE_TML_2017 from "@/data/timeline/data/work/we_tml_2017.json";
 import PT_WE_TML_2020 from "@/data/timeline/data/work/we_tml_2020.json";
 
-const loader = useLoaderTmlStore();
-
 const props = defineProps({
   lang: String,
 });
+
+const loader = useLoaderTmlStore();
 
 const lang = !props.lang ? loader.ENGLISH_ABB : props.lang.substring(0, 2);
 
@@ -82,6 +82,7 @@ let filterInformatic = false;
 let filterLanguage = false;
 
 let filterCategory: object = {};
+
 function filterAndReloadCardsComponent() {
   filterCategory = {
     filterMusic: filterMusic,
@@ -99,8 +100,8 @@ function filterAndReloadCardsComponent() {
       <span>
         <button type="button" class="btn btn-primarytimeline-btn">
           <a href="/" tag="button">{{ interfaceTxt.btn_back }}</a>
-        </button></span
-      >
+        </button>
+      </span>
       <span style="margin-left: 20px">
         <input
           type="text"
@@ -116,15 +117,15 @@ function filterAndReloadCardsComponent() {
       <br />
       <span style="margin-left: 20px">
         <span style="margin-left: 3.95em">
-          <input class="form-check-input" type="checkbox" :value="filterMusic" id="filterMusic" v-model="filterMusic" />
+          <input class="form-check-input" type="checkbox" id="filterMusic" v-model="filterMusic" />
           <label class="form-check-label" for="filterMusic">{{ interfaceTxt.checkbox_music }}</label>
         </span>
         <span>
-          <input class="form-check-input" type="checkbox" :value="filterPsychology" id="filterPsychology" v-model="filterPsychology" />
+          <input class="form-check-input" type="checkbox" id="filterPsychology" v-model="filterPsychology" />
           <label class="form-check-label" for="filterPsychology">{{ interfaceTxt.checkbox_psychology }}</label>
         </span>
         <span>
-          <input class="form-check-input" type="checkbox" :value="filterInformatic" id="filterInformatic" v-model="filterInformatic" />
+          <input class="form-check-input" type="checkbox" id="filterInformatic" v-model="filterInformatic" />
           <label class="form-check-label" for="filterInformatic">{{ interfaceTxt.checkbox_informatic }}</label>
         </span>
       </span>
@@ -135,9 +136,7 @@ function filterAndReloadCardsComponent() {
       <span> {{ interfaceTxt.txt_work }} </span>
     </div>
     <br />
-    <span>
-      <TimelineYearLogic :data="cards" :lang="lang" :filterYears="filterYears" :filterCategory="filterCategory" :key="filterYearsComponentKey" />
-    </span>
+    <span><TimelineYearLogic :data="cards" :lang="lang" :filterYears="filterYears" :filterCategory="filterCategory" :key="filterYearsComponentKey" /></span>
   </div>
 </template>
 <style scoped>

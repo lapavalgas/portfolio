@@ -15,16 +15,10 @@ function getBtnMoreTxt() {
   <div class="showcases-card">
     <div class="showcases-card-js-flickity js-flickity main-carousel">
       <div class="showcase-card" v-for="card in getCards()" :key="card.title">
-        <div class="showcase-card-img">
-          <img :src="card.img" :alt="card.img_alt" />
-        </div>
+        <div class="showcase-card-img"><img :src="card.img" :alt="card.img_alt" /></div>
         <div class="showcase-card-txt">
-          <h3 class="title-section-content title-section-content-showcases">
-            {{ card.title }}
-          </h3>
-          <p>
-            {{ card.description }}
-          </p>
+          <h3 class="title-section-content title-section-content-showcases">{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
           <div target="_blank" class="showcase-btn">
             <a :href="card.link"> {{ getBtnMoreTxt() }}</a>
           </div>

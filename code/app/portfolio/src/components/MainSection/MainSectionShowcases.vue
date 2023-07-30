@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import MainSectionShowcasesCardVue from "@/components/MainSection/MainSectionShowcasesCard.vue";
 import { useLoaderStore } from "@/stores/loader";
+import MainSectionShowcasesCardVue from "./MainSectionShowcasesCard.vue";
 
 const loader = useLoaderStore();
 
@@ -12,12 +12,8 @@ function getTitle() {
   <section id="showcases">
     <div class="section-wallpaper section-padding-8" id="showcases-wallpaper">
       <div class="section-content">
-        <h2 id="showcases-link" class="showcases-title title-section">
-          {{ getTitle() }}
-        </h2>
-        <div class="content-area">
-          <MainSectionShowcasesCardVue />
-        </div>
+        <h2 id="showcases-link" class="showcases-title title-section">{{ getTitle() }}</h2>
+        <div class="content-area"><MainSectionShowcasesCardVue /></div>
       </div>
     </div>
   </section>

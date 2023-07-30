@@ -6,24 +6,31 @@ const loader = useLoaderStore();
 function getTitle() {
   return loader.contatInterface.title;
 }
+
 function getSectionTitle() {
   return loader.contatInterface.card_farewell.title;
 }
+
 function getImg() {
   return loader.contatInterface.card_farewell.img;
 }
+
 function getImgAlt() {
   return loader.contatInterface.card_farewell.img_alt;
 }
+
 function getSectionFarewellDescription() {
   return loader.contatInterface.card_farewell.description;
 }
+
 function getSectionPsychologyDescription() {
   return loader.contatInterface.card_psychology.description;
 }
+
 function getSectionPsychologyPortfolioLink() {
   return loader.contatInterface.card_psychology.link;
 }
+
 function getSectionPsychologyPortfolioLinkText() {
   return loader.contatInterface.card_psychology.link_description;
 }
@@ -37,21 +44,15 @@ function getSectionPsychologyPortfolioLinkText() {
         </h2>
         <div class="content-area">
           <div class="contact-card">
-            <div class="contact-card-img">
-              <img :src="getImg()" :alt="getImgAlt()" />
-            </div>
+            <div class="contact-card-img"><img :src="getImg()" :alt="getImgAlt()" /></div>
             <div class="contact-card-txt">
-              <h3 class="title-section-content title-section-content-contact">
-                {{ getSectionTitle() }}
-              </h3>
+              <h3 class="title-section-content title-section-content-contact">{{ getSectionTitle() }}</h3>
               <p class="contact-card-farewell">
                 {{ getSectionFarewellDescription() }}
               </p>
               <p class="contact-card-psychology">
-                {{ getSectionPsychologyDescription() }}
-                <a class="contact-card-link" :href="getSectionPsychologyPortfolioLink()">
-                  {{ getSectionPsychologyPortfolioLinkText() }}
-                </a>
+                {{ getSectionPsychologyDescription()
+                }}<a class="contact-card-link" :href="getSectionPsychologyPortfolioLink()">{{ getSectionPsychologyPortfolioLinkText() }}</a>
               </p>
             </div>
           </div>

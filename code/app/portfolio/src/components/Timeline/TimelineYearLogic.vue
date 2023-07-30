@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Card from "./Card.vue";
 import { useLoaderTmlStore } from "@/stores/loader_tml";
+import Card from "./Card.vue";
 
 const props = defineProps({
   data: Object,

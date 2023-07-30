@@ -6,6 +6,7 @@ const loader = useLoaderStore();
 function getName() {
   return loader.coverInterface.name;
 }
+
 function getProfession() {
   return loader.coverInterface.profession;
 }
@@ -16,12 +17,8 @@ function getProfession() {
       <div class="section-content">
         <div class="cover-content-area">
           <div class="cover-card">
-            <h1 class="cover-card-name">
-              {{ getName() }}
-            </h1>
-            <p class="cover-card-profession">
-              {{ getProfession() }}
-            </p>
+            <h1 class="cover-card-name">{{ getName() }}</h1>
+            <p class="cover-card-profession">{{ getProfession() }}</p>
           </div>
         </div>
       </div>

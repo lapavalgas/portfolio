@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import interfaceTxtData from "@/data/timeline/data/interfaceTxt.json";
 import { useLoaderTmlStore } from "@/stores/loader_tml";
+import interfaceTxtData from "@/data/timeline/data/interfaceTxt.json";
 
 const props = defineProps({ data: Object, lang: String });
 
@@ -41,6 +41,7 @@ function isAStudyCard(cardType: string) {
     return true;
   }
 }
+
 function isAWorkCard(cardType: string) {
   if (cardType.toLocaleLowerCase() === CARD_TYPES.WORK_CARD.toLocaleLowerCase()) {
     return true;
@@ -74,9 +75,7 @@ function toggle_card_activity(id: string) {
           <div class="timeline-container-content">
             <h5 class="display-none">{{ data.dataStart }}</h5>
             <span class="timeline-arrow"></span>
-            <p class="timeline-containter-content-type">
-              {{ data.txtStart }}
-            </p>
+            <p class="timeline-containter-content-type">{{ data.txtStart }}</p>
             <p></p>
           </div>
         </span>
@@ -84,9 +83,7 @@ function toggle_card_activity(id: string) {
           <div class="timeline-container-content">
             <h5 class="display-none">{{ data.dataStart }}</h5>
             <span class="timeline-arrow"></span>
-            <p class="timeline-containter-content-type">
-              {{ data.title }}
-            </p>
+            <p class="timeline-containter-content-type">{{ data.title }}</p>
             <p></p>
             <span class="timeline-containter-content-title">{{ data.subTitle }} <br /></span>
             <span v-if="data.localParteA"> {{ data.localParteA }}<br /></span>
@@ -101,7 +98,9 @@ function toggle_card_activity(id: string) {
               >
                 <p>
                   <span v-if="data.txtFullText && toggle_card_txt_txt">
-                    <span :class="[data._start_card ? 'time-line-content-more-start' : 'time-line-content-more']">{{ data.txtFullText }}</span>
+                    <span :class="[data._start_card ? 'time-line-content-more-start' : 'time-line-content-more']">
+                      {{ data.txtFullText }}
+                    </span>
                   </span>
                   <span v-if="data.txtTopics && toggle_card_txt_topics">
                     <ul>
@@ -117,9 +116,9 @@ function toggle_card_activity(id: string) {
               </div>
             </span>
             <br />
-            <span class="toggle-card-txt-link" v-bind:id="'card_' + data.id + '_ver_mais'">
-              <a>{{ interfaceTxt.CARD_IS_INACTIVE_TXT }}</a>
-            </span>
+            <span class="toggle-card-txt-link" v-bind:id="'card_' + data.id + '_ver_mais'"
+              ><a>{{ interfaceTxt.CARD_IS_INACTIVE_TXT }}</a></span
+            >
           </div>
         </span>
       </div>

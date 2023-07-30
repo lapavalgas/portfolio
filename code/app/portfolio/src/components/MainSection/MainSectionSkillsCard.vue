@@ -10,12 +10,8 @@ function getCards() {
 <template>
   <div class="skills-card">
     <div class="skill-card" v-for="card in getCards()" :key="card.title">
-      <h3 class="title-section-content">
-        {{ card.title }}
-      </h3>
-      <p>
-        {{ card.description }}
-      </p>
+      <h3 class="title-section-content">{{ card.title }}</h3>
+      <p>{{ card.description }}</p>
     </div>
   </div>
 </template>

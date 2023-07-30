@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import IconLinkedinVue from "@/components/FooterLinks/icons/IconLinkedin.vue";
-import IconGithubVue from "@/components/FooterLinks/icons/IconGithub.vue";
-import IconEmailVue from "@/components/FooterLinks/icons/IconEmail.vue";
-import IconResumeVue from "@/components/FooterLinks/icons/IconResume.vue";
 import { useLoaderStore } from "@/stores/loader";
+import IconLinkedinVue from "./icons/IconLinkedin.vue";
+import IconGithubVue from "./icons/IconGithub.vue";
+import IconEmailVue from "./icons/IconEmail.vue";
+import IconResumeVue from "./icons/IconResume.vue";
+
 const loader = useLoaderStore();
 </script>
 <template>
@@ -32,7 +33,7 @@ const loader = useLoaderStore();
     </footer>
   </span>
 </template>
-<style>
+<style scoped>
 #author {
   position: absolute;
   bottom: 30px;
