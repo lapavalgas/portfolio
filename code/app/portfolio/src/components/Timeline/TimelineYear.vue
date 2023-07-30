@@ -3,8 +3,6 @@ import { ref } from "vue";
 import TimelineYearLogic from "./TimelineYearLogic.vue";
 import { useLoaderTmlStore } from "@/stores/loader_tml";
 
-const loader = useLoaderTmlStore();
-
 // INTERFACE TXT
 import interfaceTxtData from "@/data/timeline/data/interfaceTxt.json";
 
@@ -25,6 +23,8 @@ import PT_WE_TML_2013 from "@/data/timeline/data/work/we_tml_2013.json";
 import PT_WE_TML_2016 from "@/data/timeline/data/work/we_tml_2016.json";
 import PT_WE_TML_2017 from "@/data/timeline/data/work/we_tml_2017.json";
 import PT_WE_TML_2020 from "@/data/timeline/data/work/we_tml_2020.json";
+
+const loader = useLoaderTmlStore();
 
 const props = defineProps({
   lang: String,
