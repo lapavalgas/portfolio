@@ -1,4 +1,18 @@
 /***-------------------------------------------------------
+        CONSTANTS
+--------------------------------------------------------***/
+
+import languages from "@/data/languages.json";
+
+const ENGLISH = languages.list[0];
+const PORTUGUESE = languages.list[1];
+const ITALIAN = languages.list[2];
+
+const ENGLISH_ABB = "en";
+const PORTUGUESE_ABB = "pt";
+const ITALIAN_ABB = "it";
+
+/***-------------------------------------------------------
         CSS VARIABLES
 --------------------------------------------------------***/
 
@@ -234,8 +248,6 @@ function menuToggle(id) {
   }
 }
 
-export default menuToggle;
-
 // SCROLLING LOGIC CONTROLS
 function scrollFunction() {
   navContentUnselectAllMenu();
@@ -271,3 +283,13 @@ function scrollFunction() {
 function uuidv4() {
   return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) => (c ^ (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))).toString(16));
 }
+
+/***-------------------------------------------------------
+          export default
+--------------------------------------------------------***/
+
+function getEnglish() {
+  return ENGLISH;
+}
+
+export default { menuToggle, getEnglish, ENGLISH_ABB, PORTUGUESE, PORTUGUESE_ABB, ITALIAN, ITALIAN_ABB };

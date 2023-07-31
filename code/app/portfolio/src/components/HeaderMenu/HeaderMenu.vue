@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useLoaderStore } from "@/stores/loader";
 
-import menuToggle from "@/assets/scripts.js";
+import menuToggle from "@/components/scripts.js";
 
 const loader = useLoaderStore();
 
@@ -274,3 +274,4 @@ nav {
   }
 }
 </style>
+@/assets/scripts.js @/components/scripts
