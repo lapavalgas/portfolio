@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { useLoaderStore } from "@/stores/loader";
 
-import menuToggle from "@/assets/scripts.ts";
-
 const loader = useLoaderStore();
 
 function isThislanguageTheUserLanguage(language: string) {
