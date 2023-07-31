@@ -1,0 +1,158 @@
+{
+  "menu": {
+    "cover": "Start",
+    "about": "About",
+    "skills": "Skills",
+    "showcases": "Showcases",
+    "projects": "Projects",
+    "contact": "Contact me",
+    "resume": "Resume"
+  },
+  "sections": {
+    "cover": {
+      "display": true,
+      "name": "Rafael Lapa Valgas",
+      "profession": "Software Engineer"
+    },
+    "about": {
+      "display": true,
+      "title": "About",
+      "card": {
+        "title": "",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+        "img": "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg",
+        "img_alt": "Imagem do meu primeiro setup"
+      }
+    },
+    "skills": {
+      "display": true,
+      "title": "Skills",
+      "cards": [
+        {
+          "title": "LOREM IPSUM DOLOR SIT AMET",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat."
+        },
+        {
+          "title": "LOREM IPSUM DOLOR SIT AMET",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat."
+        },
+        {
+          "title": "LOREM IPSUM DOLOR SIT AMET",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat."
+        }
+      ]
+    },
+    "showcases": {
+      "display": true,
+      "title": "Showcases",
+      "cards": [
+        {
+          "title": "LOREM IPSUM DOLOR SIT AMET",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_neuropsychology_prototype/main/resources/HNAMS_02.png",
+          "img_alt": "",
+          "link": "/"
+        },
+        {
+          "title": "LOREM IPSUM DOLOR SIT AMET",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "img": "https://raw.githubusercontent.com/lapavalgas/technical_showcase_zip_code_app/main/resources/ZC_03.jpeg",
+          "img_alt": "",
+          "link": "/"
+        },
+        {
+          "title": "LOREM IPSUM DOLOR SIT AMET",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_fastservice/main/resources/fastservice_01.png",
+          "img_alt": "",
+          "link": "/"
+        }
+      ],
+      "btn_more": "SEE MORE"
+    },
+    "projects": {
+      "display": true,
+      "title": "Projects",
+      "cards": [
+        {
+          "title": "lorem_ipsum_dolor_sit_amet",
+          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
+          "link": "/"
+        },
+        {
+          "title": "temporibus_ratione_quis_voluptatem",
+          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
+          "link": "/"
+        },
+        {
+          "title": "lorem_ipsum_dolor_sit_amet",
+          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
+          "link": "/"
+        },
+        {
+          "title": "temporibus_ratione_quis_voluptatem",
+          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
+          "link": "/"
+        },
+        {
+          "title": "lorem_ipsum_dolor_sit_amet",
+          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
+          "link": "/"
+        },
+        {
+          "title": "temporibus_ratione_quis_voluptatem",
+          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
+          "link": "/"
+        }
+      ]
+    },
+    "contact": {
+      "display": true,
+      "title": "Contact me",
+      "card_farewell": {
+        "display": true,
+        "title": "Lorem!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur!",
+        "img": "https://www.planningboard.ca/wp-content/uploads/2020/03/Computer-Programmer-Interactive-Media-Developer-Image-768x512.jpg",
+        "img_alt": ""
+      },
+      "card_timeline": {
+        "display": false,
+        "description": "",
+        "link_description": "",
+        "link": ""
+      },
+      "card_psychology": {
+        "display": false,
+        "title": "",
+        "description": "",
+        "link_description": "",
+        "link": "/"
+      }
+    }
+  },
+  "footer": {
+    "display_linkedin": true,
+    "linkedin": "LinkedIn",
+    "linkedin_link": "https://www.linkedin.com/in/lapavalgas/",
+    "display_github": true,
+    "github": "Github",
+    "github_link": "https://github.com/lapavalgas",
+    "display_email": true,
+    "email": "E-mail",
+    "email_link": "",
+    "display_resume": true,
+    "resume": "Resume",
+    "resume_link": "",
+    "display_timeline": false,
+    "timeline": "Timeline",
+    "scrolldown": "scrolldown",
+    "description": "Rafael Lapa Valgas / Software Engineer"
+  }
+}

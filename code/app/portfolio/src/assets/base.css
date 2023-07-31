@@ -1,74 +1,425 @@
-/* color palette from <https://github.com/vuejs/theme> */
-:root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+@import "./normalize.css";
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+/***-------------------------------------------------------
+        MEDIA QUERIES
+-------------------------------------------------------***/
 
-  --vt-c-indigo: #2c3e50;
-
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+/* media query for landscap and tablet */
+@media (orientation: landscape) and (min-width: 640px), (min-width: 768px) and (max-width: 1024px) {
 }
 
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
+/* media query for ajusts in landscape and tablet */
+@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px), (min-width: 768px) and (max-width: 1024px) {
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
+/* media query for desktops */
+@media (min-width: 1025px) and (min-height: 625px) {
+}
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
+/* media query for ajusts in desktops */
+@media (min-width: 1445px) {
+}
 
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
+/* media query for ajusts in desktops */
+@media (min-width: 1600px) {
+}
+
+/***-------------------------------------------------------
+        VARIABLES
+-------------------------------------------------------***/
+
+:root {
+  /* clr - color  */
+  --clr-primary: rgba(122, 174, 213, 1);
+
+  --clr-base-black: #212529;
+  --clr-base-white: #fcf8f4;
+  --clr-base-link: #212529;
+
+  /* bg - background-color */
+  --bg-clr-base-white: white;
+  --bg-clr-cover: linear-gradient(180deg, rgba(122, 174, 213, 1) 0%, rgba(188, 213, 225, 1) 55%, rgba(237, 234, 228, 1) 85%, rgba(255, 255, 255, 0.5) 99%);
+  --bg-clr-showcases: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, #405b70 70%);
+  --bg-clr-contact: #405b70;
+
+  /* ff - font-family */
+  --ff-logo: "Mansalva", cursive;
+  --ff-title: "Oswald", sans-serif;
+  --ff-base: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  /* fs - font-size */
+  --fs-h1: 2.488rem;
+  --fs-h2: 2.074rem;
+  --fs-h3: 1.728rem;
+  --fs-h4: 1.44rem;
+  --fs-h5: 1.2rem;
+  --fs-small: 0.833rem;
+
+  /* lh - line-height */
+  --lh-body: 1.75;
+  --lh-h: 1.3;
+
+  /* ts - text-shadow */
+  --ts-showcases: 0 0 1px rgba(0, 0, 0, 0.5);
+
+  --border-forms: 1px solid rgba(0, 0, 0, 0.08);
+  --border-cards: 1px solid rgba(225, 225, 225, 0.9);
+  --border-radius: 0.5rem;
+
+  scroll-behavior: smooth;
+
+  /* timline bases */
+  --background: white;
+  --background-timeline: rgb(180, 180, 180);
+  --background-timeline-container: rgb(251, 251, 251);
+  --background-timeline-container-arrow: rgb(251, 251, 251);
+  --shadow-timeline-container: rgba(230, 230, 230, 0.685);
+  --shadow-hover-timeline-container: rgba(200, 200, 200, 0.765);
+  --border-timeline-content-more: rgba(230, 230, 230, 0.502);
+}
+
+/***-------------------------------------------------------
+        ONLY CSS
+-------------------------------------------------------***/
+
+.section-margin-2 {
+  margin: 2rem 0;
+}
+
+.section-margin-top-2 {
+  margin-top: 2rem;
+}
+
+.section-margin-top-4 {
+  margin-top: 4rem;
+}
+
+.section-margin-top-8 {
+  margin-top: 8rem;
+}
+
+.section-margin-4 {
+  margin: 4rem 0;
+}
+
+.section-margin-bottom-4 {
+  margin-bottom: 4rem;
+}
+
+.section-margin-bottom-8 {
+  margin-bottom: 8rem;
+}
+
+.section-margin-8 {
+  margin: 8rem 0;
+}
+
+.section-padding-2 {
+  padding: 2rem 0;
+}
+
+.section-padding-4 {
+  padding: 4rem 0;
+}
+
+.section-padding-8 {
+  padding: 8rem 0;
+}
+
+.section-fullscreen {
+  height: 100vh;
+}
+
+/* stop the section margin and padding  */
+@media (min-width: 1025px) and (min-height: 625px) {
+  .section-margin-2 {
+    margin: 0;
+  }
+
+  .section-margin-top-2 {
+    margin-top: 0;
+  }
+
+  .section-margin-top-4 {
+    margin-top: 0;
+  }
+
+  .section-margin-top-8 {
+    margin-top: 0;
+  }
+
+  .section-margin-4 {
+    margin: 0;
+  }
+
+  .section-margin-bottom-4 {
+    margin-bottom: 0;
+  }
+
+  .section-margin-bottom-8 {
+    margin-bottom: 0;
+  }
+
+  .section-margin-8 {
+    margin: 0;
+  }
+
+  .section-padding-2 {
+    padding: 0;
+  }
+
+  .section-padding-4 {
+    padding: 0;
+  }
+
+  .section-padding-8 {
+    padding: 0;
   }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-  font-weight: normal;
+/***-------------------------------------------------------
+        START
+-------------------------------------------------------***/
+
+* {
+  font-family: var(--ff-base);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
 }
 
 body {
-  min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition: color 0.5s, background-color 0.5s;
-  line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--bg-clr-base-white);
+  color: var(--clr-base-black);
+  font-family: var(--ff-base);
+}
+
+.hidden {
+  display: none;
+}
+
+/***-------------------------------------------------------
+        SECTION
+--------------------------------------------------------***/
+
+section {
+  position: relative;
+  width: 100%;
+}
+
+.section-wallpaper {
+  width: 100%;
+}
+
+.section-content {
+  width: 100%;
+}
+
+.content-area {
+  margin: 0 5%;
+}
+
+/* media query for landscap and tablet */
+@media (orientation: landscape) and (min-width: 640px), (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* media query for ajusts in landscape and tablet */
+@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px), (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* media query for desktops */
+@media (min-width: 1025px) and (min-height: 625px) {
+  html {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    -webkit-scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+  }
+
+  section {
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+  }
+
+  .hidden {
+    display: initial;
+  }
+
+  .section-wallpaper {
+    height: 100%;
+  }
+
+  .section-content {
+    padding-top: 2rem;
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .content-area {
+    height: calc(100% - 55px - 93.73px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* media query for ajusts in desktops */
+@media (min-width: 1445px) {
+  .section-content {
+    max-width: 65%;
+  }
+}
+
+/* media query for ajusts in desktops */
+@media (min-width: 1900px) {
+  .section-content {
+    max-width: 55%;
+  }
+}
+
+/***-------------------------------------------------------
+        TYPOGRAPHY NORMALIZE
+-------------------------------------------------------***/
+html {
+  font-size: 100%;
+}
+
+/*16px*/
+
+body {
+  background: white;
+  font-family: var(--ff-base);
+  font-weight: 400;
+  line-height: var(--lh-body);
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  /* margin: 3rem 0 1.38rem; */
+  margin: 1rem 0;
+  text-align: center;
+  font-family: var(--ff-base);
+  line-height: var(--lh-h);
+  font-weight: 400;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+}
+
+h5 {
+  font-size: var(--fs-h5);
+}
+
+.title-section {
+  padding-left: 4%;
+  font-size: var(--fs-h2);
+  font-family: var(--ff-title);
+  font-weight: 600;
+  text-align: left;
+}
+
+.title-section::after {
+  content: "";
+  margin-top: 12px;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--clr-primary);
+  bottom: 0;
+  left: 0;
+}
+
+.title-section-content {
+  font-size: calc(var(--fs-h5) - 5px);
+  font-family: var(--ff-title);
+  font-weight: 600;
+}
+
+.title-section-content-projects {
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.title-left {
+  text-align: left;
+}
+
+.small {
+  font-size: var(--fs-small);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: var(--border-cards);
+  border-radius: var(--border-radius);
+}
+
+/* media query for landscap and tablet */
+@media (orientation: landscape) and (min-width: 640px), (min-width: 768px) and (max-width: 1024px) {
+  .title-section {
+    padding-left: 2.2rem;
+  }
+
+  .title-section-content-showcases {
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+/* media query for ajusts in landscape and tablet */
+@media (orientation: landscape) and (min-width: 844px) and (max-width: 968px), (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* media query for desktops */
+@media (min-width: 1025px) and (min-height: 625px) {
+  .title-section {
+    padding-left: 0;
+  }
+
+  .title-section {
+    margin: 0 5%;
+  }
+}
+
+/* media query for ajusts in desktops */
+@media (min-width: 1445px) {
+}
+
+/* media query for ajusts in desktops */
+@media (min-width: 1600px) {
 }

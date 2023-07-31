@@ -1,0 +1,30 @@
+{
+  "en": {
+    "txt_description": "",
+    "txt_filter": "You can filter by year (eg: 2012), by range of years (2017-2023), or by a series of specific years (2012; 2016; 2019).",
+    "txt_study": "Academic",
+    "txt_work": "Work",
+    "btn_back": "Back",
+    "btn_filter": "Filter",
+    "txt_viewMore": "View more...",
+    "txt_seeLess": "See less...",
+    "checkbox_music": "Music",
+    "checkbox_psychology": "Psychology",
+    "checkbox_informatic": "Informatics",
+    "input_placeholder": "filter by years"
+  },
+  "pt": {
+    "txt_description": "",
+    "txt_filter": "Você pode filtrar por ano (por exemplo: 2012), por range de anos (2017-2023), ou por uma série de anos específicos (2012; 2016; 2019).",
+    "txt_study": "Estudos",
+    "txt_work": "Trabalho",
+    "btn_back": "Voltar",
+    "btn_filter": "Filtrar",
+    "txt_viewMore": "Ver mais...",
+    "txt_seeLess": "Ver menos...",
+    "checkbox_music": "Música",
+    "checkbox_psychology": "Psicologis",
+    "checkbox_informatic": "Informática",
+    "input_placeholder": "filtrar por anos"
+  }
+}
