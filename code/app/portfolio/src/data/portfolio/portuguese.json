@@ -151,7 +151,7 @@
     "display_resume": true,
     "resume": "Currículum",
     "resume_link": "",
-    "display_timeline": false,
+    "display_timeline": true,
     "timeline": "Timeline",
     "scrolldown": "scrolldown",
     "description": "Rafael Lapa Valgas / Engenheiro de Software"
