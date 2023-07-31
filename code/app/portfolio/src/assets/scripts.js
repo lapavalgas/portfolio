@@ -234,6 +234,8 @@ function menuToggle(id) {
   }
 }
 
+export default menuToggle;
+
 // SCROLLING LOGIC CONTROLS
 function scrollFunction() {
   navContentUnselectAllMenu();
