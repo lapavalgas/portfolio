@@ -112,6 +112,7 @@
         "img_alt": "Uma foto de perfil"
       },
       "card_psychology": {
+        "display": false,
         "title": "",
         "description": "Também convido você a conhecer minha carreira em psicologia e explorar o mundo da mente e das emoções 🧠💬",
         "link_description": "Saiba mais aqui...",

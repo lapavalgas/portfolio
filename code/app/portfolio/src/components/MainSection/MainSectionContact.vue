@@ -18,6 +18,9 @@ function getImgAlt() {
 function getSectionFarewellDescription() {
   return loader.contatInterface.card_farewell.description;
 }
+function IsToDisplayPsychologyDescription() {
+  return loader.contatInterface.card_psychology.display;
+}
 function getSectionPsychologyDescription() {
   return loader.contatInterface.card_psychology.description;
 }
@@ -43,7 +46,7 @@ function getSectionPsychologyPortfolioLinkText() {
               <p class="contact-card-farewell">
                 {{ getSectionFarewellDescription() }}
               </p>
-              <p class="contact-card-psychology">
+              <p v-if="IsToDisplayPsychologyDescription()" class="contact-card-psychology">
                 {{ getSectionPsychologyDescription()
                 }}<a class="contact-card-link" :href="getSectionPsychologyPortfolioLink()">{{ getSectionPsychologyPortfolioLinkText() }}</a>
               </p>

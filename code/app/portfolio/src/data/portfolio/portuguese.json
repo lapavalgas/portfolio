@@ -90,16 +90,22 @@
           "link": "https://github.com/lapavalgas/undergraduate_fastservice"
         },
         {
-          "title": "undergraduate_repositories",
-          "description": "Projeto final do curso de graduação em Análise e Desenvolvimento de Sistemas",
-          "techstack": ["Java", "Python", "JavaScript", "CSS", "Docker"],
-          "link": "https://github.com/lapavalgas/undergraduate_repositories"
+          "title": "Portfolio",
+          "description": "Código desse portfolio",
+          "techstack": ["TypeScript", "Vue", "CSS", "Mobile first"],
+          "link": "https://github.com/lapavalgas/scripts"
         },
         {
           "title": "Scripts",
           "description": "Conjunto de scripts uteis que desenvolvi para uso diário, para organizar arquivos, fotos e imagens",
           "techstack": ["Python"],
           "link": "https://github.com/lapavalgas/scripts"
+        },
+        {
+          "title": "undergraduate_repositories",
+          "description": "Projeto final do curso de graduação em Análise e Desenvolvimento de Sistemas",
+          "techstack": ["Java", "Python", "JavaScript", "CSS", "Docker"],
+          "link": "https://github.com/lapavalgas/undergraduate_repositories"
         }
       ]
     },
@@ -112,6 +118,7 @@
         "img_alt": "Uma foto de perfil"
       },
       "card_psychology": {
+        "display": true,
         "title": "",
         "description": "Também convido você a conhecer minha carreira em psicologia e explorar o mundo da mente e das emoções 🧠💬",
         "link_description": "Saiba mais aqui...",
