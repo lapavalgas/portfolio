@@ -44,7 +44,7 @@ function getTimelineLanguage() {
         </a>
         <a class="link" target="_blank" :href="'/timeline/' + getTimelineLanguage()">
           <IconTimelineVue />
-          <div id="linkedin">{{ loader.selectedLanguageData.footer.timeline }}</div>
+          <div id="timeline">{{ loader.selectedLanguageData.footer.timeline }}</div>
         </a>
       </div>
       <div id="author">{{ loader.selectedLanguageData.footer.txt }}</div>
@@ -124,7 +124,8 @@ footer {
 #linkedin::after,
 #github::after,
 #email::after,
-#curriculum::after {
+#curriculum::after,
+#timeline::after {
   content: " ";
   position: absolute;
   top: 2rem;
@@ -137,7 +138,8 @@ footer {
 .link:hover #linkedin,
 .link:hover #github,
 .link:hover #email,
-.link:hover #curriculum {
+.link:hover #curriculum,
+.link:hover #timeline {
   display: block;
 }
 .scrolldown {

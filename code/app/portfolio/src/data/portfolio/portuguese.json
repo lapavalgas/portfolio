@@ -49,21 +49,21 @@
       "cards": [
         {
           "title": "Sistema de Gestão de Avaliação Neuropsicológica",
-          "description": "Minha pesquisa de mestrado focou na viabilidade de um sistema de gestão de avaliação neuropsicológica hospitalar. Utilizando a metodologia Design Science Research, pesquisei e desenvolvi um sistema para dar suporte à avaliação neuropsicológica. Um protótipo funcional com VueJs foi desenvolvido para avaliar a usabilidade. Os resultados estão na minha dissertação, disponível online 🧠💻🎓",
+          "description": "Minha pesquisa de mestrado teve como foco a viabilidade de um sistema de gestão de avaliação neuropsicológica hospitalar. Utilizando a metodologia Design Science Research, pesquisei e desenvolvi um sistema para dar suporte à avaliação neuropsicológica. Um protótipo funcional com VueJs foi desenvolvido para avaliar a usabilidade. Os resultados estão na minha dissertação, disponível online 🧠💻🎓",
           "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_neuropsychology_prototype/main/resources/HNAMS_02.png",
           "img_alt": "uma paradinha",
           "link": "https://github.com/lapavalgas/undergraduate_neuropsychology_prototype/blob/main/README_pt-br.md"
         },
         {
           "title": "Sistema de Cadastro de clientes e Valida CEP",
-          "description": "Participei de um desafio técnico para demonstrar minhas habilidades em desenvolvimento fullstack. Desenvolvi uma aplicação com Java, Spring Boot e VueJs para cadastro de clientes, validando endereços pelo CEP usando a API do Correios. Utilizei Graphql para comunicação das APIs e o H2 como banco de dados. Desenvolvi testes unitários com jUnit e de interface com Cypress. E disponibilizei o projeto no docker. 🚀💻📅",
+          "description": "Participei de um desafio técnico para demonstrar minhas habilidades em desenvolvimento fullstack. Desenvolvi uma aplicação com Java, Spring Boot e VueJs para cadastro de clientes, validando endereços pelo CEP usando a API do Correios. Utilizei Graphql para comunicação das APIs e o H2 como banco de dados. Desenvolvi testes unitários com jUnit e de interface com Cypress. O projeto foi disponibilizado via Docker. 🚀💻📅",
           "img": "https://raw.githubusercontent.com/lapavalgas/technical_showcase_zip_code_app/main/resources/ZC_03.jpeg",
           "img_alt": "uma paradinha",
           "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app"
         },
         {
           "title": "Sistema Fast Service / Projeto de Conclusão de Curso",
-          "description": "No Projeto final da graduação, desenvolvi o sistema MVP Fast Service, um marketplace de serviços. O backend em Java com Spring foi disponibilizado no Heroku, e o frontend em VueJs na Vercel. Usei Docker e MySQL localmente. O aprendizado foi gratificante, preparando-me para novos desafios. 🚀💼💻",
+          "description": "No projeto final da graduação, desenvolvi o sistema MVP Fast Service, um marketplace de serviços. O backend em Java com Spring foi disponibilizado no Heroku, e o frontend em VueJs na Vercel. Usei Docker e MySQL localmente. O aprendizado foi gratificante, preparando-me para novos desafios. 🚀💼💻",
           "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_fastservice/main/resources/fastservice_01.png",
           "img_alt": "uma paradinha",
           "link": "https://github.com/lapavalgas/undergraduate_fastservice/blob/main/README_pt-br.md"
@@ -123,6 +123,11 @@
         "img": "https://media.licdn.com/dms/image/D4D03AQEHpmO7L_ylZw/profile-displayphoto-shrink_800_800/0/1668777662832?e=1695859200&v=beta&t=38uEw1rlWF4Z7USp4ybs_oJ_W0SjMsls1EkmG_MdqmE",
         "img_alt": "Uma foto de perfil"
       },
+      "card_timeline": {
+        "display": true,
+        "description": "Para ver toda minha trajetória profissional e acadêmica ",
+        "link_description": "acesse a timeline!"
+      },
       "card_psychology": {
         "display": true,
         "title": "",
@@ -140,7 +145,7 @@
     "github_link": "https://github.com/lapavalgas",
     "email": "E-mail",
     "email_link": "lapavalgas@gmail.com",
-    "resume": "Resume",
+    "resume": "Currículum",
     "resume_link": "",
     "timeline": "Timeline",
     "scrolldown": "scrolldown",

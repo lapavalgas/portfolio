@@ -11,18 +11,6 @@ function handleChange(e: any) {
     loader.changePortfolioLanguage(e.target.options[e.target.options.selectedIndex].value);
   }
 }
-// function getTimelineLanguage() {
-//   switch (loader.selectedLanguage.toLowerCase()) {
-//     case loader.ENGLISH.toLowerCase():
-//       return loader.ENGLISH_ABB;
-//     case loader.PORTUGUESE.toLowerCase():
-//       return loader.PORTUGUESE_ABB;
-//     case loader.ITALIAN.toLowerCase():
-//       return loader.ITALIAN_ABB;
-//     default:
-//       return navigator.language;
-//   }
-// }
 </script>
 <template>
   <header>
@@ -47,9 +35,6 @@ function handleChange(e: any) {
         <li class="nav-item" onclick="menuToggle('contact')">
           <a id="contact-menu-link" href="#contact-link">{{ loader.menuInterface.contact }}</a>
         </li>
-        <!-- <li class="nav-item" onclick="menuToggle()">
-          <a target="_blank" :href="'/timeline/' + getTimelineLanguage()">{{ loader.menuInterface.timeline }}</a>
-        </li> -->
         <li class="nav-item-select">
           <select class="form-select" @change="handleChange">
             <option v-for="language in loader.menuLanguage" :selected="isThislanguageTheUserLanguage(language)" :key="language">

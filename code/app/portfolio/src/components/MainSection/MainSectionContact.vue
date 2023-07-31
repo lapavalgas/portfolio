@@ -18,6 +18,15 @@ function getImgAlt() {
 function getSectionFarewellDescription() {
   return loader.contatInterface.card_farewell.description;
 }
+function IsToDisplayTimelineDescription() {
+  return loader.contatInterface.card_timeline.display;
+}
+function getSectionTimelineDescription() {
+  return loader.contatInterface.card_timeline.description;
+}
+function getSectionTimelineLinkTxt() {
+  return loader.contatInterface.card_timeline.link_description;
+}
 function IsToDisplayPsychologyDescription() {
   return loader.contatInterface.card_psychology.display;
 }
@@ -29,6 +38,18 @@ function getSectionPsychologyPortfolioLink() {
 }
 function getSectionPsychologyPortfolioLinkText() {
   return loader.contatInterface.card_psychology.link_description;
+}
+function getTimelineLanguage() {
+  switch (loader.selectedLanguage.toLowerCase()) {
+    case loader.ENGLISH.toLowerCase():
+      return loader.ENGLISH_ABB;
+    case loader.PORTUGUESE.toLowerCase():
+      return loader.PORTUGUESE_ABB;
+    case loader.ITALIAN.toLowerCase():
+      return loader.ITALIAN_ABB;
+    default:
+      return navigator.language;
+  }
 }
 </script>
 <template>
@@ -45,6 +66,10 @@ function getSectionPsychologyPortfolioLinkText() {
               <h3 class="title-section-content title-section-content-contact">{{ getSectionTitle() }}</h3>
               <p class="contact-card-farewell">
                 {{ getSectionFarewellDescription() }}
+              </p>
+              <p v-if="IsToDisplayTimelineDescription()">
+                {{ getSectionTimelineDescription() }}
+                <a class="contact-card-link" :href="'/timeline/' + getTimelineLanguage()">{{ getSectionTimelineLinkTxt() }} </a>
               </p>
               <p v-if="IsToDisplayPsychologyDescription()" class="contact-card-psychology">
                 {{ getSectionPsychologyDescription()
