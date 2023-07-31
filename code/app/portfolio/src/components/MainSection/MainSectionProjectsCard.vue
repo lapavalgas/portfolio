@@ -13,16 +13,19 @@ function getCards() {
   <div class="projects-card">
     <div class="project-card" v-for="card in getCards()" :key="card.title">
       <a :href="card.link" class="project-card-link" target="_blank">
-        <p>
+        <p class="margin-left-10px">
           <span class="project-card-icon"><IconGithubVue /></span> <span class="title-section-content-projects">{{ card.title }}</span>
         </p>
-        <p>{{ card.description }}</p>
+        <p class="margin-left-10px">{{ card.description }}</p>
         <span class="content-area-inside"><MainSectionProjectsCardTechstackVue :techstacks="card.techstack" /></span>
       </a>
     </div>
   </div>
 </template>
 <style scoped>
+.margin-left-10px {
+  margin-left: 10px;
+}
 .project-card:hover {
   transition: all 0.47s linear;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.04);
@@ -45,7 +48,7 @@ function getCards() {
 }
 .project-card-icon {
   position: absolute;
-  margin-top: -15px;
+  margin-top: 0px;
   margin-left: -3px;
 }
 @media (orientation: landscape) and (min-width: 640px), (min-width: 768px) and (max-width: 1024px) {
