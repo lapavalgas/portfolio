@@ -80,10 +80,6 @@ function getCardImgAlt() {
   }
 }
 @media (min-width: 1025px) {
-  .about-card {
-  }
-  .about-card-txt {
-  }
   .about-card-txt > p {
     line-height: 2em;
     margin-left: -1em;
@@ -94,12 +90,8 @@ function getCardImgAlt() {
   }
 }
 @media (min-width: 1281px) {
-  .about-card-txt > p {
-  }
   .about-card-img {
     padding: 25px;
-  }
-  .about-card-img > img {
   }
 }
 </style>
