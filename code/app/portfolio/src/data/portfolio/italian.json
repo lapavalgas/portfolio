@@ -15,15 +15,17 @@
       "profession": "Ingegnere Software"
     },
     "about": {
+      "display": true,
       "title": "Sobre mim",
       "card": {
         "title": "Olá, ",
-        "description": "Sou engenheiro de software com ampla experiência no desenvolvimento, manutenção e qualidade de APIs síncronas e assíncronas para ambientes mainframe, web e mobile. Atuei como consultor na maior instituição financeira da América Latina, o Itaú Unibanco, onde atuei com sistemas antifraude, distribuição interna de dados e os canais de atendimento ao cliente. Possuo mestrado profissional em Informática em Saúde no qual conduzi um projeto de informatização da neuropsicologia em ambientes hospitalares, com foco na usabilidade e experiência do usuário. Sinto paixão por trabalhar com tecnologia, pois acredito no potencial que ela tem de melhorar a vida das pessoas. Minha motivação como engenheiro de software é trabalhar em equipes engajadas e contribuir para o sucesso de projetos inovadores. Além de engenheiro de software sou psicólogo, mas essa é outra história…",
+        "description": "Sou engenheiro de software com ampla experiência no desenvolvimento, manutenção e qualidade de APIs síncronas e assíncronas para ambientes mainframe, web e mobile. Atuei como consultor na maior instituição financeira da América Latina, o Itaú Unibanco, onde trabalhei com sistemas antifraude, distribuição interna de dados e os canais de atendimento ao cliente. Possuo mestrado profissional em Informática em Saúde no qual conduzi um projeto de informatização da neuropsicologia em ambientes hospitalares, com foco na usabilidade e experiência do usuário. Sinto paixão por trabalhar com tecnologia, pois acredito no potencial que ela tem de melhorar a vida das pessoas. Minha motivação como engenheiro de software é trabalhar em equipes engajadas e contribuir para o sucesso de projetos inovadores. Além de engenheiro de software sou psicólogo, mas essa é outra história…",
         "img": "https://raw.githubusercontent.com/lapavalgas/portfolio/feature/layout-v0.1.0/code/app/portfolio/src/assets/aboutmeimg.jpg?token=GHSAT0AAAAAACETSK7QFURPLS5TMMRY63LIZGFQQSQ",
         "img_alt": "Imagem do meu primeiro setup"
       }
     },
     "skills": {
+      "display": true,
       "title": "Habilidades",
       "cards": [
         {
@@ -42,25 +44,26 @@
       ]
     },
     "showcases": {
+      "display": true,
       "title": "Showcases",
       "cards": [
         {
           "title": "Sistema de Gestão de Avaliação Neuropsicológica",
-          "description": "Minha pesquisa de mestrado focou na viabilidade de um sistema de gestão de avaliação neuropsicológica hospitalar. Utilizando a metodologia Design Science Research, pesquisei e desenvolvi um sistema para dar suporte à avaliação neuropsicológica. Um protótipo funcional com VueJs foi desenvolvido para avaliar a usabilidade. Os resultados estão na minha dissertação, disponível online 🧠💻🎓",
+          "description": "Minha pesquisa de mestrado teve como foco a viabilidade de um sistema de gestão de avaliação neuropsicológica hospitalar. Utilizando a metodologia Design Science Research, pesquisei e desenvolvi um sistema para dar suporte à avaliação neuropsicológica. Um protótipo funcional com VueJs foi desenvolvido para avaliar a usabilidade. Os resultados estão na minha dissertação, disponível online 🧠💻🎓",
           "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_neuropsychology_prototype/main/resources/HNAMS_02.png",
           "img_alt": "uma paradinha",
           "link": "https://github.com/lapavalgas/undergraduate_neuropsychology_prototype/blob/main/README_pt-br.md"
         },
         {
           "title": "Sistema de Cadastro de clientes e Valida CEP",
-          "description": "Participei de um desafio técnico para demonstrar minhas habilidades em desenvolvimento fullstack. Desenvolvi uma aplicação com Java, Spring Boot e VueJs para cadastro de clientes, validando endereços pelo CEP usando a API do Correios. Utilizei Graphql para comunicação das APIs e o H2 como banco de dados. Desenvolvi testes unitários com jUnit e de interface com Cypress. E disponibilizei o projeto no docker. 🚀💻📅",
+          "description": "Participei de um desafio técnico para demonstrar minhas habilidades em desenvolvimento fullstack. Desenvolvi uma aplicação com Java, Spring Boot e VueJs para cadastro de clientes, validando endereços pelo CEP usando a API do Correios. Utilizei Graphql para comunicação das APIs e o H2 como banco de dados. Desenvolvi testes unitários com jUnit e de interface com Cypress. O projeto foi disponibilizado via Docker. 🚀💻📅",
           "img": "https://raw.githubusercontent.com/lapavalgas/technical_showcase_zip_code_app/main/resources/ZC_03.jpeg",
           "img_alt": "uma paradinha",
           "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app"
         },
         {
           "title": "Sistema Fast Service / Projeto de Conclusão de Curso",
-          "description": "No Projeto final da graduação, desenvolvi o sistema MVP Fast Service, um marketplace de serviços. O backend em Java com Spring foi disponibilizado no Heroku, e o frontend em VueJs na Vercel. Usei Docker e MySQL localmente. O aprendizado foi gratificante, preparando-me para novos desafios. 🚀💼💻",
+          "description": "No projeto final da graduação, desenvolvi o sistema MVP Fast Service, um marketplace de serviços. O backend em Java com Spring foi disponibilizado no Heroku, e o frontend em VueJs na Vercel. Usei Docker e MySQL localmente. O aprendizado foi gratificante, preparando-me para novos desafios. 🚀💼💻",
           "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_fastservice/main/resources/fastservice_01.png",
           "img_alt": "uma paradinha",
           "link": "https://github.com/lapavalgas/undergraduate_fastservice/blob/main/README_pt-br.md"
@@ -69,6 +72,7 @@
       "btn_more": "SAIBA MAIS"
     },
     "projects": {
+      "display": true,
       "title": "Projetos ",
       "cards": [
         {
@@ -90,22 +94,30 @@
           "link": "https://github.com/lapavalgas/undergraduate_fastservice"
         },
         {
-          "title": "undergraduate_repositories",
-          "description": "Projeto final do curso de graduação em Análise e Desenvolvimento de Sistemas",
-          "techstack": ["Java", "Python", "JavaScript", "CSS", "Docker"],
-          "link": "https://github.com/lapavalgas/undergraduate_repositories"
+          "title": "Portfolio",
+          "description": "Código desse portfolio",
+          "techstack": ["TypeScript", "Vue", "CSS", "Mobile first"],
+          "link": "https://github.com/lapavalgas/scripts"
         },
         {
           "title": "Scripts",
           "description": "Conjunto de scripts uteis que desenvolvi para uso diário, para organizar arquivos, fotos e imagens",
           "techstack": ["Python"],
           "link": "https://github.com/lapavalgas/scripts"
+        },
+        {
+          "title": "undergraduate_repositories",
+          "description": "Projeto final do curso de graduação em Análise e Desenvolvimento de Sistemas",
+          "techstack": ["Java", "Python", "JavaScript", "CSS", "Docker"],
+          "link": "https://github.com/lapavalgas/undergraduate_repositories"
         }
       ]
     },
     "contact": {
+      "display": true,
       "title": "Contate-me",
       "card_farewell": {
+        "display": true,
         "title": "Obrigado!",
         "description": "Agradeço por acompanhar minha trajetória como Engenheiro de Software! Que tal trabalharmos juntos? 🤝 Ficarei feliz em conversar com você e compartilhar experiências! Entre em contato pelo LinkedIn, envie um e-mail ou acesse meu currículo. Espero conversarmos em breve! 📧📄",
         "img": "https://media.licdn.com/dms/image/D4D03AQEHpmO7L_ylZw/profile-displayphoto-shrink_800_800/0/1668777662832?e=1695859200&v=beta&t=38uEw1rlWF4Z7USp4ybs_oJ_W0SjMsls1EkmG_MdqmE",
@@ -113,26 +125,28 @@
       },
       "card_timeline": {
         "display": true,
-        "description": "Para ver toda minha trajetória profissional e acadêmica ",
-        "link_description": "acesse a timeline!"
+        "description": "E para ver toda minha trajetória profissional e acadêmica acesse aqui a timeline ou no ícone do rodapé 🎯📅⏳.",
+        "link_description": "acesse aqui",
+        "link": ""
       },
       "card_psychology": {
-        "display": false,
+        "display": true,
         "title": "",
-        "description": "Também convido você a conhecer minha carreira em psicologia e explorar o mundo da mente e das emoções 🧠💬",
-        "link_description": "Saiba mais aqui...",
+        "description": "Também convido você a conhecer minha carreira em psicologia no Brasil 🧠💬",
+        "link_description": "carreira em psicologia",
         "link": "/"
       }
     }
   },
   "footer": {
+    "display": true,
     "linkedin": "LinkedIn",
     "linkedin_link": "https://www.linkedin.com/in/lapavalgas/",
     "github": "Github",
     "github_link": "https://github.com/lapavalgas",
     "email": "E-mail",
     "email_link": "lapavalgas@gmail.com",
-    "resume": "Resume",
+    "resume": "Currículum",
     "resume_link": "",
     "timeline": "Timeline",
     "scrolldown": "scrolldown",
