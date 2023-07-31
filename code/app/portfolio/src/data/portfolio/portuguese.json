@@ -95,7 +95,7 @@
         },
         {
           "title": "Portfolio",
-          "description": "Código desse portfolio",
+          "description": "Esse é o repositório para o código desse portfolio, todos os componentes e regras utilizadas",
           "techstack": ["TypeScript", "Vue", "CSS", "Mobile first"],
           "link": "https://github.com/lapavalgas/scripts"
         },
@@ -139,17 +139,21 @@
     }
   },
   "footer": {
-    "display": true,
+    "display_linkedin": true,
     "linkedin": "LinkedIn",
     "linkedin_link": "https://www.linkedin.com/in/lapavalgas/",
+    "display_github": true,
     "github": "Github",
     "github_link": "https://github.com/lapavalgas",
+    "display_email": true,
     "email": "E-mail",
     "email_link": "lapavalgas@gmail.com",
+    "display_resume": true,
     "resume": "Currículum",
     "resume_link": "",
+    "display_timeline": false,
     "timeline": "Timeline",
     "scrolldown": "scrolldown",
-    "txt": "Rafael Lapa Valgas / Engenheiro de Software"
+    "description": "Rafael Lapa Valgas / Engenheiro de Software"
   }
 }

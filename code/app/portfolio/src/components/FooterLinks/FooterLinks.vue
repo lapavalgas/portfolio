@@ -26,28 +26,28 @@ function getTimelineLanguage() {
     <div class="scrolldown">{{ loader.selectedLanguageData.footer.scrolldown }}</div>
     <footer>
       <div class="social-media">
-        <a class="link" target="_blank" :href="loader.selectedLanguageData.footer.linkedin_link">
+        <a v-if="loader.selectedLanguageData.footer.display_linkedin" class="link" target="_blank" :href="loader.selectedLanguageData.footer.linkedin_link">
           <IconLinkedinVue />
           <div id="linkedin">{{ loader.selectedLanguageData.footer.linkedin }}</div>
         </a>
-        <a class="link" target="_blank" :href="loader.selectedLanguageData.footer.github_link">
+        <a v-if="loader.selectedLanguageData.footer.display_github" class="link" target="_blank" :href="loader.selectedLanguageData.footer.github_link">
           <IconGithubVue />
           <div id="github">{{ loader.selectedLanguageData.footer.github }}</div>
         </a>
-        <a class="link" target="_blank" :href="loader.selectedLanguageData.footer.email_link">
+        <a v-if="loader.selectedLanguageData.footer.display_email" class="link" target="_blank" :href="loader.selectedLanguageData.footer.email_link">
           <IconEmailVue />
           <div id="email">{{ loader.selectedLanguageData.footer.email }}</div>
         </a>
-        <a class="link" target="_blank" :href="loader.selectedLanguageData.footer.resume_link">
+        <a v-if="loader.selectedLanguageData.footer.display_resume" class="link" target="_blank" :href="loader.selectedLanguageData.footer.resume_link">
           <IconResumeVue />
           <div id="curriculum">{{ loader.selectedLanguageData.footer.resume }}</div>
         </a>
-        <a class="link" target="_blank" :href="'/timeline/' + getTimelineLanguage()">
+        <a v-if="loader.selectedLanguageData.footer.display_timeline" class="link" target="_blank" :href="'/timeline/' + getTimelineLanguage()">
           <IconTimelineVue />
           <div id="timeline">{{ loader.selectedLanguageData.footer.timeline }}</div>
         </a>
       </div>
-      <div id="author">{{ loader.selectedLanguageData.footer.txt }}</div>
+      <div id="author">{{ loader.selectedLanguageData.footer.description }}</div>
     </footer>
   </span>
 </template>

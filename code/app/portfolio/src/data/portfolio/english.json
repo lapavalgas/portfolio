@@ -129,7 +129,7 @@
         "link": ""
       },
       "card_psychology": {
-        "display": true,
+        "display": false,
         "title": "",
         "description": "Também convido você a conhecer minha carreira em psicologia no Brasil 🧠💬",
         "link_description": "carreira em psicologia",
@@ -138,17 +138,21 @@
     }
   },
   "footer": {
-    "display": true,
+    "display_linkedin": true,
     "linkedin": "LinkedIn",
     "linkedin_link": "https://www.linkedin.com/in/lapavalgas/",
+    "display_github": true,
     "github": "Github",
     "github_link": "https://github.com/lapavalgas",
+    "display_email": true,
     "email": "E-mail",
     "email_link": "lapavalgas@gmail.com",
+    "display_resume": true,
     "resume": "Currículum",
     "resume_link": "",
+    "display_timeline": false,
     "timeline": "Timeline",
     "scrolldown": "scrolldown",
-    "txt": "Rafael Lapa Valgas / Engenheiro de Software"
+    "description": "Rafael Lapa Valgas / Engenheiro de Software"
   }
 }

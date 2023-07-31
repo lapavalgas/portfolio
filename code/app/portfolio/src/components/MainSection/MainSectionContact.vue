@@ -19,7 +19,7 @@ function getSectionFarewellDescription() {
   return loader.contatInterface.card_farewell.description;
 }
 function IsToDisplayTimelineDescription() {
-  return loader.contatInterface.card_timeline.display;
+  return loader.contatInterface.card_timeline.display && loader.selectedLanguageData.footer.display_timeline;
 }
 function getSectionTimelineDescription() {
   return loader.contatInterface.card_timeline.description;
@@ -82,11 +82,12 @@ function getTimelineLanguage() {
               <p>
                 <span v-if="IsToDisplayTimelineDescription()">
                   {{ getFirstHalfOfTimelineDescription() }}
-                  <a class="contact-card-link" :href="'/timeline/' + getTimelineLanguage()">{{ getSectionTimelineLinkDescription() }} </a
-                  >{{ getSecondHalfOfTimelineDescription() }}
-                  <span v-if="IsToDisplayPsychologyDescription()">
-                    {{ getFirstHalfOfPsychologyDescription() }}
-                  </span>
+                  <a class="contact-card-link" :href="'/timeline/' + getTimelineLanguage()">{{ getSectionTimelineLinkDescription() }} </a>
+                  {{ getSecondHalfOfTimelineDescription() }}
+                </span>
+                <span v-if="IsToDisplayPsychologyDescription()">
+                  {{ getFirstHalfOfPsychologyDescription() }}
+
                   <a class="contact-card-link" :href="getSectionPsychologyPortfolioLink()">{{ getSectionPsychologyPortfolioLinkDescription() }} </a
                   >{{ getSecondHalfOfPsychologyDescription() }}
                 </span>
