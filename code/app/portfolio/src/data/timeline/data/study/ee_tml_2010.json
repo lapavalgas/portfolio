@@ -1,0 +1,126 @@
+{
+  "year": "",
+  "type": "education experience",
+  "category": "",
+  "institution_name": "",
+  "abbreviation_name": "",
+  "location": {
+    "city": "",
+    "state": "",
+    "country": ""
+  },
+  "date_start": "",
+  "date_end": "",
+  "display": true,
+  "link": [],
+  "course_name": "",
+  "department": "",
+  "classroom_monitor": [
+    {
+      "job_title": "",
+      "date_start": "",
+      "date_end": "",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "",
+          "project:": "",
+          "job_level": "",
+          "squad": "",
+          "date_start": "",
+          "date_end": "",
+          "display": true,
+          "description": {
+            "intro": "",
+            "tasks": [],
+            "conclusion": ""
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ],
+  "internship": [
+    {
+      "job_title": "",
+      "date_start": "",
+      "date_end": "",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "",
+          "project:": "",
+          "job_level": "",
+          "squad": "",
+          "date_start": "",
+          "date_end": "",
+          "display": true,
+          "description": {
+            "intro": "",
+            "tasks": [],
+            "conclusion": ""
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ],
+  "required_internship": [
+    {
+      "job_title": "",
+      "date_start": "",
+      "date_end": "",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "",
+          "project:": "",
+          "job_level": "",
+          "squad": "",
+          "date_start": "",
+          "date_end": "",
+          "display": true,
+          "description": {
+            "intro": "",
+            "tasks": [],
+            "conclusion": ""
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ],
+  "research": [
+    {
+      "job_title": "",
+      "date_start": "",
+      "date_end": "",
+      "link": "",
+      "display": true,
+      "projects": [
+        {
+          "department": "",
+          "project:": "",
+          "job_level": "",
+          "squad": "",
+          "date_start": "",
+          "date_end": "",
+          "display": true,
+          "description": {
+            "intro": "",
+            "tasks": [],
+            "conclusion": ""
+          },
+          "skills": []
+        }
+      ],
+      "linkedin": { "tasks": [], "skills": [] }
+    }
+  ]
+}
