@@ -6,13 +6,11 @@ const loader = useLoaderStore();
 function isThislanguageTheUserLanguage(language: string) {
   return language === loader.selectedLanguage;
 }
-
 function handleChange(e: any) {
   if (e.target.options.selectedIndex > -1) {
     loader.changePortfolioLanguage(e.target.options[e.target.options.selectedIndex].value);
   }
 }
-
 function getTimelineLanguage() {
   switch (loader.selectedLanguage.toLowerCase()) {
     case loader.ENGLISH.toLowerCase():
@@ -32,25 +30,25 @@ function getTimelineLanguage() {
     <nav class="nav-content-hidden">
       <ul class="nav-content">
         <li class="nav-item" onclick="menuToggle()">
-          <a id="cover-menu-link" href="#cover-link">{{ loader.selectedLanguageData.menu.cover }}</a>
+          <a id="cover-menu-link" href="#cover-link">{{ loader.menuInterface.cover }}</a>
         </li>
         <li class="nav-item" onclick="menuToggle('about')">
-          <a id="about-menu-link" href="#about-link">{{ loader.selectedLanguageData.menu.about }}</a>
+          <a id="about-menu-link" href="#about-link">{{ loader.menuInterface.about }}</a>
         </li>
         <li class="nav-item hidden-mobile" onclick="menuToggle('skills')">
-          <a id="skills-menu-link" href="#skills-link">{{ loader.selectedLanguageData.menu.skills }}</a>
+          <a id="skills-menu-link" href="#skills-link">{{ loader.menuInterface.skills }}</a>
         </li>
         <li class="nav-item" onclick="menuToggle('showcases')">
-          <a id="showcases-menu-link" href="#showcases-link">{{ loader.selectedLanguageData.menu.showcases }}</a>
+          <a id="showcases-menu-link" href="#showcases-link">{{ loader.menuInterface.showcases }}</a>
         </li>
         <li class="nav-item" onclick="menuToggle('projects')">
-          <a id="projects-menu-link" href="#projects-link">{{ loader.selectedLanguageData.menu.projects }}</a>
+          <a id="projects-menu-link" href="#projects-link">{{ loader.menuInterface.projects }}</a>
         </li>
         <li class="nav-item" onclick="menuToggle('contact')">
-          <a id="contact-menu-link" href="#contact-link">{{ loader.selectedLanguageData.menu.contact }}</a>
+          <a id="contact-menu-link" href="#contact-link">{{ loader.menuInterface.contact }}</a>
         </li>
         <li class="nav-item" onclick="menuToggle()">
-          <a target="_blank" :href="'/timeline/' + getTimelineLanguage()">{{ loader.selectedLanguageData.menu.timeline }}</a>
+          <a target="_blank" :href="'/timeline/' + getTimelineLanguage()">{{ loader.menuInterface.timeline }}</a>
         </li>
         <li class="nav-item-select">
           <select class="form-select" @change="handleChange">

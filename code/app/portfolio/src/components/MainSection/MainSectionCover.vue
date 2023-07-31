@@ -6,7 +6,6 @@ const loader = useLoaderStore();
 function getName() {
   return loader.coverInterface.name;
 }
-
 function getProfession() {
   return loader.coverInterface.profession;
 }

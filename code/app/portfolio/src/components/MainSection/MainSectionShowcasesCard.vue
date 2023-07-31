@@ -6,7 +6,6 @@ const loader = useLoaderStore();
 function getCards() {
   return loader.showcasesInterface.cards;
 }
-
 function getBtnMoreTxt() {
   return loader.showcasesInterface.btn_more;
 }

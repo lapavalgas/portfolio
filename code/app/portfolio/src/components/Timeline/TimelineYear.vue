@@ -35,7 +35,6 @@ const lang = !props.lang ? loader.ENGLISH_ABB : props.lang.substring(0, 2);
 function isPortugueseLanguage() {
   return lang === loader.PORTUGUESE_ABB;
 }
-
 let cards: object[];
 
 let interfaceTxt = {
@@ -73,7 +72,6 @@ if (isPortugueseLanguage()) {
     [PT_WE_TML_2001, PT_WE_TML_2007, PT_WE_TML_2012, PT_WE_TML_2013, PT_WE_TML_2016, PT_WE_TML_2017, PT_WE_TML_2020]
   );
 }
-
 let filterYearsComponentKey = ref(0);
 let filterYears = "";
 let filterMusic = false;
@@ -82,7 +80,6 @@ let filterInformatic = false;
 let filterLanguage = false;
 
 let filterCategory: object = {};
-
 function filterAndReloadCardsComponent() {
   filterCategory = {
     filterMusic: filterMusic,

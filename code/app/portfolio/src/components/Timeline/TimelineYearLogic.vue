@@ -23,14 +23,12 @@ const categoryFilters: Record<string, string> = {
   informatica: "filterInformatic",
   letras: "filterLanguage",
 };
-
 interface Card {
   isEndCard: boolean;
   isStartCard: boolean;
   category: string;
   id: string;
 }
-
 function startCardFirst(list: Card[]) {
   for (const el of list) {
     if (!el.isEndCard && el.isStartCard) {
@@ -41,12 +39,10 @@ function startCardFirst(list: Card[]) {
   }
   return list;
 }
-
 function cardYearIsAValidFilteredYear(cardYear: string) {
   if (!filterYears || filterYears.trim() === "") {
     return true;
   }
-
   // check if it is a range of years and validate the cards
   let filterYearsList = filterYears.trim().split("-");
   if (filterYearsList.length === 2) {
@@ -55,7 +51,6 @@ function cardYearIsAValidFilteredYear(cardYear: string) {
       return true;
     }
   }
-
   // if not, separate the years and validate the cards
   filterYearsList = filterYears
     .replace(/[./\\| `´\[\]~^:<>.\-=;]+/g, ";")
@@ -66,7 +61,6 @@ function cardYearIsAValidFilteredYear(cardYear: string) {
     return true;
   }
 }
-
 function cardDateIsCurrentDate(card: Record<string, string>) {
   const date = new Date();
   date.setDate(2);
@@ -78,7 +72,6 @@ function cardDateIsCurrentDate(card: Record<string, string>) {
     return true;
   }
 }
-
 function isAValidCategory(cardCategory: string) {
   // checks if filters are applied, otherwise it allows access to all categories
   if (!Object.values(filterCategory).some(Boolean)) {
@@ -90,7 +83,6 @@ function isAValidCategory(cardCategory: string) {
   }
   return false;
 }
-
 function cardCategoryIsAValidFilteredCategory(categoryList: string | string[]) {
   if (typeof categoryList === "string") {
     return isAValidCategory(categoryList);
@@ -100,20 +92,16 @@ function cardCategoryIsAValidFilteredCategory(categoryList: string | string[]) {
   }
   return false;
 }
-
 function isPortugueseLanguage() {
   return lang === loader.PORTUGUESE_ABB;
 }
-
 type MonthNames = {
   en: string;
   pt: string;
 };
-
 type MonthsMap = {
   [month: string]: MonthNames;
 };
-
 function getMonthInFull(month: string) {
   const months: MonthsMap = {
     "01": { en: "January", pt: "Janeiro" },
@@ -129,7 +117,6 @@ function getMonthInFull(month: string) {
     "11": { en: "November", pt: "Novembro" },
     "12": { en: "December", pt: "Dezembro" },
   };
-
   const language = isPortugueseLanguage() ? "pt" : "en";
   return months[month]?.[language] || "Invalid Month";
 }

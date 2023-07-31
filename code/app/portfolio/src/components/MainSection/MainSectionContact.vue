@@ -6,31 +6,24 @@ const loader = useLoaderStore();
 function getTitle() {
   return loader.contatInterface.title;
 }
-
 function getSectionTitle() {
   return loader.contatInterface.card_farewell.title;
 }
-
 function getImg() {
   return loader.contatInterface.card_farewell.img;
 }
-
 function getImgAlt() {
   return loader.contatInterface.card_farewell.img_alt;
 }
-
 function getSectionFarewellDescription() {
   return loader.contatInterface.card_farewell.description;
 }
-
 function getSectionPsychologyDescription() {
   return loader.contatInterface.card_psychology.description;
 }
-
 function getSectionPsychologyPortfolioLink() {
   return loader.contatInterface.card_psychology.link;
 }
-
 function getSectionPsychologyPortfolioLinkText() {
   return loader.contatInterface.card_psychology.link_description;
 }

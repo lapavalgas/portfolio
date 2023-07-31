@@ -46,7 +46,6 @@ const techstackDotColor: Record<string, string> = {
   PHP: VIOLET,
   Wordpress: BLUE,
 };
-
 function setupDotColor(techstack: any) {
   return techstackDotColor[techstack];
 }

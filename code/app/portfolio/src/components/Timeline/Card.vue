@@ -11,26 +11,22 @@ const lang = !props.lang ? loader.ENGLISH_ABB : props.lang.substring(0, 2);
 function isPortugueseLanguage() {
   return lang === loader.PORTUGUESE_ABB;
 }
-
 const CSS_CLASS_TOGGLE = "toggle_card_inactive";
 
 const CARD_TYPES = {
   STUDY_CARD: "Education Experience",
   WORK_CARD: "work experience",
 };
-
 let interfaceTxt = {
   CARD_IS_INACTIVE_TXT: interfaceTxtData.en.txt_viewMore,
   CARD_IS_ACTIVE_TXT: interfaceTxtData.en.txt_seeLess,
 };
-
 if (isPortugueseLanguage()) {
   interfaceTxt = {
     CARD_IS_INACTIVE_TXT: interfaceTxtData.pt.txt_viewMore,
     CARD_IS_ACTIVE_TXT: interfaceTxtData.pt.txt_seeLess,
   };
 }
-
 let toggle_card_is_active = false;
 let toggle_card_txt_links = false;
 let toggle_card_txt_txt = false;
@@ -41,13 +37,11 @@ function isAStudyCard(cardType: string) {
     return true;
   }
 }
-
 function isAWorkCard(cardType: string) {
   if (cardType.toLocaleLowerCase() === CARD_TYPES.WORK_CARD.toLocaleLowerCase()) {
     return true;
   }
 }
-
 function toggle_card_activity(id: string) {
   let card_txt = document.getElementById(id);
   let card_txt_ver_mais = document.getElementById(id + "_ver_mais");
@@ -58,7 +52,6 @@ function toggle_card_activity(id: string) {
     toggle_card_is_active = !toggle_card_is_active;
     return;
   }
-
   if (card_txt && card_txt_ver_mais && !toggle_card_is_active) {
     card_txt.classList.remove(CSS_CLASS_TOGGLE);
     card_txt_ver_mais.innerText = interfaceTxt.CARD_IS_ACTIVE_TXT;
