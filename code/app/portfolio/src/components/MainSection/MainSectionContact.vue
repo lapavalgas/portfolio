@@ -24,8 +24,14 @@ function IsToDisplayTimelineDescription() {
 function getSectionTimelineDescription() {
   return loader.contatInterface.card_timeline.description;
 }
-function getSectionTimelineLinkTxt() {
+function getSectionTimelineLinkDescription() {
   return loader.contatInterface.card_timeline.link_description;
+}
+function getFirstHalfOfTimelineDescription() {
+  return getSectionTimelineDescription().split(getSectionTimelineLinkDescription())[0];
+}
+function getSecondHalfOfTimelineDescription() {
+  return getSectionTimelineDescription().split(getSectionTimelineLinkDescription())[1];
 }
 function IsToDisplayPsychologyDescription() {
   return loader.contatInterface.card_psychology.display;
@@ -36,8 +42,14 @@ function getSectionPsychologyDescription() {
 function getSectionPsychologyPortfolioLink() {
   return loader.contatInterface.card_psychology.link;
 }
-function getSectionPsychologyPortfolioLinkText() {
+function getSectionPsychologyPortfolioLinkDescription() {
   return loader.contatInterface.card_psychology.link_description;
+}
+function getFirstHalfOfPsychologyDescription() {
+  return getSectionPsychologyDescription().split(getSectionPsychologyPortfolioLinkDescription())[0];
+}
+function getSecondHalfOfPsychologyDescription() {
+  return getSectionPsychologyDescription().split(getSectionPsychologyPortfolioLinkDescription())[1];
 }
 function getTimelineLanguage() {
   switch (loader.selectedLanguage.toLowerCase()) {
@@ -67,13 +79,17 @@ function getTimelineLanguage() {
               <p class="contact-card-farewell">
                 {{ getSectionFarewellDescription() }}
               </p>
-              <p v-if="IsToDisplayTimelineDescription()">
-                {{ getSectionTimelineDescription() }}
-                <a class="contact-card-link" :href="'/timeline/' + getTimelineLanguage()">{{ getSectionTimelineLinkTxt() }} </a>
-              </p>
-              <p v-if="IsToDisplayPsychologyDescription()" class="contact-card-psychology">
-                {{ getSectionPsychologyDescription()
-                }}<a class="contact-card-link" :href="getSectionPsychologyPortfolioLink()">{{ getSectionPsychologyPortfolioLinkText() }}</a>
+              <p>
+                <span v-if="IsToDisplayTimelineDescription()">
+                  {{ getFirstHalfOfTimelineDescription() }}
+                  <a class="contact-card-link" :href="'/timeline/' + getTimelineLanguage()">{{ getSectionTimelineLinkDescription() }} </a
+                  >{{ getSecondHalfOfTimelineDescription() }}
+                  <span v-if="IsToDisplayPsychologyDescription()">
+                    {{ getFirstHalfOfPsychologyDescription() }}
+                  </span>
+                  <a class="contact-card-link" :href="getSectionPsychologyPortfolioLink()">{{ getSectionPsychologyPortfolioLinkDescription() }} </a
+                  >{{ getSecondHalfOfPsychologyDescription() }}
+                </span>
               </p>
             </div>
           </div>

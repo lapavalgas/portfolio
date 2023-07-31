@@ -1,6 +1,6 @@
 {
   "menu": {
-    "cover": "Inicio",
+    "cover": "Início",
     "about": "Sobre mim",
     "skills": "Habilidades",
     "showcases": "Showcases",
@@ -125,14 +125,15 @@
       },
       "card_timeline": {
         "display": true,
-        "description": "Para ver toda minha trajetória profissional e acadêmica ",
-        "link_description": "acesse a timeline!"
+        "description": "E para ver toda minha trajetória profissional e acadêmica acesse aqui a timeline ou no ícone do rodapé 🎯📅⏳.",
+        "link_description": "acesse aqui",
+        "link": ""
       },
       "card_psychology": {
         "display": true,
         "title": "",
-        "description": "Também convido você a conhecer minha carreira em psicologia e explorar o mundo da mente e das emoções 🧠💬",
-        "link_description": "Saiba mais aqui...",
+        "description": "Também convido você a conhecer minha carreira em psicologia no Brasil 🧠💬",
+        "link_description": "carreira em psicologia",
         "link": "/"
       }
     }

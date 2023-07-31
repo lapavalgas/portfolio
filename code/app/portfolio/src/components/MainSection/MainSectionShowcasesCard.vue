@@ -117,7 +117,7 @@ function getBtnMoreTxt() {
 }
 @media (min-width: 1600px) {
   .showcase-card-txt > p {
-    max-width: 60%;
+    max-width: 55%;
   }
 }
 </style>
