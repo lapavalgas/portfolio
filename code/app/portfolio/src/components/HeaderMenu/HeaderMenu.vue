@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useLoaderStore } from "@/stores/loader";
 
-import menuToggle from "@/components/scripts.js";
+import menuToggle from "@/assets/scripts.ts";
 
 const loader = useLoaderStore();
 

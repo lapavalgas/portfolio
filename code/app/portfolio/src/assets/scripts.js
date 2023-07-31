@@ -288,8 +288,4 @@ function uuidv4() {
           export default
 --------------------------------------------------------***/
 
-function getEnglish() {
-  return ENGLISH;
-}
-
-export default { menuToggle, getEnglish, ENGLISH_ABB, PORTUGUESE, PORTUGUESE_ABB, ITALIAN, ITALIAN_ABB };
+export default { menuToggle, ENGLISH, ENGLISH_ABB, PORTUGUESE, PORTUGUESE_ABB, ITALIAN, ITALIAN_ABB };
