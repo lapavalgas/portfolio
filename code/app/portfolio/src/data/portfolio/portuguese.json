@@ -1,29 +1,31 @@
 {
   "menu": {
-    "cover": "Perfil",
-    "about": "Sobre",
+    "cover": "Inicio",
+    "about": "Sobre mim",
     "skills": "Habilidades",
     "showcases": "Showcases",
     "projects": "Projetos",
-    "contact": "Contatos",
-    "timeline": "Timeline",
+    "contact": "Contate-me",
     "resume": "Curriculum"
   },
   "sections": {
     "cover": {
+      "display": true,
       "name": "Rafael Lapa Valgas",
       "profession": "Engenheiro de Software"
     },
     "about": {
+      "display": true,
       "title": "Sobre mim",
       "card": {
         "title": "Olá, ",
-        "description": "Sou engenheiro de software com ampla experiência no desenvolvimento, manutenção e qualidade de APIs síncronas e assíncronas para ambientes mainframe, web e mobile. Atuei como consultor na maior instituição financeira da América Latina, o Itaú Unibanco, onde atuei com sistemas antifraude, distribuição interna de dados e os canais de atendimento ao cliente. Possuo mestrado profissional em Informática em Saúde no qual conduzi um projeto de informatização da neuropsicologia em ambientes hospitalares, com foco na usabilidade e experiência do usuário. Sinto paixão por trabalhar com tecnologia, pois acredito no potencial que ela tem de melhorar a vida das pessoas. Minha motivação como engenheiro de software é trabalhar em equipes engajadas e contribuir para o sucesso de projetos inovadores. Além de engenheiro de software sou psicólogo, mas essa é outra história…",
+        "description": "Sou engenheiro de software com ampla experiência no desenvolvimento, manutenção e qualidade de APIs síncronas e assíncronas para ambientes mainframe, web e mobile. Atuei como consultor na maior instituição financeira da América Latina, o Itaú Unibanco, onde trabalhei com sistemas antifraude, distribuição interna de dados e os canais de atendimento ao cliente. Possuo mestrado profissional em Informática em Saúde no qual conduzi um projeto de informatização da neuropsicologia em ambientes hospitalares, com foco na usabilidade e experiência do usuário. Sinto paixão por trabalhar com tecnologia, pois acredito no potencial que ela tem de melhorar a vida das pessoas. Minha motivação como engenheiro de software é trabalhar em equipes engajadas e contribuir para o sucesso de projetos inovadores. Além de engenheiro de software sou psicólogo, mas essa é outra história…",
         "img": "https://raw.githubusercontent.com/lapavalgas/portfolio/feature/layout-v0.1.0/code/app/portfolio/src/assets/aboutmeimg.jpg?token=GHSAT0AAAAAACETSK7QFURPLS5TMMRY63LIZGFQQSQ",
         "img_alt": "Imagem do meu primeiro setup"
       }
     },
     "skills": {
+      "display": true,
       "title": "Habilidades",
       "cards": [
         {
@@ -42,6 +44,7 @@
       ]
     },
     "showcases": {
+      "display": true,
       "title": "Showcases",
       "cards": [
         {
@@ -69,6 +72,7 @@
       "btn_more": "SAIBA MAIS"
     },
     "projects": {
+      "display": true,
       "title": "Projetos ",
       "cards": [
         {
@@ -110,8 +114,10 @@
       ]
     },
     "contact": {
+      "display": true,
       "title": "Contate-me",
       "card_farewell": {
+        "display": true,
         "title": "Obrigado!",
         "description": "Agradeço por acompanhar minha trajetória como Engenheiro de Software! Que tal trabalharmos juntos? 🤝 Ficarei feliz em conversar com você e compartilhar experiências! Entre em contato pelo LinkedIn, envie um e-mail ou acesse meu currículo. Espero conversarmos em breve! 📧📄",
         "img": "https://media.licdn.com/dms/image/D4D03AQEHpmO7L_ylZw/profile-displayphoto-shrink_800_800/0/1668777662832?e=1695859200&v=beta&t=38uEw1rlWF4Z7USp4ybs_oJ_W0SjMsls1EkmG_MdqmE",
@@ -127,6 +133,7 @@
     }
   },
   "footer": {
+    "display": true,
     "linkedin": "LinkedIn",
     "linkedin_link": "https://www.linkedin.com/in/lapavalgas/",
     "github": "Github",
@@ -135,6 +142,7 @@
     "email_link": "lapavalgas@gmail.com",
     "resume": "Resume",
     "resume_link": "",
+    "timeline": "Timeline",
     "scrolldown": "scrolldown",
     "txt": "Rafael Lapa Valgas / Engenheiro de Software"
   }

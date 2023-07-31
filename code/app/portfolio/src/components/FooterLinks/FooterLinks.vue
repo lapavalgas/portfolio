@@ -4,8 +4,22 @@ import IconLinkedinVue from "./icons/IconLinkedin.vue";
 import IconGithubVue from "./icons/IconGithub.vue";
 import IconEmailVue from "./icons/IconEmail.vue";
 import IconResumeVue from "./icons/IconResume.vue";
+import IconTimelineVue from "./icons/IconTimeline.vue";
 
 const loader = useLoaderStore();
+
+function getTimelineLanguage() {
+  switch (loader.selectedLanguage.toLowerCase()) {
+    case loader.ENGLISH.toLowerCase():
+      return loader.ENGLISH_ABB;
+    case loader.PORTUGUESE.toLowerCase():
+      return loader.PORTUGUESE_ABB;
+    case loader.ITALIAN.toLowerCase():
+      return loader.ITALIAN_ABB;
+    default:
+      return navigator.language;
+  }
+}
 </script>
 <template>
   <span>
@@ -27,6 +41,10 @@ const loader = useLoaderStore();
         <a class="link" target="_blank" :href="loader.selectedLanguageData.footer.resume_link">
           <IconResumeVue />
           <div id="curriculum">{{ loader.selectedLanguageData.footer.resume }}</div>
+        </a>
+        <a class="link" target="_blank" :href="'/timeline/' + getTimelineLanguage()">
+          <IconTimelineVue />
+          <div id="linkedin">{{ loader.selectedLanguageData.footer.timeline }}</div>
         </a>
       </div>
       <div id="author">{{ loader.selectedLanguageData.footer.txt }}</div>
