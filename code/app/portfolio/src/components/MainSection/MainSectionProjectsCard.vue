@@ -49,7 +49,7 @@ function getCards() {
 .project-card-icon {
   position: absolute;
   margin-top: 0px;
-  margin-left: -3px;
+  margin-left: -8px;
 }
 @media (orientation: landscape) and (min-width: 640px), (min-width: 768px) and (max-width: 1024px) {
   .projects-card {
