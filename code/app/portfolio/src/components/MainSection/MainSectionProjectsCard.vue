@@ -27,7 +27,6 @@ function getCards() {
   transition: all 0.47s linear;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.04);
 }
-
 .project-card {
   margin: 0.5rem 0;
   padding: 0.5rem;
@@ -35,35 +34,29 @@ function getCards() {
   font-size: var(--fs-small);
   background-color: #00000003;
 }
-
 .project-card > p {
   margin: 0;
   padding: 5px 0;
 }
-
 .project-card-link {
   text-decoration: none;
   color: inherit;
   line-height: inherit;
 }
-
 .project-card-icon {
   position: absolute;
   margin-top: -15px;
   margin-left: -3px;
 }
-
 @media (orientation: landscape) and (min-width: 640px), (min-width: 768px) and (max-width: 1024px) {
   .projects-card {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
-
   .project-card {
     margin: 0.5rem;
   }
 }
-
 @media (min-width: 1025px) and (min-height: 625px) {
   .projects-card {
     grid-template-columns: repeat(3, minmax(200px, 1fr));
