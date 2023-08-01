@@ -21,7 +21,7 @@
         "title": "",
         "description": "Sou engenheiro de software com ampla experiência no desenvolvimento, manutenção e qualidade de APIs síncronas e assíncronas para ambientes mainframe, web e mobile. Atuei como consultor na maior instituição financeira da América Latina, o Itaú Unibanco, onde trabalhei com sistemas antifraude, distribuição interna de dados e os canais de atendimento ao cliente. Possuo mestrado profissional em Informática em Saúde no qual conduzi um projeto de informatização da neuropsicologia em ambientes hospitalares, com foco na usabilidade e experiência do usuário. Sinto paixão por trabalhar com tecnologia, pois acredito no potencial que ela tem de melhorar a vida das pessoas. Minha motivação como engenheiro de software é trabalhar em equipes engajadas e contribuir para o sucesso de projetos inovadores. Além de engenheiro de software sou psicólogo, mas essa é outra história…",
         "img": "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg",
-        "img_alt": ""
+        "img_alt": "Imagem do home office e um setup de computador"
       }
     },
     "skills": {
@@ -38,7 +38,7 @@
         },
         {
           "title": "QUALITY ASSURANCE",
-          "description": "Como analista de qualidade, minha missão é garantir a excelência dos produtos desenvolvidos. Realizo testes minuciosos em diversas plataformas, como web e mobile, utilizando ferramentas como Selenium e Postman. Documento resultados, reporto bugs e trabalho em conjunto com a equipe de desenvolvimento para aprimorar a usabilidade e performance dos sistemas. Meu compromisso é entregar produtos confiáveis e de alto padrão, assegurando a satisfação dos usuários. 🕵️‍♂️🔍💡"
+          "description": "Como analista de qualidade, minha missão é garantir a excelência dos produtos desenvolvidos. Realizo testes minuciosos em diversas plataformas, como web, mobile e mainframe, utilizando ferramentas como Selenium, Postman e Jagacy. Documento resultados, reporto bugs e trabalho em conjunto com a equipe de desenvolvimento para aprimorar a usabilidade e performance dos sistemas. Meu compromisso é entregar produtos confiáveis e de alto padrão, assegurando a satisfação dos usuários. 🕵️‍♂️🔍💡"
         }
       ]
     },
@@ -47,24 +47,27 @@
       "title": "Showcases",
       "cards": [
         {
+          "id": 1,
           "title": "Sistema de Gestão de Avaliação Neuropsicológica",
           "description": "Desenvolvi um sistema de gestão de avaliação neuropsicológica hospitalar como parte da minha pesquisa de mestrado em Informática em Saúde. O projeto englobou todas as etapas, desde a análise do sistema até a validação do protótipo funcional desenvolvido em VueJs. Se você se interessa por tecnologia e sua aplicação na área da saúde, clique para conhecer os resultados e descobertas deste projeto inovador. 🧠💻🚀",
           "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_neuropsychology_prototype/main/resources/HNAMS_02.png",
-          "img_alt": "Imagem da tela inicial do sistema de Gestão de Avaliação Neuropsicológica",
+          "img_alt": "Imagem da tela inicial do sistema de Gestão de Avaliação Neuropsicológica.",
           "link": "https://github.com/lapavalgas/undergraduate_neuropsychology_prototype/blob/main/README_pt-br.md"
         },
         {
-          "title": "Sistema de Cadastro de clientes e Valida CEP",
-          "description": "Participei de um desafio técnico criando uma aplicação completa de cadastro de clientes, com validação de endereços pelo CEP usando a API dos Correios. Desenvolvi o frontend com Vue.js e o backend com Spring Boot em Java, garantindo uma comunicação eficiente através de Graphql. Além disso, automatizei testes unitários e funcionais utilizando jUnit e Cypress. O projeto foi dockerizado para facilitar a entrega. 🚀💻📅",
+          "id": 2,
+          "title": "Sistema de Cadastro de Clientes com validação de Endereço",
+          "description": "Participei de um desafio técnico criando uma aplicação completa de cadastro de clientes, com validação de endereços pelo CEP usando a API dos Correios. Desenvolvi o frontend com Vue.js e o backend com Spring Boot em Java, garantindo uma comunicação eficiente através de Graphql. Além disso, automatizei testes unitários e funcionais utilizando jUnit e Cypress. O projeto foi dockerizado para facilitar a entrega. Clique para conhecer 🚀💻📅",
           "img": "https://raw.githubusercontent.com/lapavalgas/technical_showcase_zip_code_app/main/resources/ZC_03.jpeg",
-          "img_alt": "Imagem da tela inicial do sistema de Cadastro de clientes e Valida CEP",
+          "img_alt": "Imagem da tela inicial do sistema  de Cadastro de Clientes com validação de Endereço.",
           "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app/blob/main/README_pt-br.md"
         },
         {
-          "title": "Sistema Fast Service / Projeto de Conclusão de Curso",
+          "id": 3,
+          "title": "Sistema Fast Service",
           "description": "Desenvolvi o sistema MVP Fast Service, um marketplace de serviços, como projeto final da graduação. O backend em Java com Spring e MySQL/H2 foi disponibilizado no Heroku e o frontend em VueJs no Vercel. O projeto foi dockerizado para facilitar a entrega. 🚀💼💻",
           "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_fastservice/main/resources/fastservice_01.png",
-          "img_alt": "Imagem da tela inicial do sistema Fast Service",
+          "img_alt": "Imagem da tela inicial do sistema Fast Service.",
           "link": "https://github.com/lapavalgas/undergraduate_fastservice/blob/main/README_pt-br.md"
         }
       ],
@@ -76,31 +79,31 @@
       "cards": [
         {
           "title": "masterdegree_neuropsychology_prototype",
-          "description": "Repositório do sistema desenvolvido durante meu mestrado...",
+          "description": "Repositório do sistema de avaliação neuropsicológica hospitalar...",
           "techstack": ["TypeScript", "Vue", "CSS", "Docker"],
           "link": "https://github.com/lapavalgas/masterdegree_neuropsychology_prototype"
         },
         {
           "title": "technical_showcase_zip_code_app",
-          "description": "Repositório do sistema criado para uma entrevista de emprego...",
+          "description": "Repositório do sistema de cadastro de clientes com validação de endereço...",
           "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
           "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app"
         },
         {
           "title": "undergraduate_fastservice",
-          "description": "Repositório do sistema desenvolvido durante o projeto final do curso de graduação...",
+          "description": "Repositório do sistema fast service, um marketplace de serviços... ",
           "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
           "link": "https://github.com/lapavalgas/undergraduate_fastservice"
         },
         {
           "title": "Portfolio",
-          "description": "Repositório do sistema desenvolvido para este portfolio e os dados...",
+          "description": "Repositório do meu portfólio e sistema de linha do tempo pessoal...",
           "techstack": ["TypeScript", "Vue", "CSS", "Mobile first"],
           "link": "https://github.com/lapavalgas/portfolio"
         },
         {
           "title": "Scripts",
-          "description": "Repositório com scripts úteis para organização de arquivos, fotos e imagens...",
+          "description": "Repositório dos meus scripts úteis para organização de arquivos, fotos e imagens...",
           "techstack": ["Python"],
           "link": "https://github.com/lapavalgas/scripts"
         },
@@ -119,17 +122,17 @@
         "display": true,
         "title": "Obrigado!",
         "description": "Agradeço por acompanhar minha trajetória como Engenheiro de Software! Que tal trabalharmos juntos? 🤝 Ficarei feliz em conversar com você e compartilhar experiências! Entre em contato pelo LinkedIn, envie um e-mail ou acesse meu currículo. Espero conversarmos em breve! 📧📄",
-        "img": "https://www.planningboard.ca/wp-content/uploads/2020/03/Computer-Programmer-Interactive-Media-Developer-Image-768x512.jpg",
-        "img_alt": ""
+        "img": "https://media.licdn.com/dms/image/D4D03AQEHpmO7L_ylZw/profile-displayphoto-shrink_800_800/0/1668777662832?e=1696464000&v=beta&t=GK92TatviJgD4KjdbIyKtejU1RiiWQgE84jevOna1sU",
+        "img_alt": "Foto de perfil."
       },
       "card_timeline": {
-        "display": false,
+        "display": true,
         "description": "E para ver toda minha trajetória profissional e acadêmica acesse aqui uma timeline que eu desenvolvi ou clique no ícone do rodapé. ",
         "link_description": "acesse aqui",
         "link": "/"
       },
       "card_psychology": {
-        "display": false,
+        "display": true,
         "title": "",
         "description": " Também convido você a conhecer minha carreira em psicologia no Brasil 🧠💬",
         "link_description": "carreira em psicologia",
@@ -150,7 +153,7 @@
     "display_resume": true,
     "resume": "Currículo",
     "resume_link": "",
-    "display_timeline": false,
+    "display_timeline": true,
     "timeline": "Timeline",
     "scrolldown": "scrolldown",
     "description": "Rafael Lapa Valgas / Engenheiro de Software"

@@ -19,9 +19,9 @@
       "title": "About",
       "card": {
         "title": "",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+        "description": "I am a software engineer with extensive experience in the development, maintenance, and quality assurance of synchronous and asynchronous APIs for mainframe, web, and mobile environments. I worked as a consultant at the largest financial institution in Latin America, Itaú Unibanco, where I was involved in anti-fraud systems, internal data distribution, and customer service channels. I hold a professional master's degree in Health Informatics, in which I led a project to computerize neuropsychology in hospital settings, focusing on usability and user experience. I have a passion for working with technology, as I believe in its potential to improve people's lives. As a software engineer, my motivation is to work in engaged teams and contribute to the success of innovative projects. Besides being a software engineer, I am also a psychologist, but that's another story...",
         "img": "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg",
-        "img_alt": "Imagem do meu primeiro setup"
+        "img_alt": "Home office image and computer setup"
       }
     },
     "skills": {
@@ -29,16 +29,16 @@
       "title": "Skills",
       "cards": [
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat."
+          "title": "SOFTWARE ENGINEER",
+          "description": "As a software engineer, I lead projects and teams with a focus on results. I plan, coordinate, and effectively communicate with stakeholders. I manage resources, risks, and deadlines to achieve objectives. I encourage collaboration and motivation, fostering a positive work environment. My commitment is to deliver innovative and high-quality projects, driving the success of the team and the organization. 🚀👨‍💻🤝"
         },
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat."
+          "title": "FULL-STACK DEVELOPER",
+          "description": "As a full-stack developer, I am responsible for creating comprehensive and innovative solutions. On the front-end, I use technologies like React, Angular, or Vue.js to develop user-friendly and attractive interfaces. On the back-end, I work with Node.js, Python, or Java, ensuring the robustness and efficiency of APIs. My goal is to deliver high-quality products, collaborating at all stages of development and ensuring an exceptional user experience. 🚀💻🎨"
         },
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat."
+          "title": "QUALITY ASSURANCE",
+          "description": "As a quality analyst, my mission is to ensure the excellence of the products developed. I conduct thorough tests on various platforms, such as web, mobile and mainframe, using tools like Selenium, Postman and Jagacy. I document results, report bugs, and collaborate with the development team to improve the usability and performance of the systems. My commitment is to deliver reliable and high-standard products, ensuring user satisfaction. 🕵️‍♂️🔍💡"
         }
       ]
     },
@@ -47,25 +47,28 @@
       "title": "Showcases",
       "cards": [
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "id": 1,
+          "title": "Neuropsychological Assessment Management System",
+          "description": "I developed a hospital neuropsychological assessment management system as part of my master's research in Health Informatics. The project encompassed all stages, from system analysis to validation of the functional prototype developed in Vue.js. If you are interested in technology and its application in the healthcare field, click to see more about the results and findings of this innovative project. 🧠💻🚀",
           "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_neuropsychology_prototype/main/resources/HNAMS_02.png",
-          "img_alt": "",
-          "link": "/"
+          "img_alt": "Home screen image of Neuropsychological Assessment Management System.",
+          "link": "https://github.com/lapavalgas/masterdegree_neuropsychology_prototype"
         },
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "id": 2,
+          "title": "Customer Registration System with Address validation",
+          "description": "I participated in a technical challenge, creating a complete customer registration application with address validation using the Correios API. I developed the frontend with Vue.js and the backend with Spring Boot in Java, ensuring efficient communication through Graphql. Additionally, I automated unit and functional tests using jUnit and Cypress. The project was dockerized for easy delivery. Click to see more 🚀💻📅",
           "img": "https://raw.githubusercontent.com/lapavalgas/technical_showcase_zip_code_app/main/resources/ZC_03.jpeg",
-          "img_alt": "",
-          "link": "/"
+          "img_alt": "Home screen image of System with Address validation.",
+          "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app"
         },
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "id": 3,
+          "title": "Fast Service System",
+          "description": "I developed the MVP Fast Service system, a service marketplace, as the final project for my undergraduate degree. The backend, implemented in Java with Spring and MySQL/H2, was deployed on Heroku, while the frontend, built with Vue.js, was hosted on Vercel. The project was containerized with Docker for easy delivery. 🚀💼💻",
           "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_fastservice/main/resources/fastservice_01.png",
-          "img_alt": "",
-          "link": "/"
+          "img_alt": "Home screen image of Fast Service System.",
+          "link": "https://github.com/lapavalgas/undergraduate_fastservice"
         }
       ],
       "btn_more": "SEE MORE"
@@ -75,40 +78,40 @@
       "title": "Projects",
       "cards": [
         {
-          "title": "lorem_ipsum_dolor_sit_amet",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
-          "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
-          "link": "/"
+          "title": "masterdegree_neuropsychology_prototype",
+          "description": "Repository of the hospital neuropsychological assessment system...",
+          "techstack": ["TypeScript", "Vue", "CSS", "Docker"],
+          "link": "https://github.com/lapavalgas/masterdegree_neuropsychology_prototype"
         },
         {
-          "title": "temporibus_ratione_quis_voluptatem",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "title": "technical_showcase_zip_code_app",
+          "description": "Repository of the customer registration system with address validation...",
           "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
-          "link": "/"
+          "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app"
         },
         {
-          "title": "lorem_ipsum_dolor_sit_amet",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "title": "undergraduate_fastservice",
+          "description": "Repository of the fast service system, a service marketplace...",
           "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
-          "link": "/"
+          "link": "https://github.com/lapavalgas/undergraduate_fastservice"
         },
         {
-          "title": "temporibus_ratione_quis_voluptatem",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
-          "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
-          "link": "/"
+          "title": "Portfolio",
+          "description": "Repository of my portfolio and personal timeline system...",
+          "techstack": ["TypeScript", "Vue", "CSS", "Mobile first"],
+          "link": "https://github.com/lapavalgas/portfolio"
         },
         {
-          "title": "lorem_ipsum_dolor_sit_amet",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
-          "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
-          "link": "/"
+          "title": "Scripts",
+          "description": "Repository of my useful scripts for organizing files, photos, and images...",
+          "techstack": ["Python"],
+          "link": "https://github.com/lapavalgas/scripts"
         },
         {
-          "title": "temporibus_ratione_quis_voluptatem",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
-          "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
-          "link": "/"
+          "title": "undergraduate_repositories",
+          "description": "Repository to keep the tasks developed during the undergraduate program...",
+          "techstack": ["Java", "Python", "JavaScript", "CSS", "Docker"],
+          "link": "https://github.com/lapavalgas/undergraduate_repositories"
         }
       ]
     },
@@ -117,22 +120,22 @@
       "title": "Contact me",
       "card_farewell": {
         "display": true,
-        "title": "Lorem!",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur!",
-        "img": "https://www.planningboard.ca/wp-content/uploads/2020/03/Computer-Programmer-Interactive-Media-Developer-Image-768x512.jpg",
-        "img_alt": ""
+        "title": "Thanks!",
+        "description": "Thank you for following my journey as a Software Engineer! How about we work together? 🤝 I would be happy to chat with you and share experiences! Feel free to get in touch via LinkedIn, send an email, or access my resume. Looking forward to speaking with you soon! 📧📄",
+        "img": "https://media.licdn.com/dms/image/D4D03AQEHpmO7L_ylZw/profile-displayphoto-shrink_800_800/0/1668777662832?e=1696464000&v=beta&t=GK92TatviJgD4KjdbIyKtejU1RiiWQgE84jevOna1sU",
+        "img_alt": "Profile picture."
       },
       "card_timeline": {
         "display": false,
-        "description": "",
-        "link_description": "",
-        "link": ""
+        "description": "And to view my entire professional and academic journey, access a timeline that I developed here or click on the footer icon. ",
+        "link_description": "here",
+        "link": "/"
       },
       "card_psychology": {
         "display": false,
         "title": "",
-        "description": "",
-        "link_description": "",
+        "description": "I also invite you to explore my career in psychology in Brazil 🧠💬",
+        "link_description": "career in psychology",
         "link": "/"
       }
     }

@@ -19,9 +19,9 @@
       "title": "Su di me",
       "card": {
         "title": "",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+        "description": "Sono un ingegnere del software con ampia esperienza nello sviluppo, nella manutenzione e nella qualità di API sincrone e asincrone per ambienti mainframe, web e mobile. Ho lavorato come consulente presso la più grande istituzione finanziaria dell'America Latina, Itaú Unibanco, dove ho lavorato con sistemi antifrode, distribuzione interna dei dati e canali di assistenza clienti. Possiedo una laurea magistrale professionale in Informatica in Sanità, nella quale ho condotto un progetto di informatizzazione della neuropsicologia in ambito ospedaliero, con un focus sull'usabilità e l'esperienza utente. Provengo una grande passione per lavorare con la tecnologia, poiché credo nel suo potenziale di migliorare la vita delle persone. La mia motivazione come ingegnere del software è di lavorare in team motivati e contribuire al successo di progetti innovativi. Oltre ad essere un ingegnere del software, sono anche uno psicologo, ma questa è un'altra storia...",
         "img": "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg",
-        "img_alt": "Imagem do meu primeiro setup"
+        "img_alt": "Immagine dell'home office e configurazione di un computer"
       }
     },
     "skills": {
@@ -29,16 +29,16 @@
       "title": "Abilità",
       "cards": [
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat."
+          "title": "INGEGNERE DEL SOFTWARE",
+          "description": "Come ingegnere del software, conduco progetti e squadre con un focus sui risultati. Pianifico, coordino e comunico efficacemente con le parti interessate. Gestisco risorse, rischi e scadenze per raggiungere gli obiettivi. Stimolo la collaborazione e la motivazione, promuovendo un ambiente di lavoro positivo. Il mio impegno è consegnare progetti innovativi e di alta qualità, potenziando il successo del team e dell'organizzazione. 🚀👨‍💻🤝"
         },
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat."
+          "title": "SVILUPPATORE COMPLETO",
+          "description": "Come sviluppatore fullstack, sono responsabile per creare soluzioni complete e innovative. Sul front-end, utilizzo tecnologie come React, Angular o Vue.js per sviluppare interfacce amichevoli e attraenti. Sul back-end, lavoro con Node.js, Python o Java, garantendo la robustezza e l'efficienza delle API. Il mio obiettivo è consegnare prodotti di alta qualità, collaborando in tutte le fasi dello sviluppo e garantendo un'esperienza eccezionale per l'utente. 🚀💻🎨"
         },
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat."
+          "title": "GARANZIA DI QUALITÀ",
+          "description": "Come analista di qualità, la mia missione è garantire l'eccellenza dei prodotti sviluppati. Effettuo test accurati su diverse piattaforme, come web, mobile e mainframe, utilizzando strumenti come Selenium, Postman e Jagacy. Documento i risultati, segnalo i bug e collaboro con il team di sviluppo per migliorare l'usabilità e le prestazioni dei sistemi. Il mio impegno è consegnare prodotti affidabili e di alto livello, assicurando la soddisfazione degli utenti. 🕵️‍♂️🔍💡"
         }
       ]
     },
@@ -47,25 +47,28 @@
       "title": "Esempi",
       "cards": [
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "id": 1,
+          "title": "Sistema di Gestione della Valutazione Neuropsicologica",
+          "description": "Ho sviluppato un sistema di gestione della valutazione neuropsicologica come parte della mia ricerca di laurea magistrale in Informatica in Sanità. Il progetto ha compreso tutte le fasi, dall'analisi del sistema alla validazione del prototipo funzionale sviluppato in Vue.js. Se sei interessato alla tecnologia e alla sua applicazione nell'ambito della salute, clicca per conoscere i risultati e le scoperte di questo progetto innovativo. 🧠💻🚀",
           "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_neuropsychology_prototype/main/resources/HNAMS_02.png",
-          "img_alt": "",
-          "link": "/"
+          "img_alt": "Immagine della schermata iniziale del Sistema di Gestione della Valutazione Neuropsicologica.",
+          "link": "https://github.com/lapavalgas/masterdegree_neuropsychology_prototype"
         },
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "id": 2,
+          "title": "Sistema di Registrazione Clienti con Validazione dell'Indirizzo",
+          "description": "Ho partecipato a un desafio tecnico creando un'applicazione completa di registrazione clienti, con validazione dell'indirizzo tramite codice postale usando l'API di Correios. Ho sviluppato il frontend con Vue.js e il backend con Spring Boot in Java, garantendo una comunicazione efficiente tramite Graphql. Inoltre, ho automatizzato test unitari e funzionali utilizzando jUnit e Cypress. Il progetto è stato containerizzato con Docker per facilitare la consegna. Clicca per saperne di più 🚀💻📅",
           "img": "https://raw.githubusercontent.com/lapavalgas/technical_showcase_zip_code_app/main/resources/ZC_03.jpeg",
-          "img_alt": "",
-          "link": "/"
+          "img_alt": "Immagine della schermata iniziale del Sistema di Registrazione Clienti con Validazione dell'Indirizzo.",
+          "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app"
         },
         {
-          "title": "LOREM IPSUM DOLOR SIT AMET",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "id": 3,
+          "title": "Sistema Fast Service",
+          "description": "Ho sviluppato il sistema MVP Fast Service, un marketplace dei servizi, come progetto finale di laurea. La parte del server è stata sviluppata in Java con Spring e MySQL/H2 ed è stata distribuita su Heroku, mentre il frontend è stato sviluppato in Vue.js ed è stato ospitato su Vercel. Il progetto è stato containerizzato con Docker per facilitare la consegna. 🚀💼💻",
           "img": "https://raw.githubusercontent.com/lapavalgas/undergraduate_fastservice/main/resources/fastservice_01.png",
-          "img_alt": "",
-          "link": "/"
+          "img_alt": "Immagine della schermata iniziale del Sistema Fast Service.",
+          "link": "https://github.com/lapavalgas/undergraduate_fastservice"
         }
       ],
       "btn_more": "SCOPRI DI PIÙ"
@@ -75,40 +78,40 @@
       "title": "Progetti ",
       "cards": [
         {
-          "title": "lorem_ipsum_dolor_sit_amet",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
-          "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
-          "link": "/"
+          "title": "masterdegree_neuropsychology_prototype",
+          "description": "Repository del sistema di valutazione neuropsicologica ospedaliera...",
+          "techstack": ["TypeScript", "Vue", "CSS", "Docker"],
+          "link": "https://github.com/lapavalgas/masterdegree_neuropsychology_prototype"
         },
         {
-          "title": "temporibus_ratione_quis_voluptatem",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "title": "technical_showcase_zip_code_app",
+          "description": "Repository del sistema di registrazione clienti con validazione dell'indirizzo...",
           "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
-          "link": "/"
+          "link": "https://github.com/lapavalgas/technical_showcase_zip_code_app"
         },
         {
-          "title": "lorem_ipsum_dolor_sit_amet",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
+          "title": "undergraduate_fastservice",
+          "description": "Repository del sistema Fast Service, un marketplace di servizi...",
           "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
-          "link": "/"
+          "link": "https://github.com/lapavalgas/undergraduate_fastservice"
         },
         {
-          "title": "temporibus_ratione_quis_voluptatem",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
-          "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
-          "link": "/"
+          "title": "Portfolio",
+          "description": "Repository del mio portfolio e sistema di linea del tempo personale...",
+          "techstack": ["TypeScript", "Vue", "CSS", "Mobile first"],
+          "link": "https://github.com/lapavalgas/portfolio"
         },
         {
-          "title": "lorem_ipsum_dolor_sit_amet",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
-          "techstack": ["Java", "Spring", "JavaScript", "Vue", "Docker"],
-          "link": "/"
+          "title": "Scripts",
+          "description": "Repository dei miei script utili per l'organizzazione di file, foto e immagini...",
+          "techstack": ["Python"],
+          "link": "https://github.com/lapavalgas/scripts"
         },
         {
-          "title": "temporibus_ratione_quis_voluptatem",
-          "description": "Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! ",
-          "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
-          "link": "/"
+          "title": "undergraduate_repositories",
+          "description": "Repository per mantenere le attività sviluppate durante il corso di laurea...",
+          "techstack": ["Java", "Python", "JavaScript", "CSS", "Docker"],
+          "link": "https://github.com/lapavalgas/undergraduate_repositories"
         }
       ]
     },
@@ -117,22 +120,22 @@
       "title": "Contattami",
       "card_farewell": {
         "display": true,
-        "title": "Lorem!",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione quis voluptatem nobis doloremque cumque suscipit voluptatibus repellendus! At adipisci quaerat ipsum repudiandae molestias esse dolorem quos atque a repellendus. Lorem ipsum dolor sit amet consectetur!",
-        "img": "https://www.planningboard.ca/wp-content/uploads/2020/03/Computer-Programmer-Interactive-Media-Developer-Image-768x512.jpg",
-        "img_alt": ""
+        "title": "Grazie!",
+        "description": "Grazie per seguire il mio percorso come Ingegnere del Software! Che ne dici di lavorare insieme? 🤝 Sarei felice di parlare con te e condividere esperienze! Contattami tramite LinkedIn, inviami una email o consulta il mio curriculum. Spero di sentirti presto! 📧📄",
+        "img": "https://media.licdn.com/dms/image/D4D03AQEHpmO7L_ylZw/profile-displayphoto-shrink_800_800/0/1668777662832?e=1696464000&v=beta&t=GK92TatviJgD4KjdbIyKtejU1RiiWQgE84jevOna1sU",
+        "img_alt": "Immagine del profilo."
       },
       "card_timeline": {
         "display": false,
-        "description": "",
-        "link_description": "",
+        "description": "E per vedere l'intera mia carriera professionale e accademica, accedi a una timeline che ho sviluppato o fai clic sull'icona a piè di pagina. ",
+        "link_description": "accedi a una timeline",
         "link": ""
       },
       "card_psychology": {
         "display": false,
         "title": "",
-        "description": "",
-        "link_description": "",
+        "description": " Ti invito anche a conoscere la mia carriera in psicologia in Brasile 🧠💬",
+        "link_description": "carriera in psicologia",
         "link": "/"
       }
     }
