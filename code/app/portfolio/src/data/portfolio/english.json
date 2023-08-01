@@ -20,7 +20,7 @@
       "card": {
         "title": "",
         "description": "I am a software engineer with extensive experience in the development, maintenance, and quality assurance of synchronous and asynchronous APIs for mainframe, web, and mobile environments. I worked as a consultant at the largest financial institution in Latin America, Itaú Unibanco, where I was involved in anti-fraud systems, internal data distribution, and customer service channels. I hold a professional master's degree in Health Informatics, in which I led a project to computerize neuropsychology in hospital settings, focusing on usability and user experience. I have a passion for working with technology, as I believe in its potential to improve people's lives. As a software engineer, my motivation is to work in engaged teams and contribute to the success of innovative projects. Besides being a software engineer, I am also a psychologist, but that's another story...",
-        "img": "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg",
+        "img": "/imgs/myfirstsetupimg.jpg",
         "img_alt": "Home office image and computer setup"
       }
     },
