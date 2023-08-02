@@ -18,6 +18,9 @@ function getCardImg() {
 function getCardImgAlt() {
   return loader.aboutInterface.card.img_alt;
 }
+function isToDisplayImgAlt() {
+  return loader.aboutInterface.card.display_img_alt;
+}
 </script>
 <template>
   <section id="about">
@@ -30,6 +33,7 @@ function getCardImgAlt() {
               <p>{{ getCardDescription() }}</p>
             </div>
             <div class="about-card-img">
+              <span v-if="isToDisplayImgAlt()">{{ getCardImgAlt() }}</span>
               <img :src="getCardImg()" :alt="getCardImgAlt()" />
             </div>
           </div>
@@ -48,6 +52,16 @@ function getCardImgAlt() {
 }
 .about-card-img {
   overflow: hidden;
+  position: relative;
+}
+.about-card-img > span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 1rem;
+  margin-bottom: 0.45rem;
+  color: var(--bg-clr-base-white);
+  font-family: monospace;
 }
 .about-card-txt {
   overflow: hidden;
@@ -74,6 +88,10 @@ function getCardImgAlt() {
     padding: 20px;
     max-width: 50%;
     min-height: 100%;
+  }
+  .about-card-img > span {
+    margin-right: 2rem;
+    margin-bottom: 1.45rem;
   }
   .about-card-img > img {
     min-height: 100%;

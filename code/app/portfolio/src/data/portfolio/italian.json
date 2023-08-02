@@ -21,7 +21,8 @@
         "title": "",
         "description": "Sono un ingegnere del software con ampia esperienza nello sviluppo, nella manutenzione e nella qualità di API sincrone e asincrone per ambienti mainframe, web e mobile. Ho lavorato come consulente presso la più grande istituzione finanziaria dell'America Latina, Itaú Unibanco, dove ho lavorato con sistemi antifrode, distribuzione interna dei dati e canali di assistenza clienti. Possiedo una laurea magistrale professionale in Informatica in Sanità, nella quale ho condotto un progetto di informatizzazione della neuropsicologia in ambito ospedaliero, con un focus sull'usabilità e l'esperienza utente. Provengo una grande passione per lavorare con la tecnologia, poiché credo nel suo potenziale di migliorare la vita delle persone. La mia motivazione come ingegnere del software è di lavorare in team motivati e contribuire al successo di progetti innovativi. Oltre ad essere un ingegnere del software, sono anche uno psicologo, ma questa è un'altra storia...",
         "img": "/imgs/myfirstsetupimg.jpg",
-        "img_alt": "Immagine dell'home office e configurazione di un computer"
+        "display_img_alt": true,
+        "img_alt": "Il mio primo setup, 2014"
       }
     },
     "skills": {
