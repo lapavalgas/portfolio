@@ -47,7 +47,7 @@ window.onscroll = function () {
 --------------------------------------------------------***/
 
 function isUserInMobileDevice() {
-  return screen.width <= 1024;
+  return screen.width <= 1024 || document.documentElement.clientWidth <= 1024;
 }
 
 function isUserInCoverComponent() {
@@ -216,6 +216,7 @@ function navContentSelectMenuByViewport() {
 }
 
 function menuToggle(id) {
+  console.log("teste");
   if (isUserInMobileDevice()) {
     if (isNavContentHidden()) {
       navContentTransformToVisible();
