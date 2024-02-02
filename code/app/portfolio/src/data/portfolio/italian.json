@@ -85,6 +85,12 @@
           "link": "https://github.com/lapavalgas/masterdegree_neuropsychology_prototype"
         },
         {
+          "title": "technical_showcase_crawler",
+          "description": "Repository del sistema di crawler asincrono multithread...",
+          "techstack": ["Java", "Docker"],
+          "link": "https://github.com/lapavalgas/technical_showcase_crawler"
+        },
+        {
           "title": "technical_showcase_zip_code_app",
           "description": "Repository del sistema di registrazione clienti con validazione dell'indirizzo...",
           "techstack": ["Java", "Spring", "TypeScript", "Vue", "Docker"],
