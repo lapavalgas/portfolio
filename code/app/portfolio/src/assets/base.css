@@ -64,7 +64,8 @@
 
   --border-forms: 1px solid rgba(0, 0, 0, 0.08);
   --border-cards: 1px solid rgba(225, 225, 225, 0.9);
-  --border-radius: 0.5rem;
+  --border-radius: 0.35rem;
+  --border-radius-profile-photo: 100%;
 
   scroll-behavior: smooth;
 

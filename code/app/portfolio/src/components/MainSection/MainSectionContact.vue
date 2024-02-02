@@ -119,6 +119,7 @@ function getTimelineLanguage() {
   max-width: 60%;
   box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.08);
   transition: all 1s linear;
+  border-radius: var(--border-radius-profile-photo);
 }
 .contact-card-link {
   color: rgb(162, 193, 235);
