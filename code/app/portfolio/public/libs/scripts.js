@@ -216,7 +216,6 @@ function navContentSelectMenuByViewport() {
 }
 
 function menuToggle(id) {
-  console.log("teste");
   if (isUserInMobileDevice()) {
     if (isNavContentHidden()) {
       navContentTransformToVisible();
