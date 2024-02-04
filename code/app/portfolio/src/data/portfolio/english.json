@@ -19,7 +19,7 @@
       "title": "About",
       "card": {
         "title": "",
-        "description": "I am a software engineer with extensive experience in the development, maintenance, and quality assurance of synchronous and asynchronous APIs for mainframe, web, and mobile environments. I worked as a consultant at the largest financial institution in Latin America, Itaú Unibanco, where I was involved in anti-fraud systems, internal data distribution, and customer service channels. I hold a professional master's degree in Health Informatics, in which I led a project to computerize neuropsychology in hospital settings, focusing on usability and user experience. I have a passion for working with technology, as I believe in its potential to improve people's lives. As a software engineer, my motivation is to work in engaged teams and contribute to the success of innovative projects. Besides being a software engineer, I am also a psychologist, but that's another story...",
+        "description": "I am a software engineer with experience in the development, maintenance, and quality assurance of web and mobile applications. Currently, I work as a consultant at NTT Data, providing services for Itaú Unibanco, where I focus on the data distribution systems and APIs. During my master's in Health Informatics, I developed a system for the computerization of Hospital Neuropsychological Assessment.",
         "img": "/imgs/myfirstsetupimg.jpg",
         "display_img_alt": true,
         "img_alt": "My first setup, 2014"

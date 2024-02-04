@@ -66,6 +66,9 @@ function isToDisplayImgAlt() {
 .about-card-txt {
   overflow: hidden;
 }
+.about-card-txt > p {
+  font-size: 1.25em;
+}
 .about-card-img > img {
   object-fit: fill;
   min-width: 100%;
@@ -100,7 +103,7 @@ function isToDisplayImgAlt() {
 @media (min-width: 1025px) {
   .about-card-txt > p {
     line-height: 2em;
-    margin-left: -1em;
+    margin-left: -0.5em;
   }
   .about-card-img > img {
     box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.08);

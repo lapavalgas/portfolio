@@ -19,7 +19,7 @@
       "title": "Sobre mim",
       "card": {
         "title": "",
-        "description": "Sou engenheiro de software com ampla experiência no desenvolvimento, manutenção e qualidade de APIs síncronas e assíncronas para ambientes mainframe, web e mobile. Atuei como consultor na maior instituição financeira da América Latina, o Itaú Unibanco, onde trabalhei com sistemas antifraude, distribuição interna de dados e os canais de atendimento ao cliente. Possuo mestrado profissional em Informática em Saúde no qual conduzi um projeto de informatização da neuropsicologia em ambientes hospitalares, com foco na usabilidade e experiência do usuário. Sinto paixão por trabalhar com tecnologia, pois acredito no potencial que ela tem de melhorar a vida das pessoas. Minha motivação como engenheiro de software é trabalhar em equipes engajadas e contribuir para o sucesso de projetos inovadores. Além de engenheiro de software sou psicólogo, mas essa é outra história…",
+        "description": "Sou engenheiro de software com experiência em desenvolvimento, manutenção e garantia de qualidade para aplicações web e mobile. Atualmente, atuo como consultor na NTT Data, prestando serviços para o Itaú Unibanco, onde me dedico aos sistemas e APIs responsáveis pela distribuição de dados. No mestrado em Informática em Saúde desenvolvi um sistema de informatização da Avaliação Neuropsicológica Hospitalar.",
         "img": "/imgs/myfirstsetupimg.jpg",
         "display_img_alt": true,
         "img_alt": "Meu primeiro setup, 2014"
